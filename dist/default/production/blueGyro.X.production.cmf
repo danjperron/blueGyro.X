@@ -11,79 +11,88 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcVUxWnIa.obj
+$dist/default/production/blueGyro.X.production.obj
+cinit CODE 0 39 39 16 2
+text1 CODE 0 D33 D33 66 2
+text2 CODE 0 859 859 7 2
+text3 CODE 0 868 868 C 2
+text4 CODE 0 D99 D99 6B 2
+text5 CODE 0 8CD 8CD 14 2
+text6 CODE 0 977 977 1D 2
+text7 CODE 0 9D5 9D5 23 2
+text8 CODE 0 9B2 9B2 23 2
+text9 CODE 0 95B 95B 1C 2
+text10 CODE 0 927 927 18 2
+text11 CODE 0 883 883 F 2
+text12 CODE 0 8E1 8E1 16 2
+text13 CODE 0 C7B C7B 56 2
+text14 CODE 0 90F 90F 18 2
+text15 CODE 0 5F6 5F6 9E 2
+text16 CODE 0 B1C B1C 40 2
+text17 CODE 0 852 852 7 2
+text18 CODE 0 847 847 5 2
+text19 CODE 0 842 842 5 2
+text20 CODE 0 83D 83D 5 2
+text21 CODE 0 93F 93F 1C 2
+text22 CODE 0 874 874 F 2
+text23 CODE 0 860 860 8 2
+text24 CODE 0 ADD ADD 3F 2
+text25 CODE 0 2A1 2A1 13A 2
+text26 CODE 0 8F7 8F7 18 2
+text27 CODE 0 8B9 8B9 14 2
+text28 CODE 0 BE3 BE3 44 2
+text29 CODE 0 E04 E04 73 2
+text30 CODE 0 B9F B9F 44 2
+text31 CODE 0 E77 E77 7F 2
+text32 CODE 0 CD1 CD1 62 2
+text33 CODE 0 A1D A1D 2C 2
+text34 CODE 0 AA9 AA9 34 2
+text35 CODE 0 A49 A49 2E 2
+text36 CODE 0 724 724 89 2
+text37 CODE 0 B5C B5C 43 2
+text38 CODE 0 7AD 7AD 53 2
+text39 CODE 0 EF6 EF6 82 2
+text40 CODE 0 F78 F78 88 2
+text41 CODE 0 50D 50D E9 2
+text42 CODE 0 A77 A77 32 2
+text43 CODE 0 694 694 90 2
+text44 CODE 0 9F8 9F8 25 2
+text45 CODE 0 892 892 13 2
+text46 CODE 0 8A5 8A5 14 2
+text47 CODE 0 994 994 1E 2
+text48 CODE 0 C27 C27 54 2
+maintext CODE 0 4F 4F 252 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 20 20 45 1
+intentry CODE 0 4 4 33 2
+bssBANK0 BANK0 1 65 65 5 1
+bssBANK1 BANK1 1 A0 A0 4E 1
+stringtext STRCODE 0 3DB 3DB 132 2
+idataBANK0 CODE 0 3 3 1 2
+eeprom_data EEDATA 3 0 F000 8 2
+dataBANK0 BANK0 1 6A 6A 1 1
+clrtext CODE 0 84C 84C 6 2
+bssCOMMON COMMON 1 7A 7A 2 1
+$/tmp/xcDkT5Wuv.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 37 37 2 2
 config CONFIG 0 8007 8007 2 2
-$dist/default/production/blueGyro.X.production.obj
-cinit CODE 0 39 39 16 2
-text1 CODE 0 F2F F2F 66 2
-text2 CODE 0 B22 B22 7 2
-text3 CODE 0 B31 B31 C 2
-text4 CODE 0 F95 F95 6B 2
-text5 CODE 0 B99 B99 18 2
-text6 CODE 0 C0E C0E 23 2
-text7 CODE 0 B4C B4C F 2
-text8 CODE 0 B83 B83 16 2
-text9 CODE 0 D30 D30 3F 2
-text10 CODE 0 3DB 3DB EF 2
-text11 CODE 0 B6F B6F 14 2
-text12 CODE 0 E36 E36 44 2
-text13 CODE 0 77A 77A 73 2
-text14 CODE 0 DF2 DF2 44 2
-text15 CODE 0 6FB 6FB 7F 2
-text16 CODE 0 ECD ECD 62 2
-text17 CODE 0 C31 C31 2C 2
-text18 CODE 0 CBD CBD 34 2
-text19 CODE 0 C5D C5D 2E 2
-text20 CODE 0 568 568 89 2
-text21 CODE 0 DAF DAF 43 2
-text22 CODE 0 E7A E7A 53 2
-text23 CODE 0 679 679 82 2
-text24 CODE 0 5F1 5F1 88 2
-text25 CODE 0 4CA 4CA 9E 2
-text26 CODE 0 D6F D6F 40 2
-text27 CODE 0 B1B B1B 7 2
-text28 CODE 0 B10 B10 5 2
-text29 CODE 0 B0B B0B 5 2
-text30 CODE 0 B06 B06 5 2
-text31 CODE 0 BB1 BB1 1C 2
-text32 CODE 0 B3D B3D F 2
-text33 CODE 0 B29 B29 8 2
-text34 CODE 0 2D3 2D3 108 2
-text35 CODE 0 C8B C8B 32 2
-text36 CODE 0 CF1 CF1 3F 2
-text37 CODE 0 BEB BEB 23 2
-text38 CODE 0 7ED 7ED 13 2
-text39 CODE 0 B5B B5B 14 2
-text40 CODE 0 BCD BCD 1E 2
-maintext CODE 0 194 194 13F 2
-cstackCOMMON COMMON 1 70 70 A 1
-cstackBANK0 BANK0 1 20 20 43 1
-intentry CODE 0 4 4 33 2
-bssBANK0 BANK0 1 63 63 5 1
-bssBANK1 BANK1 1 A0 A0 48 1
-stringtext STRCODE 0 4F 4F 145 2
-idataBANK0 CODE 0 3 3 1 2
-dataBANK0 BANK0 1 68 68 1 1
-clrtext CODE 0 B15 B15 6 2
-bssCOMMON COMMON 1 7A 7A 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 69-6F 1
-RAM E8-EF 1
+RAM 6B-6F 1
+RAM EE-EF 1
 RAM 120-16F 1
-BANK0 69-6F 1
-BANK1 E8-EF 1
+BANK0 6B-6F 1
+BANK1 EE-EF 1
 BANK2 120-16F 1
 CONST 2-2 2
-CONST 800-B05 2
+CONST 800-83C 2
 ENTRY 2-2 2
-ENTRY 800-B05 2
+ENTRY 800-83C 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
@@ -107,9 +116,9 @@ SFR28 E00-E6F 1
 SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
-STACK 2098-20EF 1
+STACK 209E-20EF 1
 CODE 2-2 2
-CODE 800-B05 2
+CODE 800-83C 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -122,11 +131,11 @@ SFR8 400-46F 1
 SFR9 480-4EF 1
 BIGRAM 2000-20EF 1
 COMMON 7C-7D 1
-EEDATA F000-F0FF 2
+EEDATA F008-F0FF 2
 STRCODE 2-2 2
-STRCODE 800-B05 2
+STRCODE 800-83C 2
 STRING 2-2 2
-STRING 800-B05 2
+STRING 800-83C 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -141,507 +150,591 @@ STRING 800-B05 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/blueGyro.X.production.obj
-39 cinit CODE >1402:/tmp/xcmWf2lFX
-39 cinit CODE >1405:/tmp/xcmWf2lFX
-39 cinit CODE >1464:/tmp/xcmWf2lFX
-3A cinit CODE >1465:/tmp/xcmWf2lFX
-3B cinit CODE >1469:/tmp/xcmWf2lFX
-3C cinit CODE >1470:/tmp/xcmWf2lFX
-3D cinit CODE >1471:/tmp/xcmWf2lFX
-3E cinit CODE >1472:/tmp/xcmWf2lFX
-3F cinit CODE >1473:/tmp/xcmWf2lFX
-40 cinit CODE >1477:/tmp/xcmWf2lFX
-41 cinit CODE >1478:/tmp/xcmWf2lFX
-42 cinit CODE >1479:/tmp/xcmWf2lFX
-43 cinit CODE >1480:/tmp/xcmWf2lFX
-44 cinit CODE >1481:/tmp/xcmWf2lFX
-45 cinit CODE >1482:/tmp/xcmWf2lFX
-48 cinit CODE >1487:/tmp/xcmWf2lFX
-4A cinit CODE >1488:/tmp/xcmWf2lFX
-4B cinit CODE >1494:/tmp/xcmWf2lFX
-4B cinit CODE >1496:/tmp/xcmWf2lFX
-4C cinit CODE >1497:/tmp/xcmWf2lFX
-4D cinit CODE >1498:/tmp/xcmWf2lFX
-4 intentry CODE >198:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-9 intentry CODE >200:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-C intentry CODE >201:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F intentry CODE >204:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-13 intentry CODE >206:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1A intentry CODE >207:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1F intentry CODE >208:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-23 intentry CODE >209:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-24 intentry CODE >210:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-25 intentry CODE >212:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-29 intentry CODE >216:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2B intentry CODE >221:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2E intentry CODE >222:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2F intentry CODE >223:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-33 intentry CODE >225:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BCD text40 CODE >229:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BCE text40 CODE >234:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BD4 text40 CODE >235:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BD7 text40 CODE >236:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BD8 text40 CODE >239:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BDC text40 CODE >242:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BE4 text40 CODE >244:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BE8 text40 CODE >246:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BEA text40 CODE >247:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B5B text39 CODE >4:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
-B5B text39 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
-B62 text39 CODE >7:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
-B6E text39 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
-7ED text38 CODE >419:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7EE text38 CODE >421:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7F2 text38 CODE >422:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7F6 text38 CODE >423:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7F8 text38 CODE >425:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7FC text38 CODE >426:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7FF text38 CODE >428:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BEB text37 CODE >432:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BEB text37 CODE >435:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BF8 text37 CODE >436:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-BFC text37 CODE >437:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-C0A text37 CODE >438:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-C0D text37 CODE >439:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-CF1 text36 CODE >441:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-CF1 text36 CODE >451:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-CF9 text36 CODE >452:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D01 text36 CODE >453:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D09 text36 CODE >454:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D11 text36 CODE >455:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D19 text36 CODE >456:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D21 text36 CODE >457:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D29 text36 CODE >458:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D2F text36 CODE >460:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-C8B text35 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-C8B text35 CODE >119:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-C94 text35 CODE >121:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-C96 text35 CODE >122:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-C9F text35 CODE >123:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-CA6 text35 CODE >124:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-CAD text35 CODE >125:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-CB3 text35 CODE >128:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
-2D3 text34 CODE >344:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2D3 text34 CODE >356:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2F6 text34 CODE >357:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-319 text34 CODE >358:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-33C text34 CODE >362:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-358 text34 CODE >363:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-374 text34 CODE >364:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-390 text34 CODE >365:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3BB text34 CODE >367:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3CB text34 CODE >368:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B29 text33 CODE >29:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B29 text33 CODE >30:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B3D text32 CODE >63:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B3E text32 CODE >67:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B42 text32 CODE >68:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B46 text32 CODE >69:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B48 text32 CODE >70:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B4B text32 CODE >71:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BB1 text31 CODE >74:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BB2 text31 CODE >81:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BB5 text31 CODE >82:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BB7 text31 CODE >83:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BBA text31 CODE >84:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BBF text31 CODE >85:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BC2 text31 CODE >86:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BC8 text31 CODE >87:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BCA text31 CODE >88:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BCB text31 CODE >90:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B06 text30 CODE >41:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B06 text30 CODE >42:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B08 text30 CODE >43:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B0A text30 CODE >44:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B0B text29 CODE >34:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B0B text29 CODE >36:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B0D text29 CODE >37:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B0F text29 CODE >38:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B10 text28 CODE >48:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B10 text28 CODE >50:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B12 text28 CODE >51:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B14 text28 CODE >52:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B1B text27 CODE >55:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B1C text27 CODE >57:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B1E text27 CODE >58:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B21 text27 CODE >59:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D6F text26 CODE >117:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D71 text26 CODE >120:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D74 text26 CODE >121:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D7A text26 CODE >122:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D7E text26 CODE >123:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D81 text26 CODE >124:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D88 text26 CODE >126:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D8F text26 CODE >127:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D9D text26 CODE >126:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-D9E text26 CODE >128:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-DAC text26 CODE >129:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-DAE text26 CODE >130:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-4CA text25 CODE >150:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-4CA text25 CODE >153:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-4DB text25 CODE >154:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-4DC text25 CODE >155:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-4E1 text25 CODE >156:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-4E2 text25 CODE >157:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-4F5 text25 CODE >158:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-508 text25 CODE >159:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-51B text25 CODE >160:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-52E text25 CODE >161:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-541 text25 CODE >162:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-554 text25 CODE >163:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-567 text25 CODE >164:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-5F1 text24 CODE >254:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-5F1 text24 CODE >255:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-60A text24 CODE >257:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-657 text24 CODE >258:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-65F text24 CODE >259:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-667 text24 CODE >261:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-674 text24 CODE >262:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-679 text23 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-679 text23 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-67B text23 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-67D text23 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-688 text23 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-68A text23 CODE >18:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-68A text23 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-68C text23 CODE >20:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-697 text23 CODE >21:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-69B text23 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6A3 text23 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6A9 text23 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6AB text23 CODE >26:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6AD text23 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6B4 text23 CODE >28:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6B8 text23 CODE >26:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6B9 text23 CODE >31:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6C0 text23 CODE >32:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6D0 text23 CODE >33:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6D8 text23 CODE >34:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6D9 text23 CODE >36:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6E0 text23 CODE >37:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6E4 text23 CODE >39:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6E7 text23 CODE >40:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-6F2 text23 CODE >41:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
-E7A text22 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E7A text22 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E83 text22 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E89 text22 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E8B text22 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E8D text22 CODE >18:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E94 text22 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E98 text22 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-E99 text22 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-EA0 text22 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-EB0 text22 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-EB8 text22 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-EB9 text22 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-EC0 text22 CODE >28:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-EC4 text22 CODE >30:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
-DAF text21 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DAF text21 CODE >13:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DB5 text21 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DB8 text21 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DBA text21 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DC1 text21 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DC5 text21 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DC6 text21 CODE >20:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DD6 text21 CODE >21:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DDE text21 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DE5 text21 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-DE9 text21 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
-568 text20 CODE >32:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-56A text20 CODE >38:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-572 text20 CODE >40:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-58F text20 CODE >41:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-593 text20 CODE >42:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-599 text20 CODE >43:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-59F text20 CODE >45:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-5B8 text20 CODE >46:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-5D5 text20 CODE >47:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-5D9 text20 CODE >48:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-5DD text20 CODE >49:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-5E1 text20 CODE >50:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-5EA text20 CODE >51:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-C5D text19 CODE >7:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-C5F text19 CODE >10:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-C63 text19 CODE >12:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-C65 text19 CODE >13:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-C70 text19 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-C7B text19 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
-CBD text18 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CBD text18 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CBF text18 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CC3 text18 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CC5 text18 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CC7 text18 CODE >18:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CCC text18 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CD0 text18 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CD1 text18 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CD6 text18 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CDE text18 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CE2 text18 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CE3 text18 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CE8 text18 CODE >28:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-CEC text18 CODE >30:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
-C31 text17 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C31 text17 CODE >13:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C35 text17 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C37 text17 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C39 text17 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C3E text17 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C42 text17 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C43 text17 CODE >20:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C4B text17 CODE >21:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C4F text17 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C54 text17 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-C58 text17 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
-ECD text16 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-ECF text16 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-ED3 text16 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-EE3 text16 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-EE7 text16 CODE >26:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-EEB text16 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-EF1 text16 CODE >29:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F01 text16 CODE >30:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F11 text16 CODE >31:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F15 text16 CODE >32:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F19 text16 CODE >33:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F1D text16 CODE >34:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F26 text16 CODE >35:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-F2A text16 CODE >36:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
-6FB text15 CODE >266:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-6FB text15 CODE >272:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-6FE text15 CODE >274:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-702 text15 CODE >275:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-712 text15 CODE >276:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-713 text15 CODE >278:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-71B text15 CODE >280:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-746 text15 CODE >281:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-74A text15 CODE >283:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-75B text15 CODE >285:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-762 text15 CODE >286:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-766 text15 CODE >287:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-779 text15 CODE >289:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-DF2 text14 CODE >314:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-DF2 text14 CODE >319:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E0F text14 CODE >320:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E2B text14 CODE >321:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E35 text14 CODE >322:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-77A text13 CODE >291:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-77A text13 CODE >297:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-77D text13 CODE >299:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-781 text13 CODE >300:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-791 text13 CODE >301:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-792 text13 CODE >303:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-79A text13 CODE >305:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7C5 text13 CODE >306:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7C9 text13 CODE >308:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7DA text13 CODE >310:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-7EC text13 CODE >312:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E36 text12 CODE >324:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E36 text12 CODE >330:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E53 text12 CODE >331:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E6F text12 CODE >332:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-E79 text12 CODE >333:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B6F text11 CODE >335:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B6F text11 CODE >338:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B82 text11 CODE >339:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3DB text10 CODE >388:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3DD text10 CODE >392:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3E0 text10 CODE >393:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3E3 text10 CODE >395:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3EA text10 CODE >396:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3F6 text10 CODE >397:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-3FD text10 CODE >398:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-411 text10 CODE >399:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-418 text10 CODE >400:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-42D text10 CODE >401:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-434 text10 CODE >402:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-449 text10 CODE >404:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-45E text10 CODE >405:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-465 text10 CODE >406:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-46F text10 CODE >408:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-476 text10 CODE >409:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-48B text10 CODE >410:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-492 text10 CODE >411:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-4A7 text10 CODE >412:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-4AE text10 CODE >413:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-4C3 text10 CODE >415:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-4C9 text10 CODE >416:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D30 text9 CODE >372:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D30 text9 CODE >379:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D4D text9 CODE >380:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D4F text9 CODE >381:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D6B text9 CODE >382:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-D6D text9 CODE >383:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B83 text8 CODE >169:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-B83 text8 CODE >175:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-B92 text8 CODE >177:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-B4C text7 CODE >169:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B4C text7 CODE >176:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B4E text7 CODE >177:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B50 text7 CODE >178:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B51 text7 CODE >179:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B53 text7 CODE >181:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B54 text7 CODE >182:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B56 text7 CODE >183:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B58 text7 CODE >184:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B59 text7 CODE >185:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B5A text7 CODE >186:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-C0E text6 CODE >8:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-C0E text6 CODE >10:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-C10 text6 CODE >11:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-C1E text6 CODE >13:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-C23 text6 CODE >15:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-C29 text6 CODE >16:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-C2A text6 CODE >19:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-B99 text5 CODE >99:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B9B text5 CODE >101:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B9D text5 CODE >103:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BA0 text5 CODE >104:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BA6 text5 CODE >105:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BAA text5 CODE >106:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BAE text5 CODE >107:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-BB0 text5 CODE >108:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-F95 text4 CODE >25:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-F95 text4 CODE >114:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FA1 text4 CODE >116:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FAD text4 CODE >118:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FB9 text4 CODE >120:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FBC text4 CODE >123:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FCD text4 CODE >124:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FD0 text4 CODE >125:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FD9 text4 CODE >126:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FDA text4 CODE >131:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FE6 text4 CODE >133:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FEF text4 CODE >136:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FF9 text4 CODE >137:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-FFF text4 CODE >139:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
-B31 text3 CODE >12:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B31 text3 CODE >16:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B33 text3 CODE >17:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B34 text3 CODE >19:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B37 text3 CODE >20:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B38 text3 CODE >22:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B3A text3 CODE >24:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B3C text3 CODE >26:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
-B22 text2 CODE >463:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B22 text2 CODE >465:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B28 text2 CODE >466:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F2F text1 CODE >469:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F2F text1 CODE >486:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F32 text1 CODE >488:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F35 text1 CODE >490:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F38 text1 CODE >492:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F45 text1 CODE >494:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F47 text1 CODE >496:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F49 text1 CODE >497:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F50 text1 CODE >498:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F57 text1 CODE >499:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F5C text1 CODE >500:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F64 text1 CODE >504:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F7F text1 CODE >505:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F8A text1 CODE >507:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F90 text1 CODE >511:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F92 text1 CODE >512:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-F94 text1 CODE >513:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-194 maintext CODE >516:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-194 maintext CODE >520:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-197 maintext CODE >521:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-199 maintext CODE >522:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-19B maintext CODE >523:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-19E maintext CODE >524:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1A1 maintext CODE >525:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1A4 maintext CODE >527:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1A5 maintext CODE >531:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1A6 maintext CODE >532:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1A8 maintext CODE >536:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1AA maintext CODE >537:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1AD maintext CODE >538:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1AE maintext CODE >540:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1AF maintext CODE >542:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B0 maintext CODE >543:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B1 maintext CODE >545:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B3 maintext CODE >547:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B4 maintext CODE >548:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B5 maintext CODE >549:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B6 maintext CODE >550:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B7 maintext CODE >551:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1B9 maintext CODE >552:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1BA maintext CODE >553:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1BC maintext CODE >554:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1BD maintext CODE >555:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1BF maintext CODE >556:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1C0 maintext CODE >558:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1C2 maintext CODE >559:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1C3 maintext CODE >560:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1C4 maintext CODE >561:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1C5 maintext CODE >565:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1C8 maintext CODE >570:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1D5 maintext CODE >571:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1D8 maintext CODE >572:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1DB maintext CODE >575:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1E9 maintext CODE >576:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1F0 maintext CODE >577:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-1F3 maintext CODE >578:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-201 maintext CODE >579:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-204 maintext CODE >580:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-207 maintext CODE >582:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-20D maintext CODE >583:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-211 maintext CODE >589:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-214 maintext CODE >591:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-21A maintext CODE >593:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-226 maintext CODE >594:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-228 maintext CODE >595:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-22C maintext CODE >596:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-22E maintext CODE >597:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-236 maintext CODE >598:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-238 maintext CODE >599:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-240 maintext CODE >600:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-245 maintext CODE >602:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-248 maintext CODE >604:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-250 maintext CODE >605:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-254 maintext CODE >606:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-259 maintext CODE >607:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-25C maintext CODE >614:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-261 maintext CODE >616:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-265 maintext CODE >618:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-266 maintext CODE >620:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-26D maintext CODE >621:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-26E maintext CODE >622:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-275 maintext CODE >624:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-27E maintext CODE >625:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-286 maintext CODE >626:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-28B maintext CODE >628:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-28C maintext CODE >618:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-294 maintext CODE >631:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-299 maintext CODE >633:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-29F maintext CODE >634:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2A2 maintext CODE >635:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2A5 maintext CODE >636:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2A8 maintext CODE >637:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2A9 maintext CODE >639:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2AD maintext CODE >641:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2AE maintext CODE >642:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2B0 maintext CODE >643:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2B1 maintext CODE >644:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2B4 maintext CODE >645:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2B7 maintext CODE >646:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2BD maintext CODE >648:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2C0 maintext CODE >649:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2C5 maintext CODE >650:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2C6 maintext CODE >653:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2CB maintext CODE >655:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2CE maintext CODE >656:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-2D2 maintext CODE >585:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
-B15 clrtext CODE >1453:/tmp/xcmWf2lFX
-B15 clrtext CODE >1454:/tmp/xcmWf2lFX
-B16 clrtext CODE >1455:/tmp/xcmWf2lFX
-B16 clrtext CODE >1456:/tmp/xcmWf2lFX
-B17 clrtext CODE >1457:/tmp/xcmWf2lFX
-B18 clrtext CODE >1458:/tmp/xcmWf2lFX
-B19 clrtext CODE >1459:/tmp/xcmWf2lFX
-B1A clrtext CODE >1460:/tmp/xcmWf2lFX
+39 cinit CODE >1418:/tmp/xc80qKSbq
+39 cinit CODE >1421:/tmp/xc80qKSbq
+39 cinit CODE >1492:/tmp/xc80qKSbq
+3A cinit CODE >1493:/tmp/xc80qKSbq
+3B cinit CODE >1497:/tmp/xc80qKSbq
+3C cinit CODE >1498:/tmp/xc80qKSbq
+3D cinit CODE >1499:/tmp/xc80qKSbq
+3E cinit CODE >1500:/tmp/xc80qKSbq
+3F cinit CODE >1501:/tmp/xc80qKSbq
+40 cinit CODE >1505:/tmp/xc80qKSbq
+41 cinit CODE >1506:/tmp/xc80qKSbq
+42 cinit CODE >1507:/tmp/xc80qKSbq
+43 cinit CODE >1508:/tmp/xc80qKSbq
+44 cinit CODE >1509:/tmp/xc80qKSbq
+45 cinit CODE >1510:/tmp/xc80qKSbq
+48 cinit CODE >1515:/tmp/xc80qKSbq
+4A cinit CODE >1516:/tmp/xc80qKSbq
+4B cinit CODE >1522:/tmp/xc80qKSbq
+4B cinit CODE >1524:/tmp/xc80qKSbq
+4C cinit CODE >1525:/tmp/xc80qKSbq
+4D cinit CODE >1526:/tmp/xc80qKSbq
+4 intentry CODE >236:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+4 intentry CODE >269:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9 intentry CODE >271:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C intentry CODE >272:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+F intentry CODE >275:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+13 intentry CODE >277:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1A intentry CODE >278:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1F intentry CODE >279:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+23 intentry CODE >280:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+24 intentry CODE >281:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+25 intentry CODE >283:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+29 intentry CODE >287:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2B intentry CODE >292:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2E intentry CODE >293:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2F intentry CODE >294:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+33 intentry CODE >296:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C27 text48 CODE >213:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C27 text48 CODE >217:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C32 text48 CODE >219:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C34 text48 CODE >221:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C3A text48 CODE >222:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C46 text48 CODE >223:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C4B text48 CODE >228:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C56 text48 CODE >230:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C5C text48 CODE >231:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C68 text48 CODE >232:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C6D text48 CODE >235:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+994 text47 CODE >300:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+995 text47 CODE >305:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+99B text47 CODE >306:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+99E text47 CODE >307:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+99F text47 CODE >310:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9A3 text47 CODE >313:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9AB text47 CODE >315:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9AF text47 CODE >317:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9B1 text47 CODE >318:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8A5 text46 CODE >4:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
+8A5 text46 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
+8AC text46 CODE >7:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
+8B8 text46 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/cputs.c
+892 text45 CODE >507:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+893 text45 CODE >509:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+897 text45 CODE >510:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+89B text45 CODE >511:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+89D text45 CODE >513:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8A1 text45 CODE >514:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8A4 text45 CODE >516:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9F8 text44 CODE >520:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9F8 text44 CODE >523:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+A05 text44 CODE >524:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+A0A text44 CODE >525:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+A18 text44 CODE >526:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+A1C text44 CODE >527:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+694 text43 CODE >529:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+694 text43 CODE >540:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+69F text43 CODE >541:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6AA text43 CODE >542:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6B5 text43 CODE >543:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6C0 text43 CODE >547:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6D4 text43 CODE >548:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6E8 text43 CODE >549:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6FC text43 CODE >552:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+707 text43 CODE >553:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+712 text43 CODE >554:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+71D text43 CODE >556:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+723 text43 CODE >558:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+A77 text42 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A77 text42 CODE >119:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A80 text42 CODE >121:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A82 text42 CODE >122:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A8B text42 CODE >123:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A92 text42 CODE >124:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A99 text42 CODE >125:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+A9F text42 CODE >128:/Applications/microchip/xc8/v1.35/sources/common/Umul32.c
+50D text41 CODE >423:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+50D text41 CODE >435:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+530 text41 CODE >436:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+553 text41 CODE >437:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+576 text41 CODE >441:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+592 text41 CODE >442:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+5AE text41 CODE >443:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+5CA text41 CODE >444:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+5F5 text41 CODE >446:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+F78 text40 CODE >325:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+F78 text40 CODE >326:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+F91 text40 CODE >328:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+FDE text40 CODE >329:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+FE6 text40 CODE >330:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+FEE text40 CODE >332:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+FFB text40 CODE >333:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EF6 text39 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+EF6 text39 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+EF8 text39 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+EFA text39 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F05 text39 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F07 text39 CODE >18:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F07 text39 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F09 text39 CODE >20:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F14 text39 CODE >21:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F18 text39 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F20 text39 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F26 text39 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F28 text39 CODE >26:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F2A text39 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F31 text39 CODE >28:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F35 text39 CODE >26:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F36 text39 CODE >31:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F3D text39 CODE >32:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F4D text39 CODE >33:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F55 text39 CODE >34:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F56 text39 CODE >36:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F5D text39 CODE >37:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F61 text39 CODE >39:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F64 text39 CODE >40:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+F6F text39 CODE >41:/Applications/microchip/xc8/v1.35/sources/common/aldiv.c
+7AD text38 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7AD text38 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7B6 text38 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7BC text38 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7BE text38 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7C0 text38 CODE >18:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7C7 text38 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7CB text38 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7CC text38 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7D3 text38 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7E3 text38 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7EB text38 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7EC text38 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7F3 text38 CODE >28:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+7F7 text38 CODE >30:/Applications/microchip/xc8/v1.35/sources/common/lldiv.c
+B5C text37 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B5C text37 CODE >13:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B62 text37 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B65 text37 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B67 text37 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B6E text37 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B72 text37 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B73 text37 CODE >20:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B83 text37 CODE >21:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B8B text37 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B92 text37 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+B96 text37 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/llmod.c
+724 text36 CODE >32:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+726 text36 CODE >38:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+72E text36 CODE >40:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+74B text36 CODE >41:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+74F text36 CODE >42:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+755 text36 CODE >43:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+75B text36 CODE >45:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+774 text36 CODE >46:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+791 text36 CODE >47:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+795 text36 CODE >48:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+799 text36 CODE >49:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+79D text36 CODE >50:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+7A6 text36 CODE >51:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+A49 text35 CODE >7:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+A4B text35 CODE >10:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+A4F text35 CODE >12:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+A51 text35 CODE >13:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+A5C text35 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+A67 text35 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/ltoa.c
+AA9 text34 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AA9 text34 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AAB text34 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AAF text34 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AB1 text34 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AB3 text34 CODE >18:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AB8 text34 CODE >19:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+ABC text34 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+ABD text34 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AC2 text34 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+ACA text34 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+ACE text34 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+ACF text34 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AD4 text34 CODE >28:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+AD8 text34 CODE >30:/Applications/microchip/xc8/v1.35/sources/common/lwdiv.c
+A1D text33 CODE >6:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A1D text33 CODE >13:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A21 text33 CODE >14:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A23 text33 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A25 text33 CODE >16:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A2A text33 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A2E text33 CODE >15:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A2F text33 CODE >20:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A37 text33 CODE >21:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A3B text33 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A40 text33 CODE >23:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+A44 text33 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/lwmod.c
+CD1 text32 CODE >17:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+CD3 text32 CODE >22:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+CD7 text32 CODE >24:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+CE7 text32 CODE >25:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+CEB text32 CODE >26:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+CEF text32 CODE >27:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+CF5 text32 CODE >29:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D05 text32 CODE >30:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D15 text32 CODE >31:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D19 text32 CODE >32:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D1D text32 CODE >33:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D21 text32 CODE >34:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D2A text32 CODE >35:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+D2E text32 CODE >36:/Applications/microchip/xc8/v1.35/sources/common/itoa.c
+E77 text31 CODE >345:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E77 text31 CODE >351:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E7A text31 CODE >353:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E7E text31 CODE >354:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E8E text31 CODE >355:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E8F text31 CODE >357:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E97 text31 CODE >359:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EC2 text31 CODE >360:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EC6 text31 CODE >362:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+ED7 text31 CODE >364:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EDE text31 CODE >365:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EE2 text31 CODE >366:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EF5 text31 CODE >368:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+B9F text30 CODE >393:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+B9F text30 CODE >398:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BBC text30 CODE >399:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BD8 text30 CODE >400:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BE2 text30 CODE >401:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E04 text29 CODE >370:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E04 text29 CODE >376:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E07 text29 CODE >378:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E0B text29 CODE >379:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E1B text29 CODE >380:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E1C text29 CODE >382:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E24 text29 CODE >384:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E4F text29 CODE >385:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E53 text29 CODE >387:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E64 text29 CODE >389:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E76 text29 CODE >391:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BE3 text28 CODE >403:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BE3 text28 CODE >409:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C00 text28 CODE >410:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C1C text28 CODE >411:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C26 text28 CODE >412:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8B9 text27 CODE >414:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8B9 text27 CODE >417:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8CC text27 CODE >418:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8F7 text26 CODE >337:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8F7 text26 CODE >340:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+908 text26 CODE >341:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+90E text26 CODE >342:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2A1 text25 CODE >465:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2A1 text25 CODE >469:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2A6 text25 CODE >470:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2AA text25 CODE >473:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2AD text25 CODE >475:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2B4 text25 CODE >476:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2BF text25 CODE >477:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2C6 text25 CODE >478:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2D6 text25 CODE >479:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2DE text25 CODE >480:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2EE text25 CODE >481:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2F6 text25 CODE >482:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+306 text25 CODE >484:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+31A text25 CODE >485:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+321 text25 CODE >486:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+32B text25 CODE >488:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+332 text25 CODE >489:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+34B text25 CODE >490:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+353 text25 CODE >491:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+36C text25 CODE >492:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+374 text25 CODE >493:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+38D text25 CODE >496:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+394 text25 CODE >497:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+3A4 text25 CODE >498:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+3AC text25 CODE >499:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+3BC text25 CODE >500:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+3C4 text25 CODE >501:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+3D4 text25 CODE >503:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+3DA text25 CODE >504:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+ADD text24 CODE >449:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+ADD text24 CODE >456:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+AFA text24 CODE >457:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+AFC text24 CODE >458:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+B18 text24 CODE >459:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+B1A text24 CODE >460:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+860 text23 CODE >29:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+860 text23 CODE >30:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+874 text22 CODE >63:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+875 text22 CODE >67:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+879 text22 CODE >68:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+87D text22 CODE >69:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+87F text22 CODE >70:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+882 text22 CODE >71:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+93F text21 CODE >74:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+940 text21 CODE >81:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+943 text21 CODE >82:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+945 text21 CODE >83:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+948 text21 CODE >84:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+94D text21 CODE >85:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+950 text21 CODE >86:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+956 text21 CODE >87:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+958 text21 CODE >88:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+959 text21 CODE >90:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+83D text20 CODE >41:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+83D text20 CODE >42:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+83F text20 CODE >43:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+841 text20 CODE >44:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+842 text19 CODE >34:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+842 text19 CODE >36:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+844 text19 CODE >37:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+846 text19 CODE >38:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+847 text18 CODE >48:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+847 text18 CODE >50:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+849 text18 CODE >51:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+84B text18 CODE >52:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+852 text17 CODE >55:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+853 text17 CODE >57:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+855 text17 CODE >58:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+858 text17 CODE >59:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B1C text16 CODE >117:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B1E text16 CODE >119:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B21 text16 CODE >120:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B27 text16 CODE >121:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B2B text16 CODE >122:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B2E text16 CODE >123:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B35 text16 CODE >125:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B3C text16 CODE >126:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B4A text16 CODE >125:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B4B text16 CODE >127:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B59 text16 CODE >128:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+B5B text16 CODE >129:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+5F6 text15 CODE >146:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+5F6 text15 CODE >149:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+607 text15 CODE >150:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+608 text15 CODE >151:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+60D text15 CODE >152:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+60E text15 CODE >153:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+621 text15 CODE >154:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+634 text15 CODE >155:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+647 text15 CODE >156:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+65A text15 CODE >157:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+66D text15 CODE >158:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+680 text15 CODE >159:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+693 text15 CODE >160:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+90F text14 CODE >99:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+911 text14 CODE >101:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+913 text14 CODE >103:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+916 text14 CODE >104:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+91C text14 CODE >105:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+920 text14 CODE >106:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+924 text14 CODE >107:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+926 text14 CODE >108:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+C7B text13 CODE >18:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+C7B text13 CODE >25:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+C86 text13 CODE >26:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+C97 text13 CODE >27:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+CAA text13 CODE >28:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+CBD text13 CODE >29:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+CD0 text13 CODE >30:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+8E1 text12 CODE >165:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+8E1 text12 CODE >171:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+8F0 text12 CODE >173:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+883 text11 CODE >240:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+883 text11 CODE >247:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+885 text11 CODE >248:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+887 text11 CODE >249:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+888 text11 CODE >250:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+88A text11 CODE >252:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+88B text11 CODE >253:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+88D text11 CODE >254:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+88F text11 CODE >255:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+890 text11 CODE >256:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+891 text11 CODE >257:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+927 text10 CODE >6:/Applications/microchip/xc8/v1.35/sources/pic/eeread.c
+928 text10 CODE >8:/Applications/microchip/xc8/v1.35/sources/pic/eeread.c
+928 text10 CODE >9:/Applications/microchip/xc8/v1.35/sources/pic/eeread.c
+929 text10 CODE >10:/Applications/microchip/xc8/v1.35/sources/pic/eeread.c
+92C text10 CODE >11:/Applications/microchip/xc8/v1.35/sources/pic/eeread.c
+95B text9 CODE >194:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+95B text9 CODE >197:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+95F text9 CODE >199:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+964 text9 CODE >200:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+972 text9 CODE >199:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+9B2 text8 CODE >9:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9B2 text8 CODE >11:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9B4 text8 CODE >12:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9C2 text8 CODE >14:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9C7 text8 CODE >16:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9CD text8 CODE >17:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9CE text8 CODE >20:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+9D5 text7 CODE >6:/Applications/microchip/xc8/v1.35/sources/pic/eewrite.c
+9D6 text7 CODE >8:/Applications/microchip/xc8/v1.35/sources/pic/eewrite.c
+977 text6 CODE >203:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+977 text6 CODE >206:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+97B text6 CODE >208:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+980 text6 CODE >209:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+98F text6 CODE >208:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+8CD text5 CODE >9:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+8CD text5 CODE >13:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+8D7 text5 CODE >15:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+8E0 text5 CODE >16:/Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
+D99 text4 CODE >27:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+D99 text4 CODE >114:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DA5 text4 CODE >116:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DB1 text4 CODE >118:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DBD text4 CODE >120:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DC0 text4 CODE >123:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DD1 text4 CODE >124:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DD4 text4 CODE >125:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DDD text4 CODE >126:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DDE text4 CODE >131:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DEA text4 CODE >133:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DF3 text4 CODE >136:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+DFD text4 CODE >137:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+E03 text4 CODE >139:/Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
+868 text3 CODE >12:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+868 text3 CODE >16:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+86A text3 CODE >17:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+86B text3 CODE >19:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+86E text3 CODE >20:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+86F text3 CODE >22:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+871 text3 CODE >24:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+873 text3 CODE >26:/Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
+859 text2 CODE >561:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+859 text2 CODE >563:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+85F text2 CODE >564:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D33 text1 CODE >567:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D33 text1 CODE >584:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D36 text1 CODE >586:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D39 text1 CODE >588:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D3C text1 CODE >590:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D49 text1 CODE >592:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D4B text1 CODE >594:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D4D text1 CODE >595:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D54 text1 CODE >596:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D5B text1 CODE >597:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D60 text1 CODE >598:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D68 text1 CODE >602:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D83 text1 CODE >603:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D8E text1 CODE >605:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D94 text1 CODE >609:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D96 text1 CODE >610:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D98 text1 CODE >611:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+4F maintext CODE >614:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+4F maintext CODE >618:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+52 maintext CODE >619:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+54 maintext CODE >620:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+56 maintext CODE >621:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+59 maintext CODE >622:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+5C maintext CODE >623:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+5F maintext CODE >625:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+60 maintext CODE >629:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+61 maintext CODE >630:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+63 maintext CODE >634:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+65 maintext CODE >635:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+68 maintext CODE >636:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+69 maintext CODE >638:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6A maintext CODE >640:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6B maintext CODE >641:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6C maintext CODE >643:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6E maintext CODE >645:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+6F maintext CODE >646:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+70 maintext CODE >647:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+71 maintext CODE >648:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+72 maintext CODE >649:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+74 maintext CODE >650:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+75 maintext CODE >651:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+77 maintext CODE >652:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+78 maintext CODE >653:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+7A maintext CODE >654:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+7B maintext CODE >656:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+7D maintext CODE >657:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+7E maintext CODE >658:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+7F maintext CODE >659:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+80 maintext CODE >664:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+83 maintext CODE >667:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+86 maintext CODE >672:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+93 maintext CODE >673:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+96 maintext CODE >674:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+99 maintext CODE >677:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+A7 maintext CODE >678:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+AA maintext CODE >679:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+B7 maintext CODE >680:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BA maintext CODE >681:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+BD maintext CODE >684:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C0 maintext CODE >687:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+C6 maintext CODE >688:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+CA maintext CODE >694:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+CD maintext CODE >696:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+D3 maintext CODE >698:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+DF maintext CODE >699:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E1 maintext CODE >700:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E5 maintext CODE >701:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+E7 maintext CODE >702:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+EF maintext CODE >703:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+F1 maintext CODE >704:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+F9 maintext CODE >705:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+FE maintext CODE >707:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+101 maintext CODE >709:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+109 maintext CODE >710:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+10D maintext CODE >711:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+116 maintext CODE >713:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+11A maintext CODE >714:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+123 maintext CODE >715:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+12B maintext CODE >716:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+133 maintext CODE >717:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+136 maintext CODE >718:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+137 maintext CODE >719:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+13B maintext CODE >720:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+13E maintext CODE >727:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+143 maintext CODE >729:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+147 maintext CODE >731:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+148 maintext CODE >733:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+14F maintext CODE >734:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+150 maintext CODE >735:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+157 maintext CODE >736:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+158 maintext CODE >737:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+15F maintext CODE >739:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+168 maintext CODE >740:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+16C maintext CODE >742:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+16D maintext CODE >731:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+179 maintext CODE >745:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+17E maintext CODE >747:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+184 maintext CODE >748:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+187 maintext CODE >750:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1A3 maintext CODE >751:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1BE maintext CODE >752:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1D9 maintext CODE >753:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1DE maintext CODE >755:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+1E9 maintext CODE >757:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+208 maintext CODE >758:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+227 maintext CODE >759:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+246 maintext CODE >761:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+24A maintext CODE >762:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+24E maintext CODE >763:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+252 maintext CODE >765:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+255 maintext CODE >767:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+257 maintext CODE >769:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+258 maintext CODE >771:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+25C maintext CODE >773:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+262 maintext CODE >774:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+265 maintext CODE >776:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+268 maintext CODE >778:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+26B maintext CODE >779:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+26E maintext CODE >780:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+26F maintext CODE >782:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+273 maintext CODE >784:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+274 maintext CODE >785:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+276 maintext CODE >786:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+277 maintext CODE >787:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+27A maintext CODE >789:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+27D maintext CODE >791:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+280 maintext CODE >792:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+286 maintext CODE >794:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+289 maintext CODE >795:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+28E maintext CODE >796:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+28F maintext CODE >799:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+294 maintext CODE >801:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+297 maintext CODE >803:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+29A maintext CODE >805:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+29D maintext CODE >806:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+29F maintext CODE >807:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+2A0 maintext CODE >690:/Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+84C clrtext CODE >1481:/tmp/xc80qKSbq
+84C clrtext CODE >1482:/tmp/xc80qKSbq
+84D clrtext CODE >1483:/tmp/xc80qKSbq
+84D clrtext CODE >1484:/tmp/xc80qKSbq
+84E clrtext CODE >1485:/tmp/xc80qKSbq
+84F clrtext CODE >1486:/tmp/xc80qKSbq
+850 clrtext CODE >1487:/tmp/xc80qKSbq
+851 clrtext CODE >1488:/tmp/xc80qKSbq
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -654,43 +747,48 @@ B1A clrtext CODE >1460:/tmp/xcmWf2lFX
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__end_of_CalculateSumOfSquares 7B6 0 CODE 0 text34 dist/default/production/blueGyro.X.production.obj
+__end_of_CalculateSumOfSquares BEC 0 CODE 0 text41 dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Restart 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ___latbits 1 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 putch@temp 74 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ___lwmod@counter 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 10 1E000 ABS 0 dataBANK0 -
 i2c_Read@i2cReadData 74 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 CalculateSumOfSquares@GzSquare 3A 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_OutFiFo 67 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
+_OutFiFo 69 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
 __Hspace_0 8009 0 ABS 0 - -
-__Hspace_1 E8 0 ABS 0 - -
+__Hspace_1 EE 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
-__Hspace_3 0 0 ABS 0 - -
+__Hspace_3 8 0 ABS 0 - -
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK0 10 1E000 ABS 0 idataBANK0 -
 __size_of_MPU6050_Test_I2C 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__end_of_printUShort 1706 0 CODE 0 text11 dist/default/production/blueGyro.X.production.obj
-__end_of_putHexNibble 1000 0 CODE 0 text38 dist/default/production/blueGyro.X.production.obj
+__end_of_printUShort 119A 0 CODE 0 text27 dist/default/production/blueGyro.X.production.obj
+__BbssBANK0 1E010 1E000 ABS 0 bssBANK0 -
+__BbssBANK1 1E010 1E000 ABS 0 bssBANK1 -
+__end_of_putHexNibble 114A 0 CODE 0 text45 dist/default/production/blueGyro.X.production.obj
 Setup_MPU6050@loop 23 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-Setup_MPU6050@MPU6050RegTable 9E 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
-__Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_i2c_Init 1662 0 CODE 0 text3 dist/default/production/blueGyro.X.production.obj
-_i2c_Read 1762 0 CODE 0 text31 dist/default/production/blueGyro.X.production.obj
-_i2c_Stop 1620 0 CODE 0 text28 dist/default/production/blueGyro.X.production.obj
-_i2c_Wait 1652 0 CODE 0 text33 dist/default/production/blueGyro.X.production.obj
+Setup_MPU6050@MPU6050RegTable 7B6 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+__Heeprom_data 10 1E000 EEDATA 3 eeprom_data -
+_i2c_Init 10D0 0 CODE 0 text3 dist/default/production/blueGyro.X.production.obj
+_i2c_Read 127E 0 CODE 0 text21 dist/default/production/blueGyro.X.production.obj
+_i2c_Stop 108E 0 CODE 0 text18 dist/default/production/blueGyro.X.production.obj
+_i2c_Wait 10C0 0 CODE 0 text23 dist/default/production/blueGyro.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_RD CA8 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_WR CA9 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltemp0 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltemp1 82 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltemp2 86 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltemp3 80 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Lstringtext 0 0 ABS 0 stringtext -
-_CalculateSumOfSquares 5A6 0 CODE 0 text34 dist/default/production/blueGyro.X.production.obj
-__Hstrings 0 0 ABS 0 strings -
+__Lstringtext 10 1E000 ABS 0 stringtext -
+_GetGyroWithOffset 184E 0 CODE 0 text48 dist/default/production/blueGyro.X.production.obj
+_CalculateSumOfSquares A1A 0 CODE 0 text41 dist/default/production/blueGyro.X.production.obj
+__Hstrings 10 1E000 ABS 0 strings -
 _ADGO 4E9 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _BRGH CF2 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _CREN CEC 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_Mode 68 0 BANK0 1 dataBANK0 dist/default/production/blueGyro.X.production.obj
+_Mode 6A 0 BANK0 1 dataBANK0 dist/default/production/blueGyro.X.production.obj
 _PEIE 5E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _RCEN 10B3 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _RCIE 48D 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
@@ -704,20 +802,23 @@ _TXEN CF5 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _TXIE 48C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _TXIF 8C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _WPUA 20C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-___sp 0 0 STACK 2 stack /tmp/xcVUxWnIa.obj
-_ltoa 18BA 0 CODE 0 text19 dist/default/production/blueGyro.X.production.obj
-_main 328 0 CODE 0 maintext dist/default/production/blueGyro.X.production.obj
-_utoa 1D9A 0 CODE 0 text16 dist/default/production/blueGyro.X.production.obj
+_WREN CAA 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/xcDkT5Wuv.obj
+_ltoa 1492 0 CODE 0 text35 dist/default/production/blueGyro.X.production.obj
+_main 9E 0 CODE 0 maintext dist/default/production/blueGyro.X.production.obj
+_utoa 19A2 0 CODE 0 text32 dist/default/production/blueGyro.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-start 6E 0 CODE 0 init /tmp/xcVUxWnIa.obj
+start 6E 0 CODE 0 init /tmp/xcDkT5Wuv.obj
 ttemp 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Init 167A 0 CODE 0 text3 dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Read 179A 0 CODE 0 text31 dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Stop 162A 0 CODE 0 text28 dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Wait 1662 0 CODE 0 text33 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Init 10E8 0 CODE 0 text3 dist/default/production/blueGyro.X.production.obj
+_Setting E8 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Read 12B6 0 CODE 0 text21 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Stop 1098 0 CODE 0 text18 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Wait 10D0 0 CODE 0 text23 dist/default/production/blueGyro.X.production.obj
+_Setup_HMC5883L 119A 0 CODE 0 text5 dist/default/production/blueGyro.X.production.obj
 __size_of_ltoa 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_utoa 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
@@ -727,16 +828,19 @@ __size_of___lwdiv 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of___lwmod 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltoa@buf 3B 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 ltoa@val 33 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__HbssCOMMON 0 0 ABS 0 bssCOMMON -
-__end_of_DisplayData 1A60 0 CODE 0 text36 dist/default/production/blueGyro.X.production.obj
-__end_of_DisplayInfo 994 0 CODE 0 text10 dist/default/production/blueGyro.X.production.obj
+__HbssCOMMON 10 1E000 ABS 0 bssCOMMON -
+__end_of_DisplayData E48 0 CODE 0 text43 dist/default/production/blueGyro.X.production.obj
+__end_of_DisplayInfo 7B6 0 CODE 0 text25 dist/default/production/blueGyro.X.production.obj
 LDByteWriteI2C@LowAdd 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ?___lmul 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+__end_of_Get_HMC5883L_Values 19A2 0 CODE 0 text13 dist/default/production/blueGyro.X.production.obj
 putHexNibble@value 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__LidataBANK0 0 0 ABS 0 idataBANK0 -
+_SaveSetting 12EE 0 CODE 0 text6 dist/default/production/blueGyro.X.production.obj
+__LidataBANK0 10 1E000 ABS 0 idataBANK0 -
 __size_of_Setup_MPU6050 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 printVoltage@value 5D 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
+_printValue 11EE 0 CODE 0 text26 dist/default/production/blueGyro.X.production.obj
 ttemp0 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ttemp1 81 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ttemp2 84 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
@@ -746,14 +850,14 @@ printDeciValue@T 50 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.pro
 __size_of_printDeciValue 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 utoa@c 27 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 utoa@v 25 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-main@UserKey 62 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-intlevel0 0 0 CODE 0 functab /tmp/xcVUxWnIa.obj
-intlevel1 0 0 CODE 0 functab /tmp/xcVUxWnIa.obj
-intlevel2 0 0 CODE 0 functab /tmp/xcVUxWnIa.obj
-intlevel3 0 0 CODE 0 functab /tmp/xcVUxWnIa.obj
-intlevel4 0 0 CODE 0 functab /tmp/xcVUxWnIa.obj
-intlevel5 0 0 CODE 0 functab /tmp/xcVUxWnIa.obj
-__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+main@UserKey 64 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+intlevel0 0 0 CODE 0 functab /tmp/xcDkT5Wuv.obj
+intlevel1 0 0 CODE 0 functab /tmp/xcDkT5Wuv.obj
+intlevel2 0 0 CODE 0 functab /tmp/xcDkT5Wuv.obj
+intlevel3 0 0 CODE 0 functab /tmp/xcDkT5Wuv.obj
+intlevel4 0 0 CODE 0 functab /tmp/xcDkT5Wuv.obj
+intlevel5 0 0 CODE 0 functab /tmp/xcDkT5Wuv.obj
+__LbssCOMMON 10 1E000 ABS 0 bssCOMMON -
 ___aldiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 wtemp1 80 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
@@ -764,48 +868,58 @@ wtemp5 88 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 wtemp6 7F 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ___llmod@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __Hfunctab 0 0 CODE 0 functab -
+SaveSetting@idx 78 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ___aldiv@sign 22 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 printCentiValue@T 50 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __size_of_printGForce 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Hclrtext 0 0 ABS 0 clrtext -
-DisplayInfo@Gt 5C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-DisplayInfo@gs 5E 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__end_of_Setup_MPU6050 2000 0 CODE 0 text4 dist/default/production/blueGyro.X.production.obj
+__Hclrtext 10 1E000 ABS 0 clrtext -
+DisplayInfo@Gt 5A 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+DisplayInfo@cy 5C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+DisplayInfo@cz 5E 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+__end_of_Setup_MPU6050 1C08 0 CODE 0 text4 dist/default/production/blueGyro.X.production.obj
+__end_of_Setup_HMC5883L 11C2 0 CODE 0 text5 dist/default/production/blueGyro.X.production.obj
+_LoadSetting 12B6 0 CODE 0 text9 dist/default/production/blueGyro.X.production.obj
 _ADCON0 9D 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _ADCON1 9E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 printUShort@buffer 2B 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 _ANSELA 18C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _APFCON 11D 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_i2c_Address 167A 0 CODE 0 text32 dist/default/production/blueGyro.X.production.obj
+_i2c_Address 10E8 0 CODE 0 text22 dist/default/production/blueGyro.X.production.obj
 ultoa@c 31 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 ultoa@v 2D 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-putHex@value 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+putHex@value 20 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 i2c_Read@ack 73 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__end_of___lmul 197A 0 CODE 0 text35 dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Start 1620 0 CODE 0 text29 dist/default/production/blueGyro.X.production.obj
+__end_of___lmul 1552 0 CODE 0 text42 dist/default/production/blueGyro.X.production.obj
+_EECON1 195 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_EECON2 196 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_EEDATA 193 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+LoadSetting@idx 78 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Start 108E 0 CODE 0 text19 dist/default/production/blueGyro.X.production.obj
 LDByteWriteI2C@data 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Write 1644 0 CODE 0 text27 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Write 10B2 0 CODE 0 text17 dist/default/production/blueGyro.X.production.obj
 LDByteWriteI2C@i2cSlaveAddress 22 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__Lmaintext 0 0 ABS 0 maintext -
+__Lmaintext 10 1E000 ABS 0 maintext -
 i2c_Write@data 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Start 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _FVRCON 117 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Write 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+__end_of_printValue 121E 0 CODE 0 text26 dist/default/production/blueGyro.X.production.obj
 ___lwmod@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__end_of___aldiv DF6 0 CODE 0 text23 dist/default/production/blueGyro.X.production.obj
-__end_of___lldiv 1D9A 0 CODE 0 text22 dist/default/production/blueGyro.X.production.obj
-__end_of___llmod 1BE4 0 CODE 0 text21 dist/default/production/blueGyro.X.production.obj
-__end_of___lwdiv 19E2 0 CODE 0 text18 dist/default/production/blueGyro.X.production.obj
-__end_of___lwmod 18BA 0 CODE 0 text17 dist/default/production/blueGyro.X.production.obj
-_printVersion 1644 0 CODE 0 text2 dist/default/production/blueGyro.X.production.obj
+__end_of___aldiv 1EF0 0 CODE 0 text39 dist/default/production/blueGyro.X.production.obj
+__end_of___lldiv 1000 0 CODE 0 text38 dist/default/production/blueGyro.X.production.obj
+__end_of___llmod 173E 0 CODE 0 text37 dist/default/production/blueGyro.X.production.obj
+__end_of___lwdiv 15BA 0 CODE 0 text34 dist/default/production/blueGyro.X.production.obj
+__end_of___lwmod 1492 0 CODE 0 text33 dist/default/production/blueGyro.X.production.obj
+eeprom_write@addr 75 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+_printVersion 10B2 0 CODE 0 text2 dist/default/production/blueGyro.X.production.obj
 _INTCON B 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _OPTION_REG 95 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_InFiFo 65 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
+_InFiFo 67 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
 LDByteReadI2C@i2cSlaveAddress 20 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_PeakData C0 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
-_i2c_Start 1616 0 CODE 0 text29 dist/default/production/blueGyro.X.production.obj
-_i2c_Write 1636 0 CODE 0 text27 dist/default/production/blueGyro.X.production.obj
-___lwdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+_i2c_Start 1084 0 CODE 0 text19 dist/default/production/blueGyro.X.production.obj
+_eeprom_read 124E 0 CODE 0 text10 dist/default/production/blueGyro.X.production.obj
+_i2c_Write 10A4 0 CODE 0 text17 dist/default/production/blueGyro.X.production.obj
+___lwdiv@quotient 78 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __size_of_cputs 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 printCentiValue@buffer 40 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __size_of_isqrt 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
@@ -817,16 +931,48 @@ ___lldiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.pro
 start_initialization 72 0 CODE 0 cinit dist/default/production/blueGyro.X.production.obj
 putch@char_out 73 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_i2c_Restart 160C 0 CODE 0 text30 dist/default/production/blueGyro.X.production.obj
+_i2c_Restart 107A 0 CODE 0 text20 dist/default/production/blueGyro.X.production.obj
 ___aldiv@quotient 23 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 ___lldiv@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __size_of_DisplayData 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_DisplayInfo 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_GotInt_MPU6050 1706 0 CODE 0 text8 dist/default/production/blueGyro.X.production.obj
-__end_ofSetup_MPU6050@MPU6050RegTable 130 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
-_printVoltage 1E5E 0 CODE 0 text1 dist/default/production/blueGyro.X.production.obj
+_GotInt_MPU6050 11C2 0 CODE 0 text12 dist/default/production/blueGyro.X.production.obj
+__end_ofSetup_MPU6050@MPU6050RegTable 848 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+_printVoltage 1A66 0 CODE 0 text1 dist/default/production/blueGyro.X.production.obj
+__Bbank0 1E010 1E000 ABS 0 bank0 -
+__Bbank1 1E010 1E000 ABS 0 bank1 -
+__Bbank2 1E010 1E000 ABS 0 bank2 -
+__Bbank3 1E010 1E000 BANK3 1 bank3 -
+__Bbank4 1E010 1E000 BANK4 1 bank4 -
+__Bbank5 1E010 1E000 BANK5 1 bank5 -
+__Bbank6 1E010 1E000 BANK6 1 bank6 -
+__Bbank7 1E010 1E000 BANK7 1 bank7 -
+__Bbank8 1E010 1E000 BANK8 1 bank8 -
+__Bbank9 1E010 1E000 BANK9 1 bank9 -
+__Bsfr10 1E010 1E000 ABS 0 sfr10 -
+__Bsfr11 1E010 1E000 ABS 0 sfr11 -
+__Bsfr12 1E010 1E000 ABS 0 sfr12 -
+__Bsfr13 1E010 1E000 ABS 0 sfr13 -
+__Bsfr14 1E010 1E000 ABS 0 sfr14 -
+__Bsfr15 1E010 1E000 ABS 0 sfr15 -
+__Bsfr16 1E010 1E000 ABS 0 sfr16 -
+__Bsfr17 1E010 1E000 ABS 0 sfr17 -
+__Bsfr18 1E010 1E000 ABS 0 sfr18 -
+__Bsfr19 1E010 1E000 ABS 0 sfr19 -
+__Bsfr20 1E010 1E000 ABS 0 sfr20 -
+__Bsfr21 1E010 1E000 ABS 0 sfr21 -
+__Bsfr22 1E010 1E000 ABS 0 sfr22 -
+__Bsfr23 1E010 1E000 ABS 0 sfr23 -
+__Bsfr24 1E010 1E000 ABS 0 sfr24 -
+__Bsfr25 1E010 1E000 ABS 0 sfr25 -
+__Bsfr26 1E010 1E000 ABS 0 sfr26 -
+__Bsfr27 1E010 1E000 ABS 0 sfr27 -
+__Bsfr28 1E010 1E000 ABS 0 sfr28 -
+__Bsfr29 1E010 1E000 ABS 0 sfr29 -
+__Bsfr30 1E010 1E000 ABS 0 sfr30 -
+__Bsfr31 1E010 1E000 ABS 0 sfr31 -
 __size_of_printVersion 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-clear_ram0 162A 0 CODE 0 clrtext dist/default/production/blueGyro.X.production.obj
+clear_ram0 1098 0 CODE 0 clrtext dist/default/production/blueGyro.X.production.obj
 _SPBRGH 19C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _SPBRGL 19B 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
@@ -840,375 +986,459 @@ _TRISA2 462 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 printDeciValue@_lvalue 52 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 utoa@buf 28 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 utoa@val 20 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__end_of_putHex 181C 0 CODE 0 text37 dist/default/production/blueGyro.X.production.obj
-__end_of_printCentiValue EF4 0 CODE 0 text15 dist/default/production/blueGyro.X.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/xcVUxWnIa.obj
+__end_of_putHex 143A 0 CODE 0 text44 dist/default/production/blueGyro.X.production.obj
+__end_of_printCentiValue 1DEC 0 CODE 0 text31 dist/default/production/blueGyro.X.production.obj
+___int_sp 0 0 STACK 2 stack /tmp/xcDkT5Wuv.obj
 _Timerms 7A 0 COMMON 1 bssCOMMON dist/default/production/blueGyro.X.production.obj
-__Hbank0 0 0 ABS 0 bank0 -
-__Hbank1 0 0 ABS 0 bank1 -
-__Hbank2 0 0 ABS 0 bank2 -
-__Hbank3 0 0 BANK3 1 bank3 -
-__Hbank4 0 0 BANK4 1 bank4 -
-__Hbank5 0 0 BANK5 1 bank5 -
-__Hbank6 0 0 BANK6 1 bank6 -
-__Hbank7 0 0 BANK7 1 bank7 -
-__Hbank8 0 0 BANK8 1 bank8 -
-__Hbank9 0 0 BANK9 1 bank9 -
+?_GetGyroWithOffset 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+__Hbank0 10 1E000 ABS 0 bank0 -
+__Hbank1 10 1E000 ABS 0 bank1 -
+__Hbank2 10 1E000 ABS 0 bank2 -
+__Hbank3 10 1E000 BANK3 1 bank3 -
+__Hbank4 10 1E000 BANK4 1 bank4 -
+__Hbank5 10 1E000 BANK5 1 bank5 -
+__Hbank6 10 1E000 BANK6 1 bank6 -
+__Hbank7 10 1E000 BANK7 1 bank7 -
+__Hbank8 10 1E000 BANK8 1 bank8 -
+__Hbank9 10 1E000 BANK9 1 bank9 -
 __Hcinit 9E 0 CODE 0 cinit -
 CalculateSumOfSquares@GxSquare 32 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __Hidloc 0 0 IDLOC 0 idloc -
-__Hsfr10 0 0 ABS 0 sfr10 -
-__Hsfr11 0 0 ABS 0 sfr11 -
-__Hsfr12 0 0 ABS 0 sfr12 -
-__Hsfr13 0 0 ABS 0 sfr13 -
-__Hsfr14 0 0 ABS 0 sfr14 -
-__Hsfr15 0 0 ABS 0 sfr15 -
-__Hsfr16 0 0 ABS 0 sfr16 -
-__Hsfr17 0 0 ABS 0 sfr17 -
-__Hsfr18 0 0 ABS 0 sfr18 -
-__Hsfr19 0 0 ABS 0 sfr19 -
-__Hsfr20 0 0 ABS 0 sfr20 -
-__Hsfr21 0 0 ABS 0 sfr21 -
-__Hsfr22 0 0 ABS 0 sfr22 -
-__Hsfr23 0 0 ABS 0 sfr23 -
-__Hsfr24 0 0 ABS 0 sfr24 -
-__Hsfr25 0 0 ABS 0 sfr25 -
-__Hsfr26 0 0 ABS 0 sfr26 -
-__Hsfr27 0 0 ABS 0 sfr27 -
-__Hsfr28 0 0 ABS 0 sfr28 -
-__Hsfr29 0 0 ABS 0 sfr29 -
-__Hsfr30 0 0 ABS 0 sfr30 -
-__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr10 10 1E000 ABS 0 sfr10 -
+__Hsfr11 10 1E000 ABS 0 sfr11 -
+__Hsfr12 10 1E000 ABS 0 sfr12 -
+__Hsfr13 10 1E000 ABS 0 sfr13 -
+__Hsfr14 10 1E000 ABS 0 sfr14 -
+__Hsfr15 10 1E000 ABS 0 sfr15 -
+__Hsfr16 10 1E000 ABS 0 sfr16 -
+__Hsfr17 10 1E000 ABS 0 sfr17 -
+__Hsfr18 10 1E000 ABS 0 sfr18 -
+__Hsfr19 10 1E000 ABS 0 sfr19 -
+__Hsfr20 10 1E000 ABS 0 sfr20 -
+__Hsfr21 10 1E000 ABS 0 sfr21 -
+__Hsfr22 10 1E000 ABS 0 sfr22 -
+__Hsfr23 10 1E000 ABS 0 sfr23 -
+__Hsfr24 10 1E000 ABS 0 sfr24 -
+__Hsfr25 10 1E000 ABS 0 sfr25 -
+__Hsfr26 10 1E000 ABS 0 sfr26 -
+__Hsfr27 10 1E000 ABS 0 sfr27 -
+__Hsfr28 10 1E000 ABS 0 sfr28 -
+__Hsfr29 10 1E000 ABS 0 sfr29 -
+__Hsfr30 10 1E000 ABS 0 sfr30 -
+__Hsfr31 10 1E000 ABS 0 sfr31 -
 __Hstack 0 0 STACK 2 stack -
-___lwdiv@counter 79 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __size_of_LDByteWriteI2C 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Hbank10 0 0 BANK10 1 bank10 -
-__Hbank11 0 0 BANK11 1 bank11 -
-__Hbank12 0 0 BANK12 1 bank12 -
-__Hbank13 0 0 BANK13 1 bank13 -
-__Hbank14 0 0 BANK14 1 bank14 -
-__Hbank15 0 0 BANK15 1 bank15 -
-__Hbank16 0 0 BANK16 1 bank16 -
-__Hbank17 0 0 BANK17 1 bank17 -
-__Hbank18 0 0 BANK18 1 bank18 -
-__Hbank19 0 0 BANK19 1 bank19 -
-__Hbank20 0 0 BANK20 1 bank20 -
-__Hbank21 0 0 BANK21 1 bank21 -
-__Hbank22 0 0 BANK22 1 bank22 -
-__Hbank23 0 0 BANK23 1 bank23 -
-__Hbank24 0 0 BANK24 1 bank24 -
-__Hbank25 0 0 BANK25 1 bank25 -
-__Hbank26 0 0 BANK26 1 bank26 -
-__Hbank27 0 0 BANK27 1 bank27 -
-__Hbank28 0 0 BANK28 1 bank28 -
-__Hbank29 0 0 BANK29 1 bank29 -
-__Hbank30 0 0 BANK30 1 bank30 -
-__Hbank31 0 0 BANK31 1 bank31 -
-__Hbigram 0 0 ABS 0 bigram -
-__Hmaintext 0 0 ABS 0 maintext -
-__end_of_printVersion 1652 0 CODE 0 text2 dist/default/production/blueGyro.X.production.obj
+__Hbank10 10 1E000 BANK10 1 bank10 -
+__Hbank11 10 1E000 BANK11 1 bank11 -
+__Hbank12 10 1E000 BANK12 1 bank12 -
+__Hbank13 10 1E000 BANK13 1 bank13 -
+__Hbank14 10 1E000 BANK14 1 bank14 -
+__Hbank15 10 1E000 BANK15 1 bank15 -
+__Hbank16 10 1E000 BANK16 1 bank16 -
+__Hbank17 10 1E000 BANK17 1 bank17 -
+__Hbank18 10 1E000 BANK18 1 bank18 -
+__Hbank19 10 1E000 BANK19 1 bank19 -
+__Hbank20 10 1E000 BANK20 1 bank20 -
+__Hbank21 10 1E000 BANK21 1 bank21 -
+__Hbank22 10 1E000 BANK22 1 bank22 -
+__Hbank23 10 1E000 BANK23 1 bank23 -
+__Hbank24 10 1E000 BANK24 1 bank24 -
+__Hbank25 10 1E000 BANK25 1 bank25 -
+__Hbank26 10 1E000 BANK26 1 bank26 -
+__Hbank27 10 1E000 BANK27 1 bank27 -
+__Hbank28 10 1E000 BANK28 1 bank28 -
+__Hbank29 10 1E000 BANK29 1 bank29 -
+__Hbank30 10 1E000 BANK30 1 bank30 -
+__Hbank31 10 1E000 BANK31 1 bank31 -
+__Hbigram 10 1E000 ABS 0 bigram -
+__Hmaintext 10 1E000 ABS 0 maintext -
+__end_of_printVersion 10C0 0 CODE 0 text2 dist/default/production/blueGyro.X.production.obj
 ltoa@base 37 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Hcommon 0 0 ABS 0 common -
+__Hcommon 10 1E000 ABS 0 common -
 __Hconfig 10012 0 CONFIG 0 config -
-__end_of_printGyro 1CF4 0 CODE 0 text12 dist/default/production/blueGyro.X.production.obj
+__end_of_printGyro 184E 0 CODE 0 text28 dist/default/production/blueGyro.X.production.obj
 __size_of_printGyro 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Lbank0 0 0 ABS 0 bank0 -
-__Lbank1 0 0 ABS 0 bank1 -
-__Lbank2 0 0 ABS 0 bank2 -
-__Lbank3 0 0 BANK3 1 bank3 -
-__Lbank4 0 0 BANK4 1 bank4 -
-__Lbank5 0 0 BANK5 1 bank5 -
-__Lbank6 0 0 BANK6 1 bank6 -
-__Lbank7 0 0 BANK7 1 bank7 -
-__Lbank8 0 0 BANK8 1 bank8 -
-__Lbank9 0 0 BANK9 1 bank9 -
+__Lbank0 10 1E000 ABS 0 bank0 -
+__Lbank1 10 1E000 ABS 0 bank1 -
+__Lbank2 10 1E000 ABS 0 bank2 -
+__Lbank3 10 1E000 BANK3 1 bank3 -
+__Lbank4 10 1E000 BANK4 1 bank4 -
+__Lbank5 10 1E000 BANK5 1 bank5 -
+__Lbank6 10 1E000 BANK6 1 bank6 -
+__Lbank7 10 1E000 BANK7 1 bank7 -
+__Lbank8 10 1E000 BANK8 1 bank8 -
+__Lbank9 10 1E000 BANK9 1 bank9 -
 __Lcinit 72 0 CODE 0 cinit -
 __Lidloc 0 0 IDLOC 0 idloc -
 __size_of_printVoltage 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Lsfr10 0 0 ABS 0 sfr10 -
-__Lsfr11 0 0 ABS 0 sfr11 -
-__Lsfr12 0 0 ABS 0 sfr12 -
-__Lsfr13 0 0 ABS 0 sfr13 -
-__Lsfr14 0 0 ABS 0 sfr14 -
-__Lsfr15 0 0 ABS 0 sfr15 -
-__Lsfr16 0 0 ABS 0 sfr16 -
-__Lsfr17 0 0 ABS 0 sfr17 -
-__Lsfr18 0 0 ABS 0 sfr18 -
-__Lsfr19 0 0 ABS 0 sfr19 -
-__Lsfr20 0 0 ABS 0 sfr20 -
-__Lsfr21 0 0 ABS 0 sfr21 -
-__Lsfr22 0 0 ABS 0 sfr22 -
-__Lsfr23 0 0 ABS 0 sfr23 -
-__Lsfr24 0 0 ABS 0 sfr24 -
-__Lsfr25 0 0 ABS 0 sfr25 -
-__Lsfr26 0 0 ABS 0 sfr26 -
-__Lsfr27 0 0 ABS 0 sfr27 -
-__Lsfr28 0 0 ABS 0 sfr28 -
-__Lsfr29 0 0 ABS 0 sfr29 -
-__Lsfr30 0 0 ABS 0 sfr30 -
-__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr10 10 1E000 ABS 0 sfr10 -
+__Lsfr11 10 1E000 ABS 0 sfr11 -
+__Lsfr12 10 1E000 ABS 0 sfr12 -
+__Lsfr13 10 1E000 ABS 0 sfr13 -
+__Lsfr14 10 1E000 ABS 0 sfr14 -
+__Lsfr15 10 1E000 ABS 0 sfr15 -
+__Lsfr16 10 1E000 ABS 0 sfr16 -
+__Lsfr17 10 1E000 ABS 0 sfr17 -
+__Lsfr18 10 1E000 ABS 0 sfr18 -
+__Lsfr19 10 1E000 ABS 0 sfr19 -
+__Lsfr20 10 1E000 ABS 0 sfr20 -
+__Lsfr21 10 1E000 ABS 0 sfr21 -
+__Lsfr22 10 1E000 ABS 0 sfr22 -
+__Lsfr23 10 1E000 ABS 0 sfr23 -
+__Lsfr24 10 1E000 ABS 0 sfr24 -
+__Lsfr25 10 1E000 ABS 0 sfr25 -
+__Lsfr26 10 1E000 ABS 0 sfr26 -
+__Lsfr27 10 1E000 ABS 0 sfr27 -
+__Lsfr28 10 1E000 ABS 0 sfr28 -
+__Lsfr29 10 1E000 ABS 0 sfr29 -
+__Lsfr30 10 1E000 ABS 0 sfr30 -
+__Lsfr31 10 1E000 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-__end_of_GotInt_MPU6050 1732 0 CODE 0 text8 dist/default/production/blueGyro.X.production.obj
+__end_of_GotInt_MPU6050 11EE 0 CODE 0 text12 dist/default/production/blueGyro.X.production.obj
 __size_of_CalculateSumOfSquares 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Habs1 0 0 ABS 0 abs1 -
-__Hcode 0 0 ABS 0 code -
+__Babs1 1E010 1E000 ABS 0 abs1 -
+__Bcode 1E010 1E000 ABS 0 code -
+__Bsfr0 1E010 1E000 ABS 0 sfr0 -
+__Bsfr1 1E010 1E000 ABS 0 sfr1 -
+__Bsfr2 1E010 1E000 ABS 0 sfr2 -
+__Bsfr3 1E010 1E000 ABS 0 sfr3 -
+__Bsfr4 1E010 1E000 ABS 0 sfr4 -
+__Bsfr5 1E010 1E000 ABS 0 sfr5 -
+__Bsfr6 1E010 1E000 ABS 0 sfr6 -
+__Bsfr7 1E010 1E000 ABS 0 sfr7 -
+__Bsfr8 1E010 1E000 ABS 0 sfr8 -
+__Bsfr9 1E010 1E000 ABS 0 sfr9 -
+__Btext 1E010 1E000 ABS 0 text -
+__Habs1 10 1E000 ABS 0 abs1 -
+__Hcode 10 1E000 ABS 0 code -
 __Hinit 6E 0 CODE 0 init -
-__Hsfr0 0 0 ABS 0 sfr0 -
-__Hsfr1 0 0 ABS 0 sfr1 -
-__Hsfr2 0 0 ABS 0 sfr2 -
-__Hsfr3 0 0 ABS 0 sfr3 -
-__Hsfr4 0 0 ABS 0 sfr4 -
-__Hsfr5 0 0 ABS 0 sfr5 -
-__Hsfr6 0 0 ABS 0 sfr6 -
-__Hsfr7 0 0 ABS 0 sfr7 -
-__Hsfr8 0 0 ABS 0 sfr8 -
-__Hsfr9 0 0 ABS 0 sfr9 -
-__Htext 0 0 ABS 0 text -
-__Labs1 0 0 ABS 0 abs1 -
-__Lcode 0 0 ABS 0 code -
+__Hsfr0 10 1E000 ABS 0 sfr0 -
+__Hsfr1 10 1E000 ABS 0 sfr1 -
+__Hsfr2 10 1E000 ABS 0 sfr2 -
+__Hsfr3 10 1E000 ABS 0 sfr3 -
+__Hsfr4 10 1E000 ABS 0 sfr4 -
+__Hsfr5 10 1E000 ABS 0 sfr5 -
+__Hsfr6 10 1E000 ABS 0 sfr6 -
+__Hsfr7 10 1E000 ABS 0 sfr7 -
+__Hsfr8 10 1E000 ABS 0 sfr8 -
+__Hsfr9 10 1E000 ABS 0 sfr9 -
+__Htext 10 1E000 ABS 0 text -
+__Labs1 10 1E000 ABS 0 abs1 -
+__Lcode 10 1E000 ABS 0 code -
 __Linit 6E 0 CODE 0 init -
-__Lsfr0 0 0 ABS 0 sfr0 -
-__Lsfr1 0 0 ABS 0 sfr1 -
-__Lsfr2 0 0 ABS 0 sfr2 -
-__Lsfr3 0 0 ABS 0 sfr3 -
-__Lsfr4 0 0 ABS 0 sfr4 -
-__Lsfr5 0 0 ABS 0 sfr5 -
-__Lsfr6 0 0 ABS 0 sfr6 -
-__Lsfr7 0 0 ABS 0 sfr7 -
-__Lsfr8 0 0 ABS 0 sfr8 -
-__Lsfr9 0 0 ABS 0 sfr9 -
-__Ltext 0 0 ABS 0 text -
+__Lsfr0 10 1E000 ABS 0 sfr0 -
+__Lsfr1 10 1E000 ABS 0 sfr1 -
+__Lsfr2 10 1E000 ABS 0 sfr2 -
+__Lsfr3 10 1E000 ABS 0 sfr3 -
+__Lsfr4 10 1E000 ABS 0 sfr4 -
+__Lsfr5 10 1E000 ABS 0 sfr5 -
+__Lsfr6 10 1E000 ABS 0 sfr6 -
+__Lsfr7 10 1E000 ABS 0 sfr7 -
+__Lsfr8 10 1E000 ABS 0 sfr8 -
+__Lsfr9 10 1E000 ABS 0 sfr9 -
+__Ltext 10 1E000 ABS 0 text -
 _SSP1CON2 216 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-___lmul 1916 0 CODE 0 text35 dist/default/production/blueGyro.X.production.obj
-__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+___lmul 14EE 0 CODE 0 text42 dist/default/production/blueGyro.X.production.obj
+__LcstackBANK0 10 1E000 ABS 0 cstackBANK0 -
 int$flags 7E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__HcstackCOMMON 10 1E000 ABS 0 cstackCOMMON -
 _GIE 5F 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _PEN 10B2 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _PR2 1B 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _SEN 10B0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __S0 8009 0 ABS 0 - -
-__S1 E8 0 ABS 0 - -
+__S1 EE 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
-__S3 0 0 ABS 0 - -
+__S3 F008 0 ABS 0 - -
 _isr 8 0 CODE 0 intentry dist/default/production/blueGyro.X.production.obj
-_printGyro 1C6C 0 CODE 0 text12 dist/default/production/blueGyro.X.production.obj
-_LDByteReadI2C 1ADE 0 CODE 0 text26 dist/default/production/blueGyro.X.production.obj
-_printGForce 1BE4 0 CODE 0 text14 dist/default/production/blueGyro.X.production.obj
-_printCentiValue DF6 0 CODE 0 text15 dist/default/production/blueGyro.X.production.obj
-__end_of_printVoltage 1F2A 0 CODE 0 text1 dist/default/production/blueGyro.X.production.obj
+_printGyro 17C6 0 CODE 0 text28 dist/default/production/blueGyro.X.production.obj
+_LDByteReadI2C 1638 0 CODE 0 text16 dist/default/production/blueGyro.X.production.obj
+__end_of_SaveSetting 1328 0 CODE 0 text6 dist/default/production/blueGyro.X.production.obj
+_printGForce 173E 0 CODE 0 text30 dist/default/production/blueGyro.X.production.obj
+_printCentiValue 1CEE 0 CODE 0 text31 dist/default/production/blueGyro.X.production.obj
+__end_of_printVoltage 1B32 0 CODE 0 text1 dist/default/production/blueGyro.X.production.obj
 MPU6050_Test_I2C@Data 23 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+__Bstrings 1E010 1E000 ABS 0 strings -
 utoa@base 22 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_FindDeltaG 1A60 0 CODE 0 text9 dist/default/production/blueGyro.X.production.obj
+_FindDeltaG 15BA 0 CODE 0 text24 dist/default/production/blueGyro.X.production.obj
 ultoa@base 2A 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_TimerCrash 63 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
+_TimerCrash E6 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
 __end_of_isr 6E 0 CODE 0 intentry dist/default/production/blueGyro.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+eeprom_write@value 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 isqrt@bshft 30 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+__size_of_printValue 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 printDeciValue@buffer 40 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcVUxWnIa.obj
-_NewMode 66 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcDkT5Wuv.obj
+_eeprom_write 13AA 0 CODE 0 text7 dist/default/production/blueGyro.X.production.obj
+__BcstackBANK0 1E010 1E000 ABS 0 cstackBANK0 -
+_NewMode 68 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
 _SerialBuffer A0 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
-_printDeciValue EF4 0 CODE 0 text13 dist/default/production/blueGyro.X.production.obj
-__pdataBANK0 68 0 BANK0 1 dataBANK0 dist/default/production/blueGyro.X.production.obj
+_printDeciValue 1C08 0 CODE 0 text29 dist/default/production/blueGyro.X.production.obj
+__pdataBANK0 6A 0 BANK0 1 dataBANK0 dist/default/production/blueGyro.X.production.obj
 __size_of___lmul 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ltoa@cp 3A 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__LbssBANK0 0 0 ABS 0 bssBANK0 -
-__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK0 10 1E000 ABS 0 bssBANK0 -
+__LbssBANK1 10 1E000 ABS 0 bssBANK1 -
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+__end_of_LoadSetting 12EE 0 CODE 0 text9 dist/default/production/blueGyro.X.production.obj
 i2c_Address@l_address 75 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Address 1698 0 CODE 0 text32 dist/default/production/blueGyro.X.production.obj
-__ptext10 7B6 0 CODE 0 text10 dist/default/production/blueGyro.X.production.obj
-__ptext11 16DE 0 CODE 0 text11 dist/default/production/blueGyro.X.production.obj
-__ptext12 1C6C 0 CODE 0 text12 dist/default/production/blueGyro.X.production.obj
-__ptext13 EF4 0 CODE 0 text13 dist/default/production/blueGyro.X.production.obj
-__ptext14 1BE4 0 CODE 0 text14 dist/default/production/blueGyro.X.production.obj
-__ptext15 DF6 0 CODE 0 text15 dist/default/production/blueGyro.X.production.obj
-__ptext16 1D9A 0 CODE 0 text16 dist/default/production/blueGyro.X.production.obj
-__ptext17 1862 0 CODE 0 text17 dist/default/production/blueGyro.X.production.obj
-__ptext18 197A 0 CODE 0 text18 dist/default/production/blueGyro.X.production.obj
-__ptext19 18BA 0 CODE 0 text19 dist/default/production/blueGyro.X.production.obj
-__ptext20 AD0 0 CODE 0 text20 dist/default/production/blueGyro.X.production.obj
-__ptext21 1B5E 0 CODE 0 text21 dist/default/production/blueGyro.X.production.obj
-__ptext22 1CF4 0 CODE 0 text22 dist/default/production/blueGyro.X.production.obj
-__ptext23 CF2 0 CODE 0 text23 dist/default/production/blueGyro.X.production.obj
-__ptext24 BE2 0 CODE 0 text24 dist/default/production/blueGyro.X.production.obj
-__ptext25 994 0 CODE 0 text25 dist/default/production/blueGyro.X.production.obj
-__ptext26 1ADE 0 CODE 0 text26 dist/default/production/blueGyro.X.production.obj
-__ptext27 1636 0 CODE 0 text27 dist/default/production/blueGyro.X.production.obj
-__ptext28 1620 0 CODE 0 text28 dist/default/production/blueGyro.X.production.obj
-__ptext29 1616 0 CODE 0 text29 dist/default/production/blueGyro.X.production.obj
-__ptext30 160C 0 CODE 0 text30 dist/default/production/blueGyro.X.production.obj
-__ptext31 1762 0 CODE 0 text31 dist/default/production/blueGyro.X.production.obj
-__ptext32 167A 0 CODE 0 text32 dist/default/production/blueGyro.X.production.obj
-__ptext33 1652 0 CODE 0 text33 dist/default/production/blueGyro.X.production.obj
-__ptext34 5A6 0 CODE 0 text34 dist/default/production/blueGyro.X.production.obj
-__ptext35 1916 0 CODE 0 text35 dist/default/production/blueGyro.X.production.obj
-__ptext36 19E2 0 CODE 0 text36 dist/default/production/blueGyro.X.production.obj
-__ptext37 17D6 0 CODE 0 text37 dist/default/production/blueGyro.X.production.obj
-__ptext38 FDA 0 CODE 0 text38 dist/default/production/blueGyro.X.production.obj
-__ptext39 16B6 0 CODE 0 text39 dist/default/production/blueGyro.X.production.obj
-__ptext40 179A 0 CODE 0 text40 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Address 1106 0 CODE 0 text22 dist/default/production/blueGyro.X.production.obj
+__ptext10 124E 0 CODE 0 text10 dist/default/production/blueGyro.X.production.obj
+__ptext11 1106 0 CODE 0 text11 dist/default/production/blueGyro.X.production.obj
+__ptext12 11C2 0 CODE 0 text12 dist/default/production/blueGyro.X.production.obj
+__ptext13 18F6 0 CODE 0 text13 dist/default/production/blueGyro.X.production.obj
+__ptext14 121E 0 CODE 0 text14 dist/default/production/blueGyro.X.production.obj
+__ptext15 BEC 0 CODE 0 text15 dist/default/production/blueGyro.X.production.obj
+__ptext16 1638 0 CODE 0 text16 dist/default/production/blueGyro.X.production.obj
+__ptext17 10A4 0 CODE 0 text17 dist/default/production/blueGyro.X.production.obj
+__ptext18 108E 0 CODE 0 text18 dist/default/production/blueGyro.X.production.obj
+__ptext19 1084 0 CODE 0 text19 dist/default/production/blueGyro.X.production.obj
+__ptext20 107A 0 CODE 0 text20 dist/default/production/blueGyro.X.production.obj
+__ptext21 127E 0 CODE 0 text21 dist/default/production/blueGyro.X.production.obj
+__ptext22 10E8 0 CODE 0 text22 dist/default/production/blueGyro.X.production.obj
+__ptext23 10C0 0 CODE 0 text23 dist/default/production/blueGyro.X.production.obj
+__ptext24 15BA 0 CODE 0 text24 dist/default/production/blueGyro.X.production.obj
+__ptext25 542 0 CODE 0 text25 dist/default/production/blueGyro.X.production.obj
+__ptext26 11EE 0 CODE 0 text26 dist/default/production/blueGyro.X.production.obj
+__ptext27 1172 0 CODE 0 text27 dist/default/production/blueGyro.X.production.obj
+__ptext28 17C6 0 CODE 0 text28 dist/default/production/blueGyro.X.production.obj
+__ptext29 1C08 0 CODE 0 text29 dist/default/production/blueGyro.X.production.obj
+__ptext30 173E 0 CODE 0 text30 dist/default/production/blueGyro.X.production.obj
+__ptext31 1CEE 0 CODE 0 text31 dist/default/production/blueGyro.X.production.obj
+__ptext32 19A2 0 CODE 0 text32 dist/default/production/blueGyro.X.production.obj
+__ptext33 143A 0 CODE 0 text33 dist/default/production/blueGyro.X.production.obj
+__ptext34 1552 0 CODE 0 text34 dist/default/production/blueGyro.X.production.obj
+__ptext35 1492 0 CODE 0 text35 dist/default/production/blueGyro.X.production.obj
+__ptext36 E48 0 CODE 0 text36 dist/default/production/blueGyro.X.production.obj
+__ptext37 16B8 0 CODE 0 text37 dist/default/production/blueGyro.X.production.obj
+__ptext38 F5A 0 CODE 0 text38 dist/default/production/blueGyro.X.production.obj
+__ptext39 1DEC 0 CODE 0 text39 dist/default/production/blueGyro.X.production.obj
+__ptext40 1EF0 0 CODE 0 text40 dist/default/production/blueGyro.X.production.obj
+__ptext41 A1A 0 CODE 0 text41 dist/default/production/blueGyro.X.production.obj
+__ptext42 14EE 0 CODE 0 text42 dist/default/production/blueGyro.X.production.obj
+__ptext43 D28 0 CODE 0 text43 dist/default/production/blueGyro.X.production.obj
+__ptext44 13F0 0 CODE 0 text44 dist/default/production/blueGyro.X.production.obj
+__ptext45 1124 0 CODE 0 text45 dist/default/production/blueGyro.X.production.obj
+__ptext46 114A 0 CODE 0 text46 dist/default/production/blueGyro.X.production.obj
+__ptext47 1328 0 CODE 0 text47 dist/default/production/blueGyro.X.production.obj
+__ptext48 184E 0 CODE 0 text48 dist/default/production/blueGyro.X.production.obj
 LDByteReadI2C@Length 78 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-___aldiv CF2 0 CODE 0 text23 dist/default/production/blueGyro.X.production.obj
-___lldiv 1CF4 0 CODE 0 text22 dist/default/production/blueGyro.X.production.obj
-___llmod 1B5E 0 CODE 0 text21 dist/default/production/blueGyro.X.production.obj
-___lwdiv 197A 0 CODE 0 text18 dist/default/production/blueGyro.X.production.obj
-___lwmod 1862 0 CODE 0 text17 dist/default/production/blueGyro.X.production.obj
-__Lbank10 0 0 BANK10 1 bank10 -
-__Lbank11 0 0 BANK11 1 bank11 -
-__Lbank12 0 0 BANK12 1 bank12 -
-__Lbank13 0 0 BANK13 1 bank13 -
-__Lbank14 0 0 BANK14 1 bank14 -
-__Lbank15 0 0 BANK15 1 bank15 -
-__Lbank16 0 0 BANK16 1 bank16 -
-__Lbank17 0 0 BANK17 1 bank17 -
-__Lbank18 0 0 BANK18 1 bank18 -
-__Lbank19 0 0 BANK19 1 bank19 -
-__Lbank20 0 0 BANK20 1 bank20 -
-__Lbank21 0 0 BANK21 1 bank21 -
-__Lbank22 0 0 BANK22 1 bank22 -
-__Lbank23 0 0 BANK23 1 bank23 -
-__Lbank24 0 0 BANK24 1 bank24 -
-__Lbank25 0 0 BANK25 1 bank25 -
-__Lbank26 0 0 BANK26 1 bank26 -
-__Lbank27 0 0 BANK27 1 bank27 -
-__Lbank28 0 0 BANK28 1 bank28 -
-__Lbank29 0 0 BANK29 1 bank29 -
-__Lbank30 0 0 BANK30 1 bank30 -
-__Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext 328 0 CODE 0 maintext dist/default/production/blueGyro.X.production.obj
-__Lbigram 0 0 ABS 0 bigram -
+__Bbank10 1E010 1E000 BANK10 1 bank10 -
+__Bbank11 1E010 1E000 BANK11 1 bank11 -
+__Bbank12 1E010 1E000 BANK12 1 bank12 -
+__Bbank13 1E010 1E000 BANK13 1 bank13 -
+__Bbank14 1E010 1E000 BANK14 1 bank14 -
+__Bbank15 1E010 1E000 BANK15 1 bank15 -
+__Bbank16 1E010 1E000 BANK16 1 bank16 -
+__Bbank17 1E010 1E000 BANK17 1 bank17 -
+__Bbank18 1E010 1E000 BANK18 1 bank18 -
+__Bbank19 1E010 1E000 BANK19 1 bank19 -
+__Bbank20 1E010 1E000 BANK20 1 bank20 -
+__Bbank21 1E010 1E000 BANK21 1 bank21 -
+__Bbank22 1E010 1E000 BANK22 1 bank22 -
+__Bbank23 1E010 1E000 BANK23 1 bank23 -
+__Bbank24 1E010 1E000 BANK24 1 bank24 -
+__Bbank25 1E010 1E000 BANK25 1 bank25 -
+__Bbank26 1E010 1E000 BANK26 1 bank26 -
+__Bbank27 1E010 1E000 BANK27 1 bank27 -
+__Bbank28 1E010 1E000 BANK28 1 bank28 -
+__Bbank29 1E010 1E000 BANK29 1 bank29 -
+__Bbank30 1E010 1E000 BANK30 1 bank30 -
+__Bbank31 1E010 1E000 BANK31 1 bank31 -
+__Bbigram 1E010 1E000 ABS 0 bigram -
+___aldiv 1DEC 0 CODE 0 text39 dist/default/production/blueGyro.X.production.obj
+__size_of_Setup_HMC5883L 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+___lldiv F5A 0 CODE 0 text38 dist/default/production/blueGyro.X.production.obj
+___llmod 16B8 0 CODE 0 text37 dist/default/production/blueGyro.X.production.obj
+___lwdiv 1552 0 CODE 0 text34 dist/default/production/blueGyro.X.production.obj
+___lwmod 143A 0 CODE 0 text33 dist/default/production/blueGyro.X.production.obj
+__Lbank10 10 1E000 BANK10 1 bank10 -
+__Lbank11 10 1E000 BANK11 1 bank11 -
+__Lbank12 10 1E000 BANK12 1 bank12 -
+__Lbank13 10 1E000 BANK13 1 bank13 -
+__Lbank14 10 1E000 BANK14 1 bank14 -
+__Lbank15 10 1E000 BANK15 1 bank15 -
+__Lbank16 10 1E000 BANK16 1 bank16 -
+__Lbank17 10 1E000 BANK17 1 bank17 -
+__Lbank18 10 1E000 BANK18 1 bank18 -
+__Lbank19 10 1E000 BANK19 1 bank19 -
+__Lbank20 10 1E000 BANK20 1 bank20 -
+__Lbank21 10 1E000 BANK21 1 bank21 -
+__Lbank22 10 1E000 BANK22 1 bank22 -
+__Lbank23 10 1E000 BANK23 1 bank23 -
+__Lbank24 10 1E000 BANK24 1 bank24 -
+__Lbank25 10 1E000 BANK25 1 bank25 -
+__Lbank26 10 1E000 BANK26 1 bank26 -
+__Lbank27 10 1E000 BANK27 1 bank27 -
+__Lbank28 10 1E000 BANK28 1 bank28 -
+__Lbank29 10 1E000 BANK29 1 bank29 -
+__Lbank30 10 1E000 BANK30 1 bank30 -
+__Lbank31 10 1E000 BANK31 1 bank31 -
+__BcstackCOMMON 1E010 1E000 ABS 0 cstackCOMMON -
+__pmaintext 9E 0 CODE 0 maintext dist/default/production/blueGyro.X.production.obj
+__Lbigram 10 1E000 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ___lmul@multiplier 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-_printUShort 16DE 0 CODE 0 text11 dist/default/production/blueGyro.X.production.obj
-__Lcommon 0 0 ABS 0 common -
+__Bcommon 1E010 1E000 ABS 0 common -
+_printUShort 1172 0 CODE 0 text27 dist/default/production/blueGyro.X.production.obj
+__Bclrtext 1E010 1E000 ABS 0 clrtext -
+__Lcommon 10 1E000 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_putHex 17D6 0 CODE 0 text37 dist/default/production/blueGyro.X.production.obj
+_putHex 13F0 0 CODE 0 text44 dist/default/production/blueGyro.X.production.obj
+__size_of_GetGyroWithOffset 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_Get_Accel_Values 994 0 CODE 0 text25 dist/default/production/blueGyro.X.production.obj
-_Init1msTimer 1698 0 CODE 0 text7 dist/default/production/blueGyro.X.production.obj
+_Get_Accel_Values BEC 0 CODE 0 text15 dist/default/production/blueGyro.X.production.obj
+_Init1msTimer 1106 0 CODE 0 text11 dist/default/production/blueGyro.X.production.obj
 ___lwdiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 printCentiValue@_lvalue 52 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__end_of_FindDeltaG 1ADE 0 CODE 0 text9 dist/default/production/blueGyro.X.production.obj
+__end_of_FindDeltaG 1638 0 CODE 0 text24 dist/default/production/blueGyro.X.production.obj
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 isqrt@b 38 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 isqrt@g 34 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_DisplayData 19E2 0 CODE 0 text36 dist/default/production/blueGyro.X.production.obj
-_DisplayInfo 7B6 0 CODE 0 text10 dist/default/production/blueGyro.X.production.obj
-stackhi 20EF 0 ABS 0 - /tmp/xcVUxWnIa.obj
-stacklo 2098 0 ABS 0 - /tmp/xcVUxWnIa.obj
+_DisplayData D28 0 CODE 0 text43 dist/default/production/blueGyro.X.production.obj
+_DisplayInfo 542 0 CODE 0 text25 dist/default/production/blueGyro.X.production.obj
+stackhi 20EF 0 ABS 0 - /tmp/xcDkT5Wuv.obj
+stacklo 209E 0 ABS 0 - /tmp/xcDkT5Wuv.obj
 printCentiValue@value 3C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__end_of_printDeciValue FDA 0 CODE 0 text13 dist/default/production/blueGyro.X.production.obj
+__end_of_eeprom_read 127E 0 CODE 0 text10 dist/default/production/blueGyro.X.production.obj
+GetGyroWithOffset@_temp 78 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+__Bmaintext 1E010 1E000 ABS 0 maintext -
+__end_of_printDeciValue 1CEE 0 CODE 0 text29 dist/default/production/blueGyro.X.production.obj
 __size_of_printCentiValue 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_LDByteReadI2C 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+GetGyroWithOffset@value 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __pbssCOMMON 7A 0 COMMON 1 bssCOMMON dist/default/production/blueGyro.X.production.obj
 CalculateSumOfSquares@GySquare 36 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK0 10 1E000 ABS 0 cstackBANK0 -
 __Lend_init 6E 0 CODE 0 end_init -
+GetGyroWithOffset@Goffset 74 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 10 1E000 ABS 0 cstackCOMMON -
+__end_of_eeprom_write 13F0 0 CODE 0 text7 dist/default/production/blueGyro.X.production.obj
 end_of_initialization 96 0 CODE 0 cinit dist/default/production/blueGyro.X.production.obj
-__end_of_i2c_Restart 1616 0 CODE 0 text30 dist/default/production/blueGyro.X.production.obj
+__end_of_i2c_Restart 1084 0 CODE 0 text20 dist/default/production/blueGyro.X.production.obj
+_AccGyroCount 65 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
 GotInt_MPU6050@uc_temp 23 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __Hintentry 6E 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_putHex 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__Lstrings 0 0 ABS 0 strings -
+__Lstrings 10 1E000 ABS 0 strings -
 ?___aldiv 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ___lwdiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-_CurrentData D4 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
+_CurrentData C0 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
 ?___lldiv 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ?___llmod 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ?___lwdiv 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ?___lwmod 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __size_of_Init1msTimer 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__HbssBANK0 0 0 ABS 0 bssBANK0 -
-__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK0 10 1E000 ABS 0 bssBANK0 -
+__HbssBANK1 10 1E000 ABS 0 bssBANK1 -
 Setup_MPU6050@TheReg 25 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__end_of_LDByteReadI2C 1B5E 0 CODE 0 text26 dist/default/production/blueGyro.X.production.obj
+__size_of_SaveSetting 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+__end_of_LDByteReadI2C 16B8 0 CODE 0 text16 dist/default/production/blueGyro.X.production.obj
 ultoa@buf 32 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 ultoa@val 26 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__ptext1 1E5E 0 CODE 0 text1 dist/default/production/blueGyro.X.production.obj
-__ptext2 1644 0 CODE 0 text2 dist/default/production/blueGyro.X.production.obj
-__ptext3 1662 0 CODE 0 text3 dist/default/production/blueGyro.X.production.obj
-__ptext4 1F2A 0 CODE 0 text4 dist/default/production/blueGyro.X.production.obj
-__ptext5 1732 0 CODE 0 text5 dist/default/production/blueGyro.X.production.obj
-__ptext6 181C 0 CODE 0 text6 dist/default/production/blueGyro.X.production.obj
-__ptext7 1698 0 CODE 0 text7 dist/default/production/blueGyro.X.production.obj
-__ptext8 1706 0 CODE 0 text8 dist/default/production/blueGyro.X.production.obj
-__ptext9 1A60 0 CODE 0 text9 dist/default/production/blueGyro.X.production.obj
+__ptext1 1A66 0 CODE 0 text1 dist/default/production/blueGyro.X.production.obj
+__ptext2 10B2 0 CODE 0 text2 dist/default/production/blueGyro.X.production.obj
+__ptext3 10D0 0 CODE 0 text3 dist/default/production/blueGyro.X.production.obj
+__ptext4 1B32 0 CODE 0 text4 dist/default/production/blueGyro.X.production.obj
+__ptext5 119A 0 CODE 0 text5 dist/default/production/blueGyro.X.production.obj
+__ptext6 12EE 0 CODE 0 text6 dist/default/production/blueGyro.X.production.obj
+__ptext7 13AA 0 CODE 0 text7 dist/default/production/blueGyro.X.production.obj
+__ptext8 1364 0 CODE 0 text8 dist/default/production/blueGyro.X.production.obj
+__ptext9 12B6 0 CODE 0 text9 dist/default/production/blueGyro.X.production.obj
+__size_of_Get_HMC5883L_Values 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ___aldiv@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
-FindDeltaG@HG 130 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
-FindDeltaG@LG 138 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
-__Leeprom_data 0 0 EEDATA 3 eeprom_data -
-__pstringtext 9E 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
-__end_of_Init1msTimer 16B6 0 CODE 0 text7 dist/default/production/blueGyro.X.production.obj
+FindDeltaG@HG 848 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+FindDeltaG@LG 850 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+__Leeprom_data 0 1E000 EEDATA 3 eeprom_data -
+__pstringtext 7B6 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+SaveSetting@pointer 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+__end_of_Init1msTimer 1124 0 CODE 0 text11 dist/default/production/blueGyro.X.production.obj
 printGyro@RawG 56 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__end_of_Get_Accel_Values AD0 0 CODE 0 text25 dist/default/production/blueGyro.X.production.obj
+__end_of_Get_Accel_Values D28 0 CODE 0 text15 dist/default/production/blueGyro.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec -
-_MPU6050_Test_I2C 181C 0 CODE 0 text6 dist/default/production/blueGyro.X.production.obj
+printValue@value 3C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+_MPU6050_Test_I2C 1364 0 CODE 0 text8 dist/default/production/blueGyro.X.production.obj
 LDByteWriteI2C@ErrorCode 20 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 isqrt@temp 2C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 cputs@s 75 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 i2c_Address@mode 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __size_of_Get_Accel_Values 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+__Bstringtext 1E010 1E000 ABS 0 stringtext -
 __end_of__initialization 96 0 CODE 0 cinit dist/default/production/blueGyro.X.production.obj
 __Lfunctab 0 0 CODE 0 functab -
+printValue@buffer 40 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+__BdataBANK0 1E010 1E000 ABS 0 dataBANK0 -
+_AccGyroX DA 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
+_AccGyroY DE 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
+_AccGyroZ E2 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
 __pidataBANK0 6 0 CODE 0 idataBANK0 dist/default/production/blueGyro.X.production.obj
 ?_isqrt 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__Lclrtext 0 0 ABS 0 clrtext -
-_LDByteWriteI2C 1732 0 CODE 0 text5 dist/default/production/blueGyro.X.production.obj
+__Lclrtext 10 1E000 ABS 0 clrtext -
+__size_of_LoadSetting 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_LDByteWriteI2C 121E 0 CODE 0 text14 dist/default/production/blueGyro.X.production.obj
+__end_of_GetGyroWithOffset 18F6 0 CODE 0 text48 dist/default/production/blueGyro.X.production.obj
 __CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ___lmul@product 20 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_CalculateSumOfSquares$239 2C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_CalculateSumOfSquares$240 2E 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_CalculateSumOfSquares$241 30 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_putHexNibble FDA 0 CODE 0 text38 dist/default/production/blueGyro.X.production.obj
+_CalculateSumOfSquares$290 2C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+_CalculateSumOfSquares$291 2E 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+_CalculateSumOfSquares$292 30 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+_putHexNibble 1124 0 CODE 0 text45 dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Address 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 LDByteReadI2C@Address 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ___lmul@multiplicand 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 ___lldiv@quotient 21 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+__Beeprom_data 1E000 1E000 EEDATA 3 eeprom_data -
+__BidataBANK0 1E010 1E000 ABS 0 idataBANK0 -
 printUShort@value 29 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+_Get_HMC5883L_Values 18F6 0 CODE 0 text13 dist/default/production/blueGyro.X.production.obj
 _SSPCON1 215 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _SSPCON2 216 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _SSPSTAT 214 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 i2c_Address@address 74 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 printGForce@RawG 56 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
+LoadSetting@pointer 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __Hend_init 72 0 CODE 0 end_init -
 ___llmod@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__end_of_printGForce 1C6C 0 CODE 0 text14 dist/default/production/blueGyro.X.production.obj
+__end_of_printGForce 17C6 0 CODE 0 text30 dist/default/production/blueGyro.X.production.obj
 __size_of_GotInt_MPU6050 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 ___aldiv@counter 21 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-_Setup_MPU6050 1F2A 0 CODE 0 text4 dist/default/production/blueGyro.X.production.obj
+_Setup_MPU6050 1B32 0 CODE 0 text4 dist/default/production/blueGyro.X.production.obj
 ___llmod@counter 21 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 isqrt@val 72 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
+Get_HMC5883L_Values@cval 28 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 LDByteReadI2C@Data 77 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
-__end_of_ltoa 1916 0 CODE 0 text19 dist/default/production/blueGyro.X.production.obj
-__end_of_main 5A6 0 CODE 0 maintext dist/default/production/blueGyro.X.production.obj
-__end_of_utoa 1E5E 0 CODE 0 text16 dist/default/production/blueGyro.X.production.obj
+__end_of_ltoa 14EE 0 CODE 0 text35 dist/default/production/blueGyro.X.production.obj
+__end_of_main 542 0 CODE 0 maintext dist/default/production/blueGyro.X.production.obj
+__end_of_utoa 1A66 0 CODE 0 text32 dist/default/production/blueGyro.X.production.obj
 _ABDEN CF8 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _ACKDT 10B5 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _ACKEN 10B4 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _ADRES 9B 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _BRG16 CFB 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_CARRY 18 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+_EEADR 191 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Init 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Read 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Stop 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_i2c_Wait 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__end_of_cputs 16DE 0 CODE 0 text39 dist/default/production/blueGyro.X.production.obj
-__end_of_isqrt CF2 0 CODE 0 text24 dist/default/production/blueGyro.X.production.obj
+__end_of_cputs 1172 0 CODE 0 text46 dist/default/production/blueGyro.X.production.obj
+__end_of_isqrt 2000 0 CODE 0 text40 dist/default/production/blueGyro.X.production.obj
 _PORTA C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _RCREG 199 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _RCSTA 19D 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
@@ -1216,32 +1446,36 @@ _T2CON 1C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _TRISA 8C 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _TXREG 19A 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 _TXSTA 19E 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__end_of_putch 17D6 0 CODE 0 text40 dist/default/production/blueGyro.X.production.obj
-__end_of_ultoa BE2 0 CODE 0 text20 dist/default/production/blueGyro.X.production.obj
-__Hram 0 0 ABS 0 ram -
-__Lram 0 0 ABS 0 ram -
-_cputs 16B6 0 CODE 0 text39 dist/default/production/blueGyro.X.production.obj
-_isqrt BE2 0 CODE 0 text24 dist/default/production/blueGyro.X.production.obj
-_putch 179A 0 CODE 0 text40 dist/default/production/blueGyro.X.production.obj
+__end_of_putch 1364 0 CODE 0 text47 dist/default/production/blueGyro.X.production.obj
+__end_of_ultoa F5A 0 CODE 0 text36 dist/default/production/blueGyro.X.production.obj
+__Bram 1E010 1E000 ABS 0 ram -
+__Hram 10 1E000 ABS 0 ram -
+__Lram 10 1E000 ABS 0 ram -
+_cputs 114A 0 CODE 0 text46 dist/default/production/blueGyro.X.production.obj
+_isqrt 1EF0 0 CODE 0 text40 dist/default/production/blueGyro.X.production.obj
+_putch 1328 0 CODE 0 text47 dist/default/production/blueGyro.X.production.obj
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-_ultoa AD0 0 CODE 0 text20 dist/default/production/blueGyro.X.production.obj
+_ultoa E48 0 CODE 0 text36 dist/default/production/blueGyro.X.production.obj
+eeprom_read@addr 75 0 COMMON 1 cstackCOMMON dist/default/production/blueGyro.X.production.obj
 __pintentry 8 0 CODE 0 intentry dist/default/production/blueGyro.X.production.obj
 __size_of_isr 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK0 10 1E000 ABS 0 dataBANK0 -
 Get_Accel_Values@cval 26 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
 __initialization 72 0 CODE 0 cinit dist/default/production/blueGyro.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__pbssBANK0 63 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
+__size_of_eeprom_read 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
+__pbssBANK0 65 0 BANK0 1 bssBANK0 dist/default/production/blueGyro.X.production.obj
 __pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production/blueGyro.X.production.obj
-__end_ofFindDeltaG@HG 138 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
-__end_ofFindDeltaG@LG 140 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+__end_ofFindDeltaG@HG 850 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
+__end_ofFindDeltaG@LG 858 0 STRCODE 0 stringtext dist/default/production/blueGyro.X.production.obj
 printDeciValue@value 3C 0 BANK0 1 cstackBANK0 dist/default/production/blueGyro.X.production.obj
-__Hstringtext 0 0 ABS 0 stringtext -
+__Hstringtext 10 1E000 ABS 0 stringtext -
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_putHexNibble 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
 __size_of_FindDeltaG 0 0 ABS 0 - dist/default/production/blueGyro.X.production.obj
-__end_of_LDByteWriteI2C 1762 0 CODE 0 text5 dist/default/production/blueGyro.X.production.obj
-__end_of_MPU6050_Test_I2C 1862 0 CODE 0 text6 dist/default/production/blueGyro.X.production.obj
+__BbssCOMMON 1E010 1E000 ABS 0 bssCOMMON -
+__end_of_LDByteWriteI2C 124E 0 CODE 0 text14 dist/default/production/blueGyro.X.production.obj
+__end_of_MPU6050_Test_I2C 13AA 0 CODE 0 text8 dist/default/production/blueGyro.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1267,44 +1501,56 @@ __end_of_MPU6050_Test_I2C 1862 0 CODE 0 text6 dist/default/production/blueGyro.X
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text1 0 F2F 1E5E 66 2
-text2 0 B22 1644 7 2
-text3 0 B31 1662 C 2
-text4 0 F95 1F2A 6B 2
-text5 0 B99 1732 18 2
-text6 0 C0E 181C 23 2
-text7 0 B4C 1698 F 2
-text8 0 B83 1706 16 2
-text9 0 D30 1A60 3F 2
-text11 0 B6F 16DE 14 2
-text12 0 E36 1C6C 44 2
-text14 0 DF2 1BE4 44 2
-text16 0 ECD 1D9A 62 2
-text17 0 C31 1862 2C 2
-text18 0 CBD 197A 34 2
-text19 0 C5D 18BA 2E 2
-text21 0 DAF 1B5E 43 2
-text22 0 E7A 1CF4 53 2
-text26 0 D6F 1ADE 40 2
-text27 0 B1B 1636 7 2
-text28 0 B10 1620 5 2
-text29 0 B0B 1616 5 2
-text30 0 B06 160C 5 2
-text31 0 BB1 1762 1C 2
-text32 0 B3D 167A F 2
-text33 0 B29 1652 8 2
-text35 0 C8B 1916 32 2
-text36 0 CF1 19E2 3F 2
-text37 0 BEB 17D6 23 2
-text39 0 B5B 16B6 14 2
-text40 0 BCD 179A 1E 2
-maintext 0 194 328 66C 2
+text1 0 D33 1A66 66 2
+text2 0 859 10B2 7 2
+text3 0 868 10D0 C 2
+text4 0 D99 1B32 6B 2
+text5 0 8CD 119A 14 2
+text6 0 977 12EE 1D 2
+text7 0 9D5 13AA 23 2
+text8 0 9B2 1364 23 2
+text9 0 95B 12B6 1C 2
+text10 0 927 124E 18 2
+text11 0 883 1106 F 2
+text12 0 8E1 11C2 16 2
+text13 0 C7B 18F6 56 2
+text14 0 90F 121E 18 2
+text16 0 B1C 1638 40 2
+text17 0 852 10A4 7 2
+text18 0 847 108E 5 2
+text19 0 842 1084 5 2
+text20 0 83D 107A 5 2
+text21 0 93F 127E 1C 2
+text22 0 874 10E8 F 2
+text23 0 860 10C0 8 2
+text24 0 ADD 15BA 3F 2
+text26 0 8F7 11EE 18 2
+text27 0 8B9 1172 14 2
+text28 0 BE3 17C6 44 2
+text29 0 E04 1C08 73 2
+text30 0 B9F 173E 44 2
+text31 0 E77 1CEE 7F 2
+text32 0 CD1 19A2 62 2
+text33 0 A1D 143A 2C 2
+text34 0 AA9 1552 34 2
+text35 0 A49 1492 2E 2
+text37 0 B5C 16B8 43 2
+text39 0 EF6 1DEC 82 2
+text40 0 F78 1EF0 88 2
+text41 0 50D A1A 2F3 2
+text42 0 A77 14EE 32 2
+text44 0 9F8 13F0 25 2
+text45 0 892 1124 13 2
+text46 0 8A5 114A 14 2
+text47 0 994 1328 1E 2
+text48 0 C27 184E 54 2
 cstackCOMMON 1 70 70 C 1
-cstackBANK0 1 20 20 49 1
-intentry 0 4 8 4B 2
+cstackBANK0 1 20 20 4B 1
+intentry 0 4 8 3D7 2
 reset_vec 0 0 0 2 2
-bssBANK1 1 A0 A0 48 1
-stringtext 0 4F 9E 145 2
+bssBANK1 1 A0 A0 4E 1
+stringtext 0 3DB 7B6 132 2
 idataBANK0 0 3 6 1 2
-clrtext 0 B15 162A 6 2
+eeprom_data 3 0 1E000 8 2
+clrtext 0 84C 1098 6 2
 config 0 8007 1000E 2 2

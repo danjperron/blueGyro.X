@@ -36,5 +36,5 @@ unsigned char i2c_Read(unsigned char ack);
 // Main Function
 void LDByteWriteI2C(unsigned char i2cSlaveAddress, unsigned char LowAdd, unsigned char data);
 void LDByteReadI2C(unsigned char i2cSlaveAddress, unsigned char Address, unsigned char *Data, unsigned char Length);
-
+unsigned char  LDSingleByteReadI2C(unsigned char i2cSlaveAddress, unsigned char Address);
  

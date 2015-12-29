@@ -5,6 +5,7 @@
 #include "i2cMaster.h"
 #include "MPU6050.h"
 
+
 int MPU6050_Test_I2C(void)
 {
     unsigned char Data = 0x00;
@@ -20,6 +21,7 @@ int MPU6050_Test_I2C(void)
  
     return(0);
 }
+
 
 
 void Setup_MPU6050(void)
@@ -105,13 +107,11 @@ const unsigned char MPU6050RegTable[]= {
 };   
 
 
-
-//    //Sets sample rate to 8000/1+7 = 1000Hz
-//    LDByteWriteI2C(MPU6050_ADDRESS, MPU6050_RA_SMPLRT_DIV, 0x07);
-    //Sets sample rate to 8000/1+31 = 250Hz
+     // V1.01 because of magnetometer sample in reduce to 125Hz
+    //Sets sample rate to 8000/1+63 = 125Hz
     // we will transmit accelerometer+gyro
     // this is 4 hex number per values = 4 * 7 + crlf + newline = 30  * 10 bit/character
-    LDByteWriteI2C(MPU6050_ADDRESS, MPU6050_RA_SMPLRT_DIV, 31);
+    LDByteWriteI2C(MPU6050_ADDRESS, MPU6050_RA_SMPLRT_DIV, 63);
     //Disable gyro self tests, scale of 2000 degrees/s
     LDByteWriteI2C(MPU6050_ADDRESS, MPU6050_RA_GYRO_CONFIG, 0b00011000);
     //Disable accel self tests, scale of +-16g, no DHPF
@@ -139,12 +139,8 @@ const unsigned char MPU6050RegTable[]= {
 }
 
 
-
-
-
-
 GForceStruct  CurrentData;
-GForceStruct  PeakData;
+
 extern near volatile unsigned short Timerms;
 
 void Get_Accel_Values(void)

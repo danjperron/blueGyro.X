@@ -1,3 +1,5 @@
+#include "HMC5883L.h"
+
 #define MPU6050_ADDRESS 0x68  // Address with end write bit
 #define MPU6050_RA_XG_OFFS_TC 0x00 //[7] PWR_MODE, [6:1] XG_OFFS_TC, [0] OTP_BNK_VLD
 #define MPU6050_RA_YG_OFFS_TC 0x01 //[7] PWR_MODE, [6:1] YG_OFFS_TC, [0] OTP_BNK_VLD
@@ -125,8 +127,10 @@ typedef struct
   short Gyrox,Gyroy,Gyroz;
   unsigned short Timer;
   unsigned long SumSquare;
+#ifdef HMC5883L_ENABLE
+  short MagX,MagY,MagZ;
+#endif
 }GForceStruct;
 
 
 extern GForceStruct  CurrentData;
-extern GForceStruct  PeakData;

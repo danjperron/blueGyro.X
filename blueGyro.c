@@ -47,7 +47,8 @@
        [esc] 			-> IDLE  Go to idle mode (do nothing)
         G,g or enter	-> READY  Be ready for High G detection
         I or i          -> INFO   Display Acceleration info in G.
-        H or h          -> HIT    Force High G detection
+        H or h          -> HIT    Force High/Low G detection
+ *      Z or z          -> Zero   Zero Gyro values (set offset)
 
       Command available in IDLE mode only
         ?               -> display Release version.
@@ -78,6 +79,9 @@
 */
 
 
+// Dec 29 Magnetometer data add-on
+// if you don't want magnetometer  undef HMC5883L_ENABLE in HMC5883L.h
+
 
 
 #include <htc.h>
@@ -86,6 +90,7 @@
 #include <stdlib.h>
 #include "i2cMaster.h"
 #include "MPU6050.h"
+
 
 
 #ifndef _XTAL_FREQ
@@ -132,11 +137,31 @@ __IDLOC(0000);
 
 #endif
 
+// store/read gyro offset into flash memory
+
+//Set default value
+__EEPROM_DATA(0,0,0,0,0,0,0,0);
+
+typedef struct{
+  short GyroX,GyroY,GyroZ;
+}settingsStruct;
+
+
+settingsStruct Setting;
+
 #define iabs(A)  (A<0 ?  (-A) :  A)
 
  near volatile unsigned short Timerms;       //  Interrupt Timer counter in ms 
  volatile unsigned short TimerCrash;   // Interrupt Timer counter in ms  
 
+ 
+ 
+ // variable for Gyro offset calculation
+ long  AccGyroX;
+ long  AccGyroY;
+ long  AccGyroZ;
+ short AccGyroCount;
+ 
  //unsigned short Timerms;       //  Interrupt Timer counter in ms 
  //unsigned short TimerCrash;   // Interrupt Timer counter in ms  
 
@@ -152,6 +177,7 @@ __IDLOC(0000);
 #define MODE_IDLE      			0
 #define MODE_READY  	      	1
 #define MODE_HIT			 	3
+#define MODE_GYRO_OFFSET        4
 #define MODE_INFO				100
 
 volatile unsigned char Mode= 0xff;
@@ -163,6 +189,51 @@ volatile unsigned char InFiFo, OutFiFo;   // these are the buffer pointers for i
 char SerialBuffer[SERIAL_BUFFER_SIZE];
 
 
+// eerom function
+// EEPROM LOAD AND SAVE SETTING
+void LoadSetting(void)
+{
+  unsigned char  idx;
+  unsigned char  * pointer = (unsigned char *) &Setting;
+
+  for(idx=0; idx < sizeof(Setting);idx++)
+     *(pointer++) = eeprom_read(idx);
+}
+
+void SaveSetting(void)
+{
+  unsigned char  idx;
+  unsigned char  * pointer = (unsigned char *) &Setting;
+ 
+  for(idx=0; idx < sizeof(Setting);idx++)
+      eeprom_write(idx, *(pointer++));
+}
+
+
+short GetGyroWithOffset(short value, short Goffset)
+{
+    short _temp;
+    
+    if(value > 0)
+    {
+      if(Goffset <0)
+      {
+          _temp = 32767 +Goffset;
+          if(value >= _temp)
+              return 32767;
+      }
+    }   
+    else 
+    {
+    if(Goffset >0)
+    {
+        _temp = -32768 + Goffset;
+        if(value <= _temp)
+            return -32768;
+    }
+    }
+      return(value - Goffset);
+}
 
 
 
@@ -261,6 +332,14 @@ static unsigned short isqrt(unsigned long val) {
 	    } while (b >>= 1);
 	    return g;
 	}
+
+
+void printValue(long value)
+{
+    char buffer[16];
+    ltoa(buffer,value,10);
+    cputs(buffer);
+}
 
 
 void printCentiValue(long value)
@@ -364,8 +443,6 @@ long temp;
   GzSquare *= GzSquare;
   CurrentData.SumSquare =  GxSquare + GySquare + GzSquare;
 
-if(CurrentData.SumSquare > PeakData.SumSquare)
-   PeakData = CurrentData;
 }
 
  
@@ -385,33 +462,44 @@ char FindDeltaG(void)
 }
 
 
-void DisplayInfo(GForceStruct * gs)
+void DisplayInfo(void)
 {
   unsigned short  Gt;
+  
+  const char * cy=" y=";
+  const char * cz=" z=";
+  
   // assuming that interrupt routine is off
-  Get_Accel_Values();  // values return in global variable  ACCEL_XOUT,ACCEL_YOUT,ACCEL_ZOUT
   CalculateSumOfSquares();
   // now let's display the info
   cputs(" Time(ms)=");
-  printUShort(gs->Timer);
-  cputs("  Gx=");
-  printGForce(gs->Gx);
-  cputs("  Gy=");
-  printGForce(gs->Gy);
-  cputs("  Gz=");
-  printGForce(gs->Gz);
+  printUShort(CurrentData.Timer);
+  cputs(" G x=");
+  printGForce(CurrentData.Gx);
+  cputs(cy);
+  printGForce(CurrentData.Gy);
+  cputs(cz);
+  printGForce(CurrentData.Gz);
   // now  for the full force we will do the square root of the sum of the squares.
-  Gt = isqrt(gs->SumSquare);
-  cputs("  G=");
+  Gt = isqrt(CurrentData.SumSquare);
+  cputs("Gt=");
   printGForce(Gt);
 
   cputs(" Gyro x=");
-  printGyro(gs->Gyrox);
-  cputs(" y=");
-  printGyro(gs->Gyroy);
-  cputs(" z=");
-  printGyro(gs->Gyroz);
+  printGyro(GetGyroWithOffset(CurrentData.Gyrox,Setting.GyroX));
+  cputs(cy);
+  printGyro(GetGyroWithOffset(CurrentData.Gyroy,Setting.GyroY));
+  cputs(cz);
+  printGyro(GetGyroWithOffset(CurrentData.Gyroz,Setting.GyroZ));
   
+#ifdef HMC5883L_ENABLE
+  cputs(" Mag x=");
+  printValue(CurrentData.MagX);  
+  cputs(cy);   
+  printValue(CurrentData.MagY);
+  cputs(cz);        
+  printValue(CurrentData.MagZ);
+#endif
   cputs("\r\n");  
 }
 
@@ -447,14 +535,24 @@ void DisplayData(void)
 // XXXX is 16 bits hex   Raw Gx value
 // XXXX is 16 bits hex   Raw Gy value
 // XXXX is 16 bits hex   Raw Gz value
-
+   
+   
    putHex(CurrentData.Timer);
    putHex(CurrentData.Gx);
    putHex(CurrentData.Gy);
    putHex(CurrentData.Gz);
-   putHex(CurrentData.Gyrox);
-   putHex(CurrentData.Gyroy);
-   putHex(CurrentData.Gyroz);
+   
+   
+   
+   putHex(GetGyroWithOffset(CurrentData.Gyrox,Setting.GyroX));
+   putHex(GetGyroWithOffset(CurrentData.Gyroy,Setting.GyroY));
+   putHex(GetGyroWithOffset(CurrentData.Gyroz,Setting.GyroZ));
+   
+#ifdef HMC5883L_ENABLE
+   putHex(CurrentData.MagX);
+   putHex(CurrentData.MagY);
+   putHex(CurrentData.MagZ);
+#endif
    cputs("\r\n");
 
 }
@@ -462,7 +560,7 @@ void DisplayData(void)
 
 void printVersion(void)
 {
-   cputs("Catapult V1.00\r\n");
+   cputs("Catapult V1.01\r\n");
 }
 
 
@@ -561,6 +659,10 @@ void printVoltage(void)
     PEIE =1;  // enable peripheral
 
 
+    // load Gyro offset
+    
+    LoadSetting();
+     
 
      Init1msTimer() ;
 
@@ -571,13 +673,16 @@ void printVoltage(void)
   printVersion();
   printVoltage();
 
-  // wait 2 seconds 
- __delay_ms(2000);
-  cputs("Test MPU6050 communication\n\r");
+  // wait 5 seconds 
+ __delay_ms(5000);
   i2c_Init();
- __delay_ms(2000); // wait another 2 seconds
+ __delay_ms(1000); // wait another 2 seconds
   MPU6050_Test_I2C();
   Setup_MPU6050();
+  
+#ifdef HMC5883L_ENABLE
+  Setup_HMC5883L();
+#endif
 
   Mode= RCREG; // clear receive buffer;
   Mode= 255;
@@ -590,7 +695,7 @@ void printVoltage(void)
    { 
      UserKey = RCREG;  // get user command
      
-     if ((UserKey == 'G' ) || (UserKey == 'g' ) || (UserKey == 0xd))
+    if ((UserKey == 'G' ) || (UserKey == 'g' ) || (UserKey == 0xd))
          NewMode=MODE_READY;
     else if (UserKey== 27)
          NewMode= MODE_IDLE;
@@ -603,6 +708,14 @@ void printVoltage(void)
         {
            if  ((UserKey == 'V')  || (UserKey == 'v'))
                     printVoltage();
+           else if ((UserKey == 'Z') || (UserKey=='z'))
+           {
+               NewMode= MODE_GYRO_OFFSET;
+               AccGyroX=0;
+               AccGyroY=0;
+               AccGyroZ=0;
+               AccGyroCount=0;
+           }
            else if (UserKey =='?')
                     printVersion(); 
        }
@@ -617,21 +730,51 @@ void printVoltage(void)
 
      switch(Mode)
     {
+       case MODE_GYRO_OFFSET:  cputs("\r\nZero Gyro.\r\n");
+                               break;
        case MODE_IDLE:   cputs("\r\nIDLE\r\n");
                                       break;
        case MODE_READY: cputs("\r\nREADY\r\n");
 						    // clear the  datas
-                                        PeakData.SumSquare=0;
                                         CurrentData.SumSquare=0;
                                         TimerCrash=65535;
                                         break;
     } 
   }
 
+ if(Mode == MODE_GYRO_OFFSET)
+     {
+       while(GotInt_MPU6050()==0);
+         Get_Accel_Values();
+ 
+         AccGyroX += CurrentData.Gyrox;
+         AccGyroY += CurrentData.Gyroy;
+         AccGyroZ += CurrentData.Gyroz;
+         AccGyroCount++;
+         
+         if(AccGyroCount>=250)
+       {
+          AccGyroX/=AccGyroCount;
+          AccGyroY/=AccGyroCount;
+          AccGyroZ/=AccGyroCount;
+ 
+          Setting.GyroX=AccGyroX;
+          Setting.GyroY=AccGyroY;
+          Setting.GyroZ=AccGyroZ;
+
+          SaveSetting(); // store into eerom 
+                     
+          NewMode=MODE_IDLE;
+       }
+         continue;
+     }
   if(Mode == MODE_HIT)
      {
        while(GotInt_MPU6050()==0);
          Get_Accel_Values();
+#ifdef HMC5883L_ENABLE
+         Get_HMC5883L_Values();
+#endif
          CalculateSumOfSquares();
          DisplayData();
          continue;
@@ -642,10 +785,13 @@ void printVoltage(void)
         Timerms=0;
        ei();
        Get_Accel_Values();
+#ifdef HMC5883L_ENABLE
+         Get_HMC5883L_Values();
+#endif
        CalculateSumOfSquares();
        if(FindDeltaG())
          {
-            DisplayData();
+           DisplayData();
             NewMode= MODE_HIT;
            continue;
          }
@@ -653,7 +799,12 @@ void printVoltage(void)
    if(Mode == MODE_INFO)
    {
       Get_Accel_Values();
-      DisplayInfo(&CurrentData);
+#ifdef HMC5883L_ENABLE
+      Get_HMC5883L_Values();
+#endif
+      DisplayInfo();
+      NewMode = MODE_IDLE;
+      Mode    = MODE_IDLE;
    }
  }
 }
