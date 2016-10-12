@@ -989,7 +989,7 @@
 	    40: 68 34 69 34 6A 34 1A 34 37 34 38 34 74 34 FF 34	h4i4j4.47484t4.4
 	    50: 00 34 00 34 90 34 00 34 A4 34 F0 34 28 34 00 34	.4.4.4.4.4.4(4.4
 	    60: 43 34 61 34 74 34 61 34 70 34 75 34 6C 34 74 34	C4a4t4a4p4u4l4t4
-	    70: 20 34 56 34 31 34 2E 34 30 34 31 34 0D 34 0A 34	 4V414.40414.4.4
+	    70: 20 34 56 34 31 34 2E 34 30 34 32 34 0D 34 0A 34	 4V414.40424.4.4
 	    80: 00 34 5A 34 65 34 72 34 6F 34 20 34 47 34 79 34	.4Z4e4r4o4 4G4y4
 	    90: 72 34 6F 34 2E 34 0D 34 0A 34 00 34 45 34 52 34	r4o4.4.4.4.4E4R4
 	    A0: 52 34 4F 34 52 34 3A 34 20 34 49 34 32 34 43 34	R4O4R4:4 4I424C4
@@ -1045,7 +1045,7 @@
 		0x30	RELBITS COMPLEX		11
 		maintext & 0x7FF
 	227	SYM	491
-		/tmp/xcattEUVk		0	FILNAM
+		/tmp/xccra9eJH		0	FILNAM
 		1291	cinit	0	LINENO
 		1294	cinit	0	LINENO
 		1383	cinit	0	LINENO
@@ -1084,28 +1084,28 @@
 		1378	clrtext	4	LINENO
 		1379	clrtext	5	LINENO
 		blueGyro.c		0	FILNAM
-		617	maintext	0	LINENO
 		621	maintext	0	LINENO
-		622	maintext	3	LINENO
-		623	maintext	5	LINENO
-		624	maintext	7	LINENO
-		625	maintext	A	LINENO
-		626	maintext	D	LINENO
-		628	maintext	10	LINENO
-		632	maintext	11	LINENO
-		633	maintext	12	LINENO
-		637	maintext	14	LINENO
-		638	maintext	16	LINENO
-		639	maintext	19	LINENO
-		641	maintext	1A	LINENO
-		643	maintext	1B	LINENO
-		644	maintext	1C	LINENO
-		646	maintext	1D	LINENO
-		648	maintext	1F	LINENO
-		649	maintext	20	LINENO
-		650	maintext	21	LINENO
-		651	maintext	22	LINENO
-		652	maintext	23	LINENO
+		625	maintext	0	LINENO
+		626	maintext	3	LINENO
+		627	maintext	5	LINENO
+		628	maintext	7	LINENO
+		629	maintext	A	LINENO
+		630	maintext	D	LINENO
+		632	maintext	10	LINENO
+		636	maintext	11	LINENO
+		637	maintext	12	LINENO
+		641	maintext	14	LINENO
+		642	maintext	16	LINENO
+		643	maintext	19	LINENO
+		645	maintext	1A	LINENO
+		647	maintext	1B	LINENO
+		648	maintext	1C	LINENO
+		650	maintext	1D	LINENO
+		652	maintext	1F	LINENO
+		653	maintext	20	LINENO
+		654	maintext	21	LINENO
+		655	maintext	22	LINENO
+		656	maintext	23	LINENO
 	231	TEXT	175
 		maintext	0x0	0xA2
 	     0: F0 30 21 00 99 00 03 30 95 00 23 00 8C 01 20 30	.0!....0..#... 0
@@ -1208,32 +1208,32 @@
 		0x38	RELBITS COMPLEX		7
 		(maintext >> 0x8) & 0x7F
 	235	SYM	494
-		653	maintext	25	LINENO
-		654	maintext	26	LINENO
-		655	maintext	28	LINENO
-		656	maintext	29	LINENO
-		657	maintext	2B	LINENO
-		659	maintext	2C	LINENO
-		660	maintext	2E	LINENO
-		661	maintext	2F	LINENO
-		662	maintext	30	LINENO
-		667	maintext	31	LINENO
-		670	maintext	34	LINENO
-		675	maintext	37	LINENO
-		676	maintext	44	LINENO
-		677	maintext	47	LINENO
-		680	maintext	4A	LINENO
-		681	maintext	58	LINENO
-		682	maintext	5B	LINENO
-		683	maintext	68	LINENO
-		684	maintext	6B	LINENO
-		687	maintext	6E	LINENO
-		690	maintext	71	LINENO
-		691	maintext	77	LINENO
-		697	maintext	7B	LINENO
-		699	maintext	7E	LINENO
-		701	maintext	84	LINENO
-		703	maintext	8C	LINENO
+		657	maintext	25	LINENO
+		658	maintext	26	LINENO
+		659	maintext	28	LINENO
+		660	maintext	29	LINENO
+		661	maintext	2B	LINENO
+		663	maintext	2C	LINENO
+		664	maintext	2E	LINENO
+		665	maintext	2F	LINENO
+		666	maintext	30	LINENO
+		671	maintext	31	LINENO
+		674	maintext	34	LINENO
+		679	maintext	37	LINENO
+		680	maintext	44	LINENO
+		681	maintext	47	LINENO
+		684	maintext	4A	LINENO
+		685	maintext	58	LINENO
+		686	maintext	5B	LINENO
+		687	maintext	68	LINENO
+		688	maintext	6B	LINENO
+		691	maintext	6E	LINENO
+		694	maintext	71	LINENO
+		695	maintext	77	LINENO
+		701	maintext	7B	LINENO
+		703	maintext	7E	LINENO
+		705	maintext	84	LINENO
+		707	maintext	8C	LINENO
 	236	TEXT	117
 		maintext	0xDC	0x68
 	     0: 80 31 00 20 80 31 23 00 19 08 20 00 B4 00 34 08	.1. .1#... ...4.
@@ -1416,32 +1416,32 @@
 		0x42	RELBITS RPSECT	cstackBANK0	7
 		0x44	RELBITS RPSECT	dataBANK0	7
 	244	SYM	494
-		704	maintext	8E	LINENO
-		705	maintext	94	LINENO
-		706	maintext	A1	LINENO
-		708	maintext	A5	LINENO
-		709	maintext	AD	LINENO
-		710	maintext	AF	LINENO
-		711	maintext	B3	LINENO
-		713	maintext	B5	LINENO
-		714	maintext	BD	LINENO
-		716	maintext	BF	LINENO
-		717	maintext	C7	LINENO
-		719	maintext	CC	LINENO
-		721	maintext	CF	LINENO
-		722	maintext	D7	LINENO
-		723	maintext	DB	LINENO
-		725	maintext	E4	LINENO
-		726	maintext	E8	LINENO
-		727	maintext	F1	LINENO
-		728	maintext	F9	LINENO
-		729	maintext	101	LINENO
-		730	maintext	104	LINENO
-		731	maintext	105	LINENO
-		732	maintext	109	LINENO
-		739	maintext	10C	LINENO
-		741	maintext	111	LINENO
-		743	maintext	115	LINENO
+		708	maintext	8E	LINENO
+		709	maintext	94	LINENO
+		710	maintext	A1	LINENO
+		712	maintext	A5	LINENO
+		713	maintext	AD	LINENO
+		714	maintext	AF	LINENO
+		715	maintext	B3	LINENO
+		717	maintext	B5	LINENO
+		718	maintext	BD	LINENO
+		720	maintext	BF	LINENO
+		721	maintext	C7	LINENO
+		723	maintext	CC	LINENO
+		725	maintext	CF	LINENO
+		726	maintext	D7	LINENO
+		727	maintext	DB	LINENO
+		729	maintext	E4	LINENO
+		730	maintext	E8	LINENO
+		731	maintext	F1	LINENO
+		732	maintext	F9	LINENO
+		733	maintext	101	LINENO
+		734	maintext	104	LINENO
+		735	maintext	105	LINENO
+		736	maintext	109	LINENO
+		743	maintext	10C	LINENO
+		745	maintext	111	LINENO
+		747	maintext	115	LINENO
 	245	TEXT	53
 		maintext	0x22A	0x28
 	     0: 00 28 00 30 85 00 00 30 86 00 80 31 00 20 80 31	.(.0...0...1. .1
@@ -1792,32 +1792,32 @@
 		0x46	RELBITS COMPLEX		7
 		(maintext >> 0x8) & 0x7F
 	261	SYM	494
-		745	maintext	116	LINENO
-		746	maintext	11D	LINENO
-		747	maintext	11E	LINENO
-		748	maintext	125	LINENO
-		749	maintext	126	LINENO
-		751	maintext	12D	LINENO
-		752	maintext	136	LINENO
-		754	maintext	13A	LINENO
-		743	maintext	13B	LINENO
-		757	maintext	147	LINENO
-		759	maintext	14C	LINENO
-		760	maintext	152	LINENO
-		762	maintext	155	LINENO
-		763	maintext	171	LINENO
-		764	maintext	18C	LINENO
-		765	maintext	1A7	LINENO
-		767	maintext	1AC	LINENO
-		769	maintext	1B7	LINENO
-		770	maintext	1D6	LINENO
-		771	maintext	1F5	LINENO
-		773	maintext	214	LINENO
-		774	maintext	21B	LINENO
-		775	maintext	223	LINENO
-		777	maintext	22B	LINENO
-		784	maintext	22F	LINENO
-		786	maintext	233	LINENO
+		749	maintext	116	LINENO
+		750	maintext	11D	LINENO
+		751	maintext	11E	LINENO
+		752	maintext	125	LINENO
+		753	maintext	126	LINENO
+		755	maintext	12D	LINENO
+		756	maintext	136	LINENO
+		758	maintext	13A	LINENO
+		747	maintext	13B	LINENO
+		761	maintext	147	LINENO
+		763	maintext	14C	LINENO
+		764	maintext	152	LINENO
+		766	maintext	155	LINENO
+		767	maintext	171	LINENO
+		768	maintext	18C	LINENO
+		769	maintext	1A7	LINENO
+		771	maintext	1AC	LINENO
+		773	maintext	1B7	LINENO
+		774	maintext	1D6	LINENO
+		775	maintext	1F5	LINENO
+		777	maintext	214	LINENO
+		778	maintext	21B	LINENO
+		779	maintext	223	LINENO
+		781	maintext	22B	LINENO
+		788	maintext	22F	LINENO
+		790	maintext	233	LINENO
 	262	TEXT	93
 		maintext	0x45C	0x50
 	     0: 00 28 05 30 00 06 03 1D 00 28 05 08 87 00 04 08	.(.0.....(......
@@ -1960,32 +1960,32 @@
 		0x3E	RELBITS COMPLEX		11
 		text13 & 0x7FF
 	268	SYM	494
-		787	maintext	23F	LINENO
-		789	maintext	255	LINENO
-		792	maintext	256	LINENO
-		793	maintext	259	LINENO
-		794	maintext	265	LINENO
-		795	maintext	267	LINENO
-		798	maintext	268	LINENO
-		800	maintext	26C	LINENO
-		801	maintext	272	LINENO
-		803	maintext	275	LINENO
-		805	maintext	278	LINENO
-		806	maintext	27B	LINENO
-		808	maintext	27E	LINENO
-		811	maintext	28B	LINENO
-		813	maintext	28C	LINENO
-		815	maintext	28F	LINENO
-		816	maintext	290	LINENO
-		817	maintext	292	LINENO
-		818	maintext	293	LINENO
-		820	maintext	296	LINENO
-		822	maintext	299	LINENO
-		823	maintext	29C	LINENO
-		825	maintext	2A2	LINENO
-		827	maintext	2A5	LINENO
-		828	maintext	2A8	LINENO
-		829	maintext	2B0	LINENO
+		791	maintext	23F	LINENO
+		793	maintext	255	LINENO
+		796	maintext	256	LINENO
+		797	maintext	259	LINENO
+		798	maintext	265	LINENO
+		799	maintext	267	LINENO
+		802	maintext	268	LINENO
+		804	maintext	26C	LINENO
+		805	maintext	272	LINENO
+		807	maintext	275	LINENO
+		809	maintext	278	LINENO
+		810	maintext	27B	LINENO
+		812	maintext	27E	LINENO
+		815	maintext	28B	LINENO
+		817	maintext	28C	LINENO
+		819	maintext	28F	LINENO
+		820	maintext	290	LINENO
+		821	maintext	292	LINENO
+		822	maintext	293	LINENO
+		824	maintext	296	LINENO
+		826	maintext	299	LINENO
+		827	maintext	29C	LINENO
+		829	maintext	2A2	LINENO
+		831	maintext	2A5	LINENO
+		832	maintext	2A8	LINENO
+		833	maintext	2B0	LINENO
 	269	TEXT	91
 		maintext	0x530	0x4E
 	     0: 80 31 80 31 00 20 80 31 80 31 00 20 80 31 00 3A	.1.1. .1.1. .1.:
@@ -2202,35 +2202,35 @@
 		0xA	RELBITS COMPLEX		11
 		text37 & 0x7FF
 	281	SYM	491
-		831	maintext	2BC	LINENO
-		832	maintext	2C0	LINENO
-		837	maintext	2C1	LINENO
-		839	maintext	2C6	LINENO
-		841	maintext	2C9	LINENO
-		843	maintext	2CC	LINENO
-		844	maintext	2CF	LINENO
-		845	maintext	2D1	LINENO
-		693	maintext	2D2	LINENO
-		570	text1	0	LINENO
-		587	text1	0	LINENO
-		589	text1	3	LINENO
-		591	text1	6	LINENO
-		593	text1	9	LINENO
-		595	text1	16	LINENO
-		597	text1	18	LINENO
-		598	text1	1A	LINENO
-		599	text1	21	LINENO
-		600	text1	28	LINENO
-		601	text1	2D	LINENO
-		605	text1	35	LINENO
-		606	text1	50	LINENO
-		608	text1	5B	LINENO
-		612	text1	61	LINENO
-		613	text1	63	LINENO
-		614	text1	65	LINENO
-		564	text2	0	LINENO
-		566	text2	0	LINENO
-		567	text2	6	LINENO
+		835	maintext	2BC	LINENO
+		836	maintext	2C0	LINENO
+		841	maintext	2C1	LINENO
+		843	maintext	2C6	LINENO
+		845	maintext	2C9	LINENO
+		847	maintext	2CC	LINENO
+		848	maintext	2CF	LINENO
+		849	maintext	2D1	LINENO
+		697	maintext	2D2	LINENO
+		574	text1	0	LINENO
+		591	text1	0	LINENO
+		593	text1	3	LINENO
+		595	text1	6	LINENO
+		597	text1	9	LINENO
+		599	text1	16	LINENO
+		601	text1	18	LINENO
+		602	text1	1A	LINENO
+		603	text1	21	LINENO
+		604	text1	28	LINENO
+		605	text1	2D	LINENO
+		609	text1	35	LINENO
+		610	text1	50	LINENO
+		612	text1	5B	LINENO
+		616	text1	61	LINENO
+		617	text1	63	LINENO
+		618	text1	65	LINENO
+		568	text2	0	LINENO
+		570	text2	0	LINENO
+		571	text2	6	LINENO
 	282	TEXT	34
 		text3	0x0	0x18
 	     0: 21 00 8C 14 0C 15 28 30 24 00 95 00 96 01 13 30	!.....(0$......0
@@ -2411,9 +2411,9 @@
 		15	text5	B	LINENO
 		16	text5	15	LINENO
 		blueGyro.c		0	FILNAM
-		208	text6	0	LINENO
-		211	text6	0	LINENO
-		213	text6	4	LINENO
+		212	text6	0	LINENO
+		215	text6	0	LINENO
+		217	text6	4	LINENO
 	292	TEXT	68
 		text6	0x0	0x3A
 	     0: 00 30 86 00 06 08 87 00 88 01 06 30 08 02 03 18	.0.........0....
@@ -2550,8 +2550,8 @@
 		0x1A	RELBITS RPSECT	cstackCOMMON	7
 		0x1C	RELBITS RPSECT	cstackCOMMON	7
 	302	SYM	503
-		214	text6	9	LINENO
-		213	text6	18	LINENO
+		218	text6	9	LINENO
+		217	text6	18	LINENO
 		/Applications/microchip/xc8/v1.35/sources/pic/eewrite.c		0	FILNAM
 		6	text7	0	LINENO
 		8	text7	1	LINENO
@@ -2562,11 +2562,11 @@
 		14	text8	10	LINENO
 		21	text8	15	LINENO
 		blueGyro.c		0	FILNAM
-		199	text9	0	LINENO
-		202	text9	0	LINENO
-		204	text9	4	LINENO
-		205	text9	9	LINENO
-		204	text9	17	LINENO
+		203	text9	0	LINENO
+		206	text9	0	LINENO
+		208	text9	4	LINENO
+		209	text9	9	LINENO
+		208	text9	17	LINENO
 		/Applications/microchip/xc8/v1.35/sources/pic/eeread.c		0	FILNAM
 		6	text10	0	LINENO
 		8	text10	1	LINENO
@@ -2574,8 +2574,8 @@
 		10	text10	2	LINENO
 		11	text10	5	LINENO
 		blueGyro.c		0	FILNAM
-		245	text11	0	LINENO
-		252	text11	0	LINENO
+		249	text11	0	LINENO
+		256	text11	0	LINENO
 	303	TEXT	41
 		text11	0x0	0x1E
 	     0: 20 00 9C 01 7D 30 9B 00 9A 01 07 30 9C 00 91 10	 ...}0.....0....
@@ -2740,15 +2740,15 @@
 		0x22	RELBITS COMPLEX		11
 		text44 & 0x7FF
 	315	SYM	506
-		253	text11	2	LINENO
-		254	text11	4	LINENO
-		255	text11	5	LINENO
-		257	text11	7	LINENO
-		258	text11	8	LINENO
-		259	text11	A	LINENO
-		260	text11	C	LINENO
-		261	text11	D	LINENO
-		262	text11	E	LINENO
+		257	text11	2	LINENO
+		258	text11	4	LINENO
+		259	text11	5	LINENO
+		261	text11	7	LINENO
+		262	text11	8	LINENO
+		263	text11	A	LINENO
+		264	text11	C	LINENO
+		265	text11	D	LINENO
+		266	text11	E	LINENO
 		MPU6050.c		0	FILNAM
 		164	text12	0	LINENO
 		170	text12	0	LINENO
@@ -3470,35 +3470,35 @@
 		0x3A	RELBITS RPSECT	cstackCOMMON	7
 		0x3C	RELBITS RPSECT	cstackBANK0	7
 	351	SYM	493
-		452	text18	0	LINENO
-		459	text18	0	LINENO
-		460	text18	1D	LINENO
-		461	text18	1F	LINENO
-		462	text18	3B	LINENO
-		463	text18	3D	LINENO
-		469	text19	0	LINENO
+		456	text18	0	LINENO
+		463	text18	0	LINENO
+		464	text18	1D	LINENO
+		465	text18	1F	LINENO
+		466	text18	3B	LINENO
+		467	text18	3D	LINENO
 		473	text19	0	LINENO
-		474	text19	5	LINENO
-		477	text19	9	LINENO
-		479	text19	C	LINENO
-		480	text19	13	LINENO
-		481	text19	1E	LINENO
-		482	text19	25	LINENO
-		483	text19	35	LINENO
-		484	text19	3D	LINENO
-		485	text19	4D	LINENO
-		486	text19	55	LINENO
-		488	text19	65	LINENO
-		489	text19	79	LINENO
-		490	text19	80	LINENO
-		492	text19	8A	LINENO
-		493	text19	91	LINENO
-		494	text19	AB	LINENO
-		495	text19	B3	LINENO
-		496	text19	CD	LINENO
-		497	text19	D5	LINENO
-		500	text19	EF	LINENO
-		501	text19	F6	LINENO
+		477	text19	0	LINENO
+		478	text19	5	LINENO
+		481	text19	9	LINENO
+		483	text19	C	LINENO
+		484	text19	13	LINENO
+		485	text19	1E	LINENO
+		486	text19	25	LINENO
+		487	text19	35	LINENO
+		488	text19	3D	LINENO
+		489	text19	4D	LINENO
+		490	text19	55	LINENO
+		492	text19	65	LINENO
+		493	text19	79	LINENO
+		494	text19	80	LINENO
+		496	text19	8A	LINENO
+		497	text19	91	LINENO
+		498	text19	AB	LINENO
+		499	text19	B3	LINENO
+		500	text19	CD	LINENO
+		501	text19	D5	LINENO
+		504	text19	EF	LINENO
+		505	text19	F6	LINENO
 	352	TEXT	69
 		text19	0x1D4	0x3A
 	     0: AC 00 AD 00 80 31 00 20 80 31 00 30 85 00 00 30	.....1. .1.0...0
@@ -3892,35 +3892,35 @@
 		0xA	RELBITS COMPLEX		11
 		text37 & 0x7FF
 	374	SYM	493
-		502	text19	101	LINENO
-		503	text19	109	LINENO
-		504	text19	114	LINENO
-		505	text19	11C	LINENO
-		507	text19	127	LINENO
-		508	text19	12D	LINENO
-		338	text20	0	LINENO
-		341	text20	0	LINENO
-		342	text20	D	LINENO
-		343	text20	13	LINENO
-		417	text21	0	LINENO
-		420	text21	0	LINENO
-		421	text21	13	LINENO
-		406	text22	0	LINENO
-		412	text22	0	LINENO
-		413	text22	1D	LINENO
-		414	text22	39	LINENO
-		415	text22	43	LINENO
-		371	text23	0	LINENO
-		377	text23	0	LINENO
-		379	text23	3	LINENO
-		380	text23	7	LINENO
-		381	text23	17	LINENO
-		383	text23	18	LINENO
-		385	text23	20	LINENO
-		386	text23	47	LINENO
-		388	text23	4B	LINENO
-		390	text23	5C	LINENO
-		392	text23	6E	LINENO
+		506	text19	101	LINENO
+		507	text19	109	LINENO
+		508	text19	114	LINENO
+		509	text19	11C	LINENO
+		511	text19	127	LINENO
+		512	text19	12D	LINENO
+		342	text20	0	LINENO
+		345	text20	0	LINENO
+		346	text20	D	LINENO
+		347	text20	13	LINENO
+		421	text21	0	LINENO
+		424	text21	0	LINENO
+		425	text21	13	LINENO
+		410	text22	0	LINENO
+		416	text22	0	LINENO
+		417	text22	1D	LINENO
+		418	text22	39	LINENO
+		419	text22	43	LINENO
+		375	text23	0	LINENO
+		381	text23	0	LINENO
+		383	text23	3	LINENO
+		384	text23	7	LINENO
+		385	text23	17	LINENO
+		387	text23	18	LINENO
+		389	text23	20	LINENO
+		390	text23	47	LINENO
+		392	text23	4B	LINENO
+		394	text23	5C	LINENO
+		396	text23	6E	LINENO
 	375	TEXT	93
 		text24	0x0	0x52
 	     0: 00 30 85 00 00 30 84 00 00 30 83 00 32 30 82 00	.0...0...0..20..
@@ -4201,24 +4201,24 @@
 		0x44	RELBITS COMPLEX		11
 		text27 & 0x7FF
 	389	SYM	493
-		396	text24	0	LINENO
-		401	text24	0	LINENO
-		402	text24	1D	LINENO
-		403	text24	39	LINENO
-		404	text24	43	LINENO
-		346	text25	0	LINENO
-		352	text25	0	LINENO
-		354	text25	3	LINENO
-		355	text25	7	LINENO
-		356	text25	17	LINENO
-		358	text25	18	LINENO
-		360	text25	20	LINENO
-		361	text25	47	LINENO
-		363	text25	4B	LINENO
-		365	text25	5C	LINENO
-		366	text25	63	LINENO
-		367	text25	67	LINENO
-		369	text25	7A	LINENO
+		400	text24	0	LINENO
+		405	text24	0	LINENO
+		406	text24	1D	LINENO
+		407	text24	39	LINENO
+		408	text24	43	LINENO
+		350	text25	0	LINENO
+		356	text25	0	LINENO
+		358	text25	3	LINENO
+		359	text25	7	LINENO
+		360	text25	17	LINENO
+		362	text25	18	LINENO
+		364	text25	20	LINENO
+		365	text25	47	LINENO
+		367	text25	4B	LINENO
+		369	text25	5C	LINENO
+		370	text25	63	LINENO
+		371	text25	67	LINENO
+		373	text25	7A	LINENO
 		/Applications/microchip/xc8/v1.35/sources/common/itoa.c		0	FILNAM
 		4	text26	0	LINENO
 		6	text26	2	LINENO
@@ -4940,18 +4940,18 @@
 		40	text30	6E	LINENO
 		41	text30	79	LINENO
 		blueGyro.c		0	FILNAM
-		326	text31	0	LINENO
-		327	text31	0	LINENO
-		329	text31	19	LINENO
-		330	text31	66	LINENO
-		331	text31	6E	LINENO
-		333	text31	76	LINENO
-		334	text31	83	LINENO
-		426	text32	0	LINENO
-		438	text32	0	LINENO
-		439	text32	23	LINENO
-		440	text32	46	LINENO
-		444	text32	69	LINENO
+		330	text31	0	LINENO
+		331	text31	0	LINENO
+		333	text31	19	LINENO
+		334	text31	66	LINENO
+		335	text31	6E	LINENO
+		337	text31	76	LINENO
+		338	text31	83	LINENO
+		430	text32	0	LINENO
+		442	text32	0	LINENO
+		443	text32	23	LINENO
+		444	text32	46	LINENO
+		448	text32	69	LINENO
 	429	TEXT	75
 		text32	0xE0	0x40
 	     0: 82 00 15 08 89 00 14 08 88 00 13 08 87 00 12 08	................
@@ -5365,10 +5365,10 @@
 		0x1A	RELBITS COMPLEX		11
 		text37 & 0x7FF
 	451	SYM	507
-		445	text32	85	LINENO
-		446	text32	A1	LINENO
-		447	text32	BD	LINENO
-		449	text32	E8	LINENO
+		449	text32	85	LINENO
+		450	text32	A1	LINENO
+		451	text32	BD	LINENO
+		453	text32	E8	LINENO
 		/Applications/microchip/xc8/v1.35/sources/common/Umul32.c		0	FILNAM
 		15	text33	0	LINENO
 		119	text33	0	LINENO
@@ -5379,19 +5379,19 @@
 		125	text33	22	LINENO
 		128	text33	28	LINENO
 		blueGyro.c		0	FILNAM
-		532	text34	0	LINENO
-		543	text34	0	LINENO
-		544	text34	B	LINENO
-		545	text34	16	LINENO
-		546	text34	21	LINENO
-		550	text34	2C	LINENO
-		551	text34	41	LINENO
-		552	text34	56	LINENO
-		555	text34	6B	LINENO
-		556	text34	76	LINENO
-		557	text34	81	LINENO
-		559	text34	8C	LINENO
-		561	text34	92	LINENO
+		536	text34	0	LINENO
+		547	text34	0	LINENO
+		548	text34	B	LINENO
+		549	text34	16	LINENO
+		550	text34	21	LINENO
+		554	text34	2C	LINENO
+		555	text34	41	LINENO
+		556	text34	56	LINENO
+		559	text34	6B	LINENO
+		560	text34	76	LINENO
+		561	text34	81	LINENO
+		563	text34	8C	LINENO
+		565	text34	92	LINENO
 	452	TEXT	81
 		text35	0x0	0x46
 	     0: 20 00 01 08 83 00 00 08 82 00 03 0E 0F 39 82 00	 ............9..
@@ -5489,33 +5489,33 @@
 		0x26	RELBITS COMPLEX		11
 		text37 - (text37 & 0xFFFFF800)
 	460	SYM	499
-		523	text35	0	LINENO
-		526	text35	0	LINENO
-		527	text35	D	LINENO
-		528	text35	12	LINENO
-		529	text35	20	LINENO
-		530	text35	24	LINENO
-		510	text36	0	LINENO
-		512	text36	1	LINENO
-		513	text36	5	LINENO
-		514	text36	9	LINENO
-		516	text36	B	LINENO
-		517	text36	F	LINENO
-		519	text36	12	LINENO
+		527	text35	0	LINENO
+		530	text35	0	LINENO
+		531	text35	D	LINENO
+		532	text35	12	LINENO
+		533	text35	20	LINENO
+		534	text35	24	LINENO
+		514	text36	0	LINENO
+		516	text36	1	LINENO
+		517	text36	5	LINENO
+		518	text36	9	LINENO
+		520	text36	B	LINENO
+		521	text36	F	LINENO
+		523	text36	12	LINENO
 		/Applications/microchip/xc8/v1.35/sources/common/cputs.c		0	FILNAM
 		4	text37	0	LINENO
 		6	text37	0	LINENO
 		7	text37	7	LINENO
 		6	text37	13	LINENO
 		blueGyro.c		0	FILNAM
-		301	text38	0	LINENO
-		306	text38	1	LINENO
-		307	text38	7	LINENO
-		308	text38	A	LINENO
-		311	text38	B	LINENO
-		314	text38	F	LINENO
-		316	text38	17	LINENO
-		318	text38	1B	LINENO
+		305	text38	0	LINENO
+		310	text38	1	LINENO
+		311	text38	7	LINENO
+		312	text38	A	LINENO
+		315	text38	B	LINENO
+		318	text38	F	LINENO
+		320	text38	17	LINENO
+		322	text38	1B	LINENO
 	461	TEXT	71
 		text38	0x0	0x3C
 	     0: 83 00 20 00 0B 08 01 3E 82 00 02 08 84 00 20 30	.. ....>...... 0
@@ -5732,18 +5732,18 @@
 		0x46	RELBITS COMPLEX		11
 		text44 & 0x7FF
 	473	SYM	506
-		319	text38	1D	LINENO
-		218	text39	0	LINENO
+		323	text38	1D	LINENO
 		222	text39	0	LINENO
-		224	text39	B	LINENO
-		226	text39	D	LINENO
-		227	text39	13	LINENO
-		228	text39	1F	LINENO
-		233	text39	24	LINENO
-		235	text39	2F	LINENO
-		236	text39	35	LINENO
-		237	text39	41	LINENO
-		240	text39	46	LINENO
+		226	text39	0	LINENO
+		228	text39	B	LINENO
+		230	text39	D	LINENO
+		231	text39	13	LINENO
+		232	text39	1F	LINENO
+		237	text39	24	LINENO
+		239	text39	2F	LINENO
+		240	text39	35	LINENO
+		241	text39	41	LINENO
+		244	text39	46	LINENO
 		AT24CM02.c		0	FILNAM
 		27	text40	0	LINENO
 		29	text40	0	LINENO
@@ -6190,21 +6190,21 @@
 	509	TEXT	16
 		cstackBANK0	0x39	0x0
 	510	SYM	285
-		270	intentry	0	LINENO
-		272	intentry	5	LINENO
-		273	intentry	8	LINENO
-		276	intentry	B	LINENO
-		278	intentry	F	LINENO
-		279	intentry	16	LINENO
-		280	intentry	1B	LINENO
-		281	intentry	1F	LINENO
-		282	intentry	20	LINENO
-		284	intentry	21	LINENO
-		288	intentry	25	LINENO
-		293	intentry	27	LINENO
-		294	intentry	2A	LINENO
-		295	intentry	2B	LINENO
-		297	intentry	2F	LINENO
+		274	intentry	0	LINENO
+		276	intentry	5	LINENO
+		277	intentry	8	LINENO
+		280	intentry	B	LINENO
+		282	intentry	F	LINENO
+		283	intentry	16	LINENO
+		284	intentry	1B	LINENO
+		285	intentry	1F	LINENO
+		286	intentry	20	LINENO
+		288	intentry	21	LINENO
+		292	intentry	25	LINENO
+		297	intentry	27	LINENO
+		298	intentry	2A	LINENO
+		299	intentry	2B	LINENO
+		301	intentry	2F	LINENO
 	511	LISTRELOC	100
 		'dist/default/production/blueGyro.X.production.rlf' -> 'dist/default/production/blueGyro.X.production.lst'
 	512	FNINFO	303

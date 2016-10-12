@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.35 build -356382666 
-                                                                                               Wed Oct 12 18:35:23 2016
+                                                                                               Wed Oct 12 19:35:44 2016
 
 Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080246
      1                           	processor	12F1840
@@ -564,7 +564,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
    558  0576  3431               	retlw	49	;'1'
    559  0577  342E               	retlw	46	;'.'
    560  0578  3430               	retlw	48	;'0'
-   561  0579  3431               	retlw	49	;'1'
+   561  0579  3432               	retlw	50	;'2'
    562  057A  340D               	retlw	13
    563  057B  340A               	retlw	10
    564  057C  3400               	retlw	0
@@ -1484,7 +1484,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1478 ;;
   1479 ;; *************** function _main *****************
   1480 ;; Defined at:
-  1481 ;;		line 617 in file "blueGyro.c"
+  1481 ;;		line 621 in file "blueGyro.c"
   1482 ;; Parameters:    Size  Location     Type
   1483 ;;		None
   1484 ;; Auto vars:     Size  Location     Type
@@ -1535,9 +1535,9 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1529                           ;psect for function _main
   1530  0052                     _main:	
   1531                           
-  1532                           ;blueGyro.c: 618: unsigned short m_Timer;
-  1533                           ;blueGyro.c: 619: char UserKey;
-  1534                           ;blueGyro.c: 621: OSCCON = 0b11110000;
+  1532                           ;blueGyro.c: 622: unsigned short m_Timer;
+  1533                           ;blueGyro.c: 623: char UserKey;
+  1534                           ;blueGyro.c: 625: OSCCON = 0b11110000;
   1535                           
   1536                           ;incstack = 0
   1537                           ; Regs used in _main: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -1545,117 +1545,117 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1539  0053  0021               	movlb	1	; select bank1
   1540  0054  0099               	movwf	25	;volatile
   1541                           
-  1542                           ;blueGyro.c: 622: OPTION_REG = 0b00000011;
+  1542                           ;blueGyro.c: 626: OPTION_REG = 0b00000011;
   1543  0055  3003               	movlw	3
   1544  0056  0095               	movwf	21	;volatile
   1545                           
-  1546                           ;blueGyro.c: 623: ANSELA = 0b00000;
+  1546                           ;blueGyro.c: 627: ANSELA = 0b00000;
   1547  0057  0023               	movlb	3	; select bank3
   1548  0058  018C               	clrf	12	;volatile
   1549                           
-  1550                           ;blueGyro.c: 624: PORTA = 0b00100000;
+  1550                           ;blueGyro.c: 628: PORTA = 0b00100000;
   1551  0059  3020               	movlw	32
   1552  005A  0020               	movlb	0	; select bank0
   1553  005B  008C               	movwf	12	;volatile
   1554                           
-  1555                           ;blueGyro.c: 625: WPUA = 0b00111111;
+  1555                           ;blueGyro.c: 629: WPUA = 0b00111111;
   1556  005C  303F               	movlw	63
   1557  005D  0024               	movlb	4	; select bank4
   1558  005E  008C               	movwf	12	;volatile
   1559                           
-  1560                           ;blueGyro.c: 626: TRISA = 0b00011111;
+  1560                           ;blueGyro.c: 630: TRISA = 0b00011111;
   1561  005F  301F               	movlw	31
   1562  0060  0021               	movlb	1	; select bank1
   1563  0061  008C               	movwf	12	;volatile
   1564                           
-  1565                           ;blueGyro.c: 628: INTCON = 0b00000000;
+  1565                           ;blueGyro.c: 632: INTCON = 0b00000000;
   1566  0062  018B               	clrf	11	;volatile
   1567                           
-  1568                           ;blueGyro.c: 632: ADCON0=0;
+  1568                           ;blueGyro.c: 636: ADCON0=0;
   1569  0063  019D               	clrf	29	;volatile
   1570                           
-  1571                           ;blueGyro.c: 633: FVRCON=0;
+  1571                           ;blueGyro.c: 637: FVRCON=0;
   1572  0064  0022               	movlb	2	; select bank2
   1573  0065  0197               	clrf	23	;volatile
   1574                           
-  1575                           ;blueGyro.c: 637: APFCON = 0b10000100;
+  1575                           ;blueGyro.c: 641: APFCON = 0b10000100;
   1576  0066  3084               	movlw	132
   1577  0067  009D               	movwf	29	;volatile
   1578                           
-  1579                           ;blueGyro.c: 638: TXSTA = 0b10000010;
+  1579                           ;blueGyro.c: 642: TXSTA = 0b10000010;
   1580  0068  3082               	movlw	130
   1581  0069  0023               	movlb	3	; select bank3
   1582  006A  009E               	movwf	30	;volatile
   1583                           
-  1584                           ;blueGyro.c: 639: RCSTA = 0;
+  1584                           ;blueGyro.c: 643: RCSTA = 0;
   1585  006B  019D               	clrf	29	;volatile
   1586                           
-  1587                           ;blueGyro.c: 641: BRGH=1;
+  1587                           ;blueGyro.c: 645: BRGH=1;
   1588  006C  151E               	bsf	30,2	;volatile
   1589                           
-  1590                           ;blueGyro.c: 643: BRG16 = 0;
+  1590                           ;blueGyro.c: 647: BRG16 = 0;
   1591  006D  119F               	bcf	31,3	;volatile
   1592                           
-  1593                           ;blueGyro.c: 644: SYNC =0;
+  1593                           ;blueGyro.c: 648: SYNC =0;
   1594  006E  121E               	bcf	30,4	;volatile
   1595                           
-  1596                           ;blueGyro.c: 646: SPBRGL = 16;
+  1596                           ;blueGyro.c: 650: SPBRGL = 16;
   1597  006F  3010               	movlw	16
   1598  0070  009B               	movwf	27	;volatile
   1599                           
-  1600                           ;blueGyro.c: 648: SPBRGH =0;
+  1600                           ;blueGyro.c: 652: SPBRGH =0;
   1601  0071  019C               	clrf	28	;volatile
   1602                           
-  1603                           ;blueGyro.c: 649: TXEN =1;
+  1603                           ;blueGyro.c: 653: TXEN =1;
   1604  0072  169E               	bsf	30,5	;volatile
   1605                           
-  1606                           ;blueGyro.c: 650: SPEN = 1;
+  1606                           ;blueGyro.c: 654: SPEN = 1;
   1607  0073  179D               	bsf	29,7	;volatile
   1608                           
-  1609                           ;blueGyro.c: 651: CREN = 1;
+  1609                           ;blueGyro.c: 655: CREN = 1;
   1610  0074  161D               	bsf	29,4	;volatile
   1611                           
-  1612                           ;blueGyro.c: 652: RCIE =0;
+  1612                           ;blueGyro.c: 656: RCIE =0;
   1613  0075  0021               	movlb	1	; select bank1
   1614  0076  1291               	bcf	17,5	;volatile
   1615                           
-  1616                           ;blueGyro.c: 653: TXIE =0;
+  1616                           ;blueGyro.c: 657: TXIE =0;
   1617  0077  1211               	bcf	17,4	;volatile
   1618                           
-  1619                           ;blueGyro.c: 654: RCIF =0;
+  1619                           ;blueGyro.c: 658: RCIF =0;
   1620  0078  0020               	movlb	0	; select bank0
   1621  0079  1291               	bcf	17,5	;volatile
   1622                           
-  1623                           ;blueGyro.c: 655: TXIF = 0;
+  1623                           ;blueGyro.c: 659: TXIF = 0;
   1624  007A  1211               	bcf	17,4	;volatile
   1625                           
-  1626                           ;blueGyro.c: 656: SCKP = 0;
+  1626                           ;blueGyro.c: 660: SCKP = 0;
   1627  007B  0023               	movlb	3	; select bank3
   1628  007C  121F               	bcf	31,4	;volatile
   1629                           
-  1630                           ;blueGyro.c: 657: ABDEN = 0;
+  1630                           ;blueGyro.c: 661: ABDEN = 0;
   1631  007D  101F               	bcf	31,0	;volatile
   1632                           
-  1633                           ;blueGyro.c: 659: InFiFo=0;
+  1633                           ;blueGyro.c: 663: InFiFo=0;
   1634  007E  0020               	movlb	0	; select bank0
   1635  007F  01E4               	clrf	_InFiFo	;volatile
   1636                           
-  1637                           ;blueGyro.c: 660: OutFiFo=0;
+  1637                           ;blueGyro.c: 664: OutFiFo=0;
   1638  0080  01E6               	clrf	_OutFiFo	;volatile
   1639                           
-  1640                           ;blueGyro.c: 661: GIE = 1;
+  1640                           ;blueGyro.c: 665: GIE = 1;
   1641  0081  178B               	bsf	11,7	;volatile
   1642                           
-  1643                           ;blueGyro.c: 662: PEIE =1;
+  1643                           ;blueGyro.c: 666: PEIE =1;
   1644  0082  170B               	bsf	11,6	;volatile
   1645                           
-  1646                           ;blueGyro.c: 667: LoadSetting();
+  1646                           ;blueGyro.c: 671: LoadSetting();
   1647  0083  3189  21B1  3180   	fcall	_LoadSetting
   1648                           
-  1649                           ;blueGyro.c: 670: Init1msTimer() ;
+  1649                           ;blueGyro.c: 674: Init1msTimer() ;
   1650  0086  3188  20CF  3180   	fcall	_Init1msTimer
   1651                           
-  1652                           ;blueGyro.c: 675: _delay((unsigned long)((100)*(32000000/4000.0)));
+  1652                           ;blueGyro.c: 679: _delay((unsigned long)((100)*(32000000/4000.0)));
   1653  0089  3005               	movlw	5
   1654  008A  0020               	movlb	0	; select bank0
   1655  008B  00D6               	movwf	??_main+2
@@ -1671,13 +1671,13 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1665  0094  0BD6               	decfsz	??_main+2,f
   1666  0095  2890               	goto	u3317
   1667                           
-  1668                           ;blueGyro.c: 676: printVersion();
+  1668                           ;blueGyro.c: 680: printVersion();
   1669  0096  3188  2098  3180   	fcall	_printVersion
   1670                           
-  1671                           ;blueGyro.c: 677: printVoltage();
+  1671                           ;blueGyro.c: 681: printVoltage();
   1672  0099  3187  279A  3180   	fcall	_printVoltage
   1673                           
-  1674                           ;blueGyro.c: 680: _delay((unsigned long)((5000)*(32000000/4000.0)));
+  1674                           ;blueGyro.c: 684: _delay((unsigned long)((5000)*(32000000/4000.0)));
   1675  009C  30CB               	movlw	203
   1676  009D  0020               	movlb	0	; select bank0
   1677  009E  00D6               	movwf	??_main+2
@@ -1694,10 +1694,10 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1688  00A8  28A3               	goto	u3327
   1689  00A9  3200               	nop2
   1690                           
-  1691                           ;blueGyro.c: 681: i2c_Init();
+  1691                           ;blueGyro.c: 685: i2c_Init();
   1692  00AA  3188  20A7  3180   	fcall	_i2c_Init
   1693                           
-  1694                           ;blueGyro.c: 682: _delay((unsigned long)((1000)*(32000000/4000.0)));
+  1694                           ;blueGyro.c: 686: _delay((unsigned long)((1000)*(32000000/4000.0)));
   1695  00AD  3029               	movlw	41
   1696  00AE  0020               	movlb	0	; select bank0
   1697  00AF  00D6               	movwf	??_main+2
@@ -1713,16 +1713,16 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1707  00B8  0BD6               	decfsz	??_main+2,f
   1708  00B9  28B4               	goto	u3337
   1709                           
-  1710                           ;blueGyro.c: 683: MPU6050_Test_I2C();
+  1710                           ;blueGyro.c: 687: MPU6050_Test_I2C();
   1711  00BA  3189  21CD  3180   	fcall	_MPU6050_Test_I2C
   1712                           
-  1713                           ;blueGyro.c: 684: Setup_MPU6050();
+  1713                           ;blueGyro.c: 688: Setup_MPU6050();
   1714  00BD  318E  262A  3180   	fcall	_Setup_MPU6050
   1715                           
-  1716                           ;blueGyro.c: 687: Setup_HMC5883L();
+  1716                           ;blueGyro.c: 691: Setup_HMC5883L();
   1717  00C0  3189  2167  3180   	fcall	_Setup_HMC5883L
   1718                           
-  1719                           ;blueGyro.c: 690: Mode= RCREG;
+  1719                           ;blueGyro.c: 694: Mode= RCREG;
   1720  00C3  0023               	movlb	3	; select bank3
   1721  00C4  0819               	movf	25,w	;volatile
   1722  00C5  0020               	movlb	0	; select bank0
@@ -1730,23 +1730,23 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1724  00C7  0854               	movf	??_main,w
   1725  00C8  00ED               	movwf	_Mode	;volatile
   1726                           
-  1727                           ;blueGyro.c: 691: Mode= 255;
+  1727                           ;blueGyro.c: 695: Mode= 255;
   1728  00C9  30FF               	movlw	255
   1729  00CA  00D4               	movwf	??_main
   1730  00CB  0854               	movf	??_main,w
   1731  00CC  00ED               	movwf	_Mode	;volatile
   1732  00CD                     l3620:	
-  1733                           ;blueGyro.c: 693: while(1)
+  1733                           ;blueGyro.c: 697: while(1)
   1734                           
   1735                           
-  1736                           ;blueGyro.c: 694: {
-  1737                           ;blueGyro.c: 697: if(RCIF)
+  1736                           ;blueGyro.c: 698: {
+  1737                           ;blueGyro.c: 701: if(RCIF)
   1738  00CD  0020               	movlb	0	; select bank0
   1739  00CE  1E91               	btfss	17,5	;volatile
   1740  00CF  295E               	goto	l3678
   1741                           
-  1742                           ;blueGyro.c: 698: {
-  1743                           ;blueGyro.c: 699: UserKey = RCREG;
+  1742                           ;blueGyro.c: 702: {
+  1743                           ;blueGyro.c: 703: UserKey = RCREG;
   1744  00D0  0023               	movlb	3	; select bank3
   1745  00D1  0819               	movf	25,w	;volatile
   1746  00D2  0020               	movlb	0	; select bank0
@@ -1754,7 +1754,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1748  00D4  0854               	movf	??_main,w
   1749  00D5  00D8               	movwf	main@UserKey
   1750                           
-  1751                           ;blueGyro.c: 701: if ((UserKey == 'D') || (UserKey == 'd' ))
+  1751                           ;blueGyro.c: 705: if ((UserKey == 'D') || (UserKey == 'd' ))
   1752  00D6  3044               	movlw	68
   1753  00D7  0658               	xorwf	main@UserKey,w
   1754  00D8  1903               	btfsc	3,2
@@ -1765,18 +1765,18 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1759  00DD  28F7               	goto	l3636
   1760  00DE                     l3628:	
   1761                           
-  1762                           ;blueGyro.c: 702: {
-  1763                           ;blueGyro.c: 703: AT24CM02_BlockIdx=0;
+  1762                           ;blueGyro.c: 706: {
+  1763                           ;blueGyro.c: 707: AT24CM02_BlockIdx=0;
   1764  00DE  01DD               	clrf	_AT24CM02_BlockIdx
   1765  00DF  01DE               	clrf	_AT24CM02_BlockIdx+1
   1766                           
-  1767                           ;blueGyro.c: 704: AT24CM02_ReadBlock(0);
+  1767                           ;blueGyro.c: 708: AT24CM02_ReadBlock(0);
   1768  00E0  3000               	movlw	0
   1769  00E1  00A6               	movwf	AT24CM02_ReadBlock@block
   1770  00E2  00A7               	movwf	AT24CM02_ReadBlock@block+1
   1771  00E3  318A  22B5  3180   	fcall	_AT24CM02_ReadBlock
   1772                           
-  1773                           ;blueGyro.c: 705: AT24CM02_BlockID= CurrentData.BlockID;
+  1773                           ;blueGyro.c: 709: AT24CM02_BlockID= CurrentData.BlockID;
   1774  00E6  301A               	movlw	26
   1775  00E7  3ED0               	addlw	(low (_CurrentData| 0))& (0+255)
   1776  00E8  0086               	movwf	6
@@ -1791,15 +1791,15 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1785  00F1  3F43               	moviw [3]fsr1
   1786  00F2  00DC               	movwf	_AT24CM02_BlockID+3
   1787                           
-  1788                           ;blueGyro.c: 706: NewMode= 5;
+  1788                           ;blueGyro.c: 710: NewMode= 5;
   1789  00F3  3005               	movlw	5
   1790  00F4  00D4               	movwf	??_main
   1791  00F5  0854               	movf	??_main,w
   1792  00F6  00E5               	movwf	_NewMode	;volatile
   1793  00F7                     l3636:	
   1794                           
-  1795                           ;blueGyro.c: 707: }
-  1796                           ;blueGyro.c: 708: if ((UserKey == 'G' ) || (UserKey == 'g' ))
+  1795                           ;blueGyro.c: 711: }
+  1796                           ;blueGyro.c: 712: if ((UserKey == 'G' ) || (UserKey == 'g' ))
   1797  00F7  3047               	movlw	71
   1798  00F8  0658               	xorwf	main@UserKey,w
   1799  00F9  1903               	btfsc	3,2
@@ -1810,23 +1810,23 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1804  00FE  2901               	goto	l3642
   1805  00FF                     l3640:	
   1806                           
-  1807                           ;blueGyro.c: 709: NewMode=1;
+  1807                           ;blueGyro.c: 713: NewMode=1;
   1808  00FF  3001               	movlw	1
   1809  0100  291A               	goto	L2
   1810  0101                     l3642:	
   1811                           
-  1812                           ;blueGyro.c: 710: else if (UserKey== 27)
+  1812                           ;blueGyro.c: 714: else if (UserKey== 27)
   1813  0101  301B               	movlw	27
   1814  0102  0658               	xorwf	main@UserKey,w
   1815  0103  1D03               	btfss	3,2
   1816  0104  2907               	goto	l3646
   1817                           
-  1818                           ;blueGyro.c: 711: NewMode= 0;
+  1818                           ;blueGyro.c: 715: NewMode= 0;
   1819  0105  01E5               	clrf	_NewMode	;volatile
   1820  0106  295E               	goto	l3678
   1821  0107                     l3646:	
   1822                           
-  1823                           ;blueGyro.c: 713: else if ((UserKey== 'I') || (UserKey== 'i'))
+  1823                           ;blueGyro.c: 717: else if ((UserKey== 'I') || (UserKey== 'i'))
   1824  0107  3049               	movlw	73
   1825  0108  0658               	xorwf	main@UserKey,w
   1826  0109  1903               	btfsc	3,2
@@ -1837,12 +1837,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1831  010E  2911               	goto	l3652
   1832  010F                     l3650:	
   1833                           
-  1834                           ;blueGyro.c: 714: NewMode= 100;
+  1834                           ;blueGyro.c: 718: NewMode= 100;
   1835  010F  3064               	movlw	100
   1836  0110  291A               	goto	L2
   1837  0111                     l3652:	
   1838                           
-  1839                           ;blueGyro.c: 716: else if ((UserKey == 'H' ) || (UserKey == 'h'))
+  1839                           ;blueGyro.c: 720: else if ((UserKey == 'H' ) || (UserKey == 'h'))
   1840  0111  3048               	movlw	72
   1841  0112  0658               	xorwf	main@UserKey,w
   1842  0113  1903               	btfsc	3,2
@@ -1853,7 +1853,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1847  0118  291E               	goto	l3658
   1848  0119                     l3656:	
   1849                           
-  1850                           ;blueGyro.c: 717: NewMode = 3;
+  1850                           ;blueGyro.c: 721: NewMode = 3;
   1851  0119  3003               	movlw	3
   1852  011A                     L2:	
   1853  011A  00D4               	movwf	??_main
@@ -1862,14 +1862,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1856  011D  295E               	goto	l3678
   1857  011E                     l3658:	
   1858                           
-  1859                           ;blueGyro.c: 718: else
-  1860                           ;blueGyro.c: 719: if(Mode == 0)
+  1859                           ;blueGyro.c: 722: else
+  1860                           ;blueGyro.c: 723: if(Mode == 0)
   1861  011E  086D               	movf	_Mode,w	;volatile
   1862  011F  1D03               	btfss	3,2
   1863  0120  295E               	goto	l3678
   1864                           
-  1865                           ;blueGyro.c: 720: {
-  1866                           ;blueGyro.c: 721: if ((UserKey == 'V') || (UserKey == 'v'))
+  1865                           ;blueGyro.c: 724: {
+  1866                           ;blueGyro.c: 725: if ((UserKey == 'V') || (UserKey == 'v'))
   1867  0121  3056               	movlw	86
   1868  0122  0658               	xorwf	main@UserKey,w
   1869  0123  1903               	btfsc	3,2
@@ -1880,12 +1880,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1874  0128  292D               	goto	l3666
   1875  0129                     l3664:	
   1876                           
-  1877                           ;blueGyro.c: 722: printVoltage();
+  1877                           ;blueGyro.c: 726: printVoltage();
   1878  0129  3187  279A  3180   	fcall	_printVoltage
   1879  012C  295E               	goto	l3678
   1880  012D                     l3666:	
   1881                           
-  1882                           ;blueGyro.c: 723: else if ((UserKey == 'Z') || (UserKey=='z'))
+  1882                           ;blueGyro.c: 727: else if ((UserKey == 'Z') || (UserKey=='z'))
   1883  012D  305A               	movlw	90
   1884  012E  0020               	movlb	0	; select bank0
   1885  012F  0658               	xorwf	main@UserKey,w
@@ -1897,14 +1897,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1891  0135  2957               	goto	l3674
   1892  0136                     l3670:	
   1893                           
-  1894                           ;blueGyro.c: 724: {
-  1895                           ;blueGyro.c: 725: NewMode= 4;
+  1894                           ;blueGyro.c: 728: {
+  1895                           ;blueGyro.c: 729: NewMode= 4;
   1896  0136  3004               	movlw	4
   1897  0137  00D4               	movwf	??_main
   1898  0138  0854               	movf	??_main,w
   1899  0139  00E5               	movwf	_NewMode	;volatile
   1900                           
-  1901                           ;blueGyro.c: 726: AccGyroX=0;
+  1901                           ;blueGyro.c: 730: AccGyroX=0;
   1902  013A  3000               	movlw	0
   1903  013B  0021               	movlb	1	; select bank1
   1904  013C  00C3               	movwf	(_AccGyroX+3)^(0+128)
@@ -1915,7 +1915,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1909  0141  3000               	movlw	0
   1910  0142  00C0               	movwf	_AccGyroX^(0+128)
   1911                           
-  1912                           ;blueGyro.c: 727: AccGyroY=0;
+  1912                           ;blueGyro.c: 731: AccGyroY=0;
   1913  0143  3000               	movlw	0
   1914  0144  00C7               	movwf	(_AccGyroY+3)^(0+128)
   1915  0145  3000               	movlw	0
@@ -1925,7 +1925,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1919  0149  3000               	movlw	0
   1920  014A  00C4               	movwf	_AccGyroY^(0+128)
   1921                           
-  1922                           ;blueGyro.c: 728: AccGyroZ=0;
+  1922                           ;blueGyro.c: 732: AccGyroZ=0;
   1923  014B  3000               	movlw	0
   1924  014C  00CB               	movwf	(_AccGyroZ+3)^(0+128)
   1925  014D  3000               	movlw	0
@@ -1935,46 +1935,46 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1929  0151  3000               	movlw	0
   1930  0152  00C8               	movwf	_AccGyroZ^(0+128)
   1931                           
-  1932                           ;blueGyro.c: 729: AccGyroCount=0;
+  1932                           ;blueGyro.c: 733: AccGyroCount=0;
   1933  0153  0020               	movlb	0	; select bank0
   1934  0154  01DF               	clrf	_AccGyroCount
   1935  0155  01E0               	clrf	_AccGyroCount+1
   1936                           
-  1937                           ;blueGyro.c: 730: }
+  1937                           ;blueGyro.c: 734: }
   1938  0156  295E               	goto	l3678
   1939  0157                     l3674:	
   1940                           
-  1941                           ;blueGyro.c: 731: else if (UserKey =='?')
+  1941                           ;blueGyro.c: 735: else if (UserKey =='?')
   1942  0157  303F               	movlw	63
   1943  0158  0658               	xorwf	main@UserKey,w
   1944  0159  1D03               	btfss	3,2
   1945  015A  295E               	goto	l3678
   1946                           
-  1947                           ;blueGyro.c: 732: printVersion();
+  1947                           ;blueGyro.c: 736: printVersion();
   1948  015B  3188  2098  3180   	fcall	_printVersion
   1949  015E                     l3678:	
   1950                           
-  1951                           ;blueGyro.c: 733: }
-  1952                           ;blueGyro.c: 735: }
-  1953                           ;blueGyro.c: 739: if(Mode != NewMode)
+  1951                           ;blueGyro.c: 737: }
+  1952                           ;blueGyro.c: 739: }
+  1953                           ;blueGyro.c: 743: if(Mode != NewMode)
   1954  015E  0020               	movlb	0	; select bank0
   1955  015F  086D               	movf	_Mode,w	;volatile
   1956  0160  0665               	xorwf	_NewMode,w	;volatile
   1957  0161  1903               	skipnz
   1958  0162  2999               	goto	l3696
   1959                           
-  1960                           ;blueGyro.c: 740: {
-  1961                           ;blueGyro.c: 741: Mode=NewMode;
+  1960                           ;blueGyro.c: 744: {
+  1961                           ;blueGyro.c: 745: Mode=NewMode;
   1962  0163  0865               	movf	_NewMode,w	;volatile
   1963  0164  00D4               	movwf	??_main
   1964  0165  0854               	movf	??_main,w
   1965  0166  00ED               	movwf	_Mode	;volatile
   1966                           
-  1967                           ;blueGyro.c: 743: switch(Mode)
+  1967                           ;blueGyro.c: 747: switch(Mode)
   1968  0167  298D               	goto	l3694
   1969  0168                     l3682:	
-  1970                           ;blueGyro.c: 744: {
-  1971                           ;blueGyro.c: 745: case 4: cputs("Zero Gyro.\r\n");
+  1970                           ;blueGyro.c: 748: {
+  1971                           ;blueGyro.c: 749: case 4: cputs("Zero Gyro.\r\n");
   1972                           
   1973  0168  307D               	movlw	low (STR_15| (0+32768))
   1974  0169  00F5               	movwf	cputs@s
@@ -1982,10 +1982,10 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1976  016B  00F6               	movwf	cputs@s+1
   1977  016C  3189  2115  3180   	fcall	_cputs
   1978                           
-  1979                           ;blueGyro.c: 746: break;
+  1979                           ;blueGyro.c: 750: break;
   1980  016F  2999               	goto	l3696
   1981  0170                     l3684:	
-  1982                           ;blueGyro.c: 747: case 0: cputs("IDLE\r\n");
+  1982                           ;blueGyro.c: 751: case 0: cputs("IDLE\r\n");
   1983                           
   1984  0170  30B8               	movlw	low (STR_16| (0+32768))
   1985  0171  00F5               	movwf	cputs@s
@@ -1993,10 +1993,10 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1987  0173  00F6               	movwf	cputs@s+1
   1988  0174  3189  2115  3180   	fcall	_cputs
   1989                           
-  1990                           ;blueGyro.c: 748: break;
+  1990                           ;blueGyro.c: 752: break;
   1991  0177  2999               	goto	l3696
   1992  0178                     l3686:	
-  1993                           ;blueGyro.c: 749: case 1: cputs("READY\r\n");
+  1993                           ;blueGyro.c: 753: case 1: cputs("READY\r\n");
   1994                           
   1995  0178  30A0               	movlw	low (STR_17| (0+32768))
   1996  0179  00F5               	movwf	cputs@s
@@ -2004,7 +2004,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   1998  017B  00F6               	movwf	cputs@s+1
   1999  017C  3189  2115  3180   	fcall	_cputs
   2000                           
-  2001                           ;blueGyro.c: 751: CurrentData.SumSquare=0;
+  2001                           ;blueGyro.c: 755: CurrentData.SumSquare=0;
   2002  017F  3000               	movlw	0
   2003  0180  0021               	movlb	1	; select bank1
   2004  0181  00E9               	movwf	((_CurrentData+3)^(0+128)+22)
@@ -2015,15 +2015,15 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2009  0186  3000               	movlw	0
   2010  0187  00E6               	movwf	(_CurrentData^(0+128)+22)
   2011                           
-  2012                           ;blueGyro.c: 752: TimerCrash=65535;
+  2012                           ;blueGyro.c: 756: TimerCrash=65535;
   2013  0188  30FF               	movlw	255
   2014  0189  00CE               	movwf	_TimerCrash^(0+128)	;volatile
   2015  018A  30FF               	movlw	255
   2016  018B  00CF               	movwf	(_TimerCrash^(0+128)+1)	;volatile
   2017                           
-  2018                           ;blueGyro.c: 754: }
+  2018                           ;blueGyro.c: 758: }
   2019                           
-  2020                           ;blueGyro.c: 753: break;
+  2020                           ;blueGyro.c: 757: break;
   2021  018C  2999               	goto	l3696
   2022  018D                     l3694:	
   2023  018D  0020               	movlb	0	; select bank0
@@ -2049,26 +2049,26 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2043  0198  2999               	goto	l3696
   2044  0199                     l3696:	
   2045                           
-  2046                           ;blueGyro.c: 755: }
-  2047                           ;blueGyro.c: 757: if(Mode == 4)
+  2046                           ;blueGyro.c: 759: }
+  2047                           ;blueGyro.c: 761: if(Mode == 4)
   2048  0199  3004               	movlw	4
   2049  019A  0020               	movlb	0	; select bank0
   2050  019B  066D               	xorwf	_Mode,w	;volatile
   2051  019C  1D03               	btfss	3,2
   2052  019D  2A81               	goto	l3726
   2053  019E                     l3700:	
-  2054                           ;blueGyro.c: 758: {
-  2055                           ;blueGyro.c: 759: while(GotInt_MPU6050()==0);
+  2054                           ;blueGyro.c: 762: {
+  2055                           ;blueGyro.c: 763: while(GotInt_MPU6050()==0);
   2056                           
   2057  019E  3189  2151  3180   	fcall	_GotInt_MPU6050
   2058  01A1  3A00               	xorlw	0
   2059  01A2  1903               	skipnz
   2060  01A3  299E               	goto	l3700
   2061                           
-  2062                           ;blueGyro.c: 760: Get_Accel_Values();
+  2062                           ;blueGyro.c: 764: Get_Accel_Values();
   2063  01A4  3185  25E1  3180   	fcall	_Get_Accel_Values
   2064                           
-  2065                           ;blueGyro.c: 762: AccGyroX += CurrentData.Gyrox;
+  2065                           ;blueGyro.c: 766: AccGyroX += CurrentData.Gyrox;
   2066  01A7  0021               	movlb	1	; select bank1
   2067  01A8  085A               	movf	(_CurrentData^(0+128)+10),w
   2068  01A9  0020               	movlb	0	; select bank0
@@ -2098,7 +2098,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2092  01C1  0021               	movlb	1	; select bank1
   2093  01C2  3DC3               	addwfc	(_AccGyroX+3)^(0+128),f
   2094                           
-  2095                           ;blueGyro.c: 763: AccGyroY += CurrentData.Gyroy;
+  2095                           ;blueGyro.c: 767: AccGyroY += CurrentData.Gyroy;
   2096  01C3  085C               	movf	(_CurrentData^(0+128)+12),w
   2097  01C4  0020               	movlb	0	; select bank0
   2098  01C5  00D4               	movwf	??_main
@@ -2127,7 +2127,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2121  01DC  0021               	movlb	1	; select bank1
   2122  01DD  3DC7               	addwfc	(_AccGyroY+3)^(0+128),f
   2123                           
-  2124                           ;blueGyro.c: 764: AccGyroZ += CurrentData.Gyroz;
+  2124                           ;blueGyro.c: 768: AccGyroZ += CurrentData.Gyroz;
   2125  01DE  085E               	movf	(_CurrentData^(0+128)+14),w
   2126  01DF  0020               	movlb	0	; select bank0
   2127  01E0  00D4               	movwf	??_main
@@ -2156,14 +2156,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2150  01F7  0021               	movlb	1	; select bank1
   2151  01F8  3DCB               	addwfc	(_AccGyroZ+3)^(0+128),f
   2152                           
-  2153                           ;blueGyro.c: 765: AccGyroCount++;
+  2153                           ;blueGyro.c: 769: AccGyroCount++;
   2154  01F9  3001               	movlw	1
   2155  01FA  0020               	movlb	0	; select bank0
   2156  01FB  07DF               	addwf	_AccGyroCount,f
   2157  01FC  3000               	movlw	0
   2158  01FD  3DE0               	addwfc	_AccGyroCount+1,f
   2159                           
-  2160                           ;blueGyro.c: 767: if(AccGyroCount>=250)
+  2160                           ;blueGyro.c: 771: if(AccGyroCount>=250)
   2161  01FE  0860               	movf	_AccGyroCount+1,w
   2162  01FF  3A80               	xorlw	128
   2163  0200  00D4               	movwf	??_main
@@ -2177,8 +2177,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2171  0207  1C03               	skipc
   2172  0208  28CD               	goto	l3620
   2173                           
-  2174                           ;blueGyro.c: 768: {
-  2175                           ;blueGyro.c: 769: AccGyroX/=AccGyroCount;
+  2174                           ;blueGyro.c: 772: {
+  2175                           ;blueGyro.c: 773: AccGyroX/=AccGyroCount;
   2176  0209  0020               	movlb	0	; select bank0
   2177  020A  085F               	movf	_AccGyroCount,w
   2178  020B  00F2               	movwf	___aldiv@divisor
@@ -2209,7 +2209,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2203  0226  0872               	movf	?___aldiv,w
   2204  0227  00C0               	movwf	_AccGyroX^(0+128)
   2205                           
-  2206                           ;blueGyro.c: 770: AccGyroY/=AccGyroCount;
+  2206                           ;blueGyro.c: 774: AccGyroY/=AccGyroCount;
   2207  0228  0020               	movlb	0	; select bank0
   2208  0229  085F               	movf	_AccGyroCount,w
   2209  022A  00F2               	movwf	___aldiv@divisor
@@ -2240,7 +2240,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2234  0245  0872               	movf	?___aldiv,w
   2235  0246  00C4               	movwf	_AccGyroY^(0+128)
   2236                           
-  2237                           ;blueGyro.c: 771: AccGyroZ/=AccGyroCount;
+  2237                           ;blueGyro.c: 775: AccGyroZ/=AccGyroCount;
   2238  0247  0020               	movlb	0	; select bank0
   2239  0248  085F               	movf	_AccGyroCount,w
   2240  0249  00F2               	movwf	___aldiv@divisor
@@ -2271,7 +2271,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2265  0264  0872               	movf	?___aldiv,w
   2266  0265  00C8               	movwf	_AccGyroZ^(0+128)
   2267                           
-  2268                           ;blueGyro.c: 773: Setting.GyroX=AccGyroX;
+  2268                           ;blueGyro.c: 777: Setting.GyroX=AccGyroX;
   2269  0266  0841               	movf	(_AccGyroX+1)^(0+128),w
   2270  0267  0020               	movlb	0	; select bank0
   2271  0268  00E8               	movwf	_Setting+1
@@ -2280,7 +2280,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2274  026B  0020               	movlb	0	; select bank0
   2275  026C  00E7               	movwf	_Setting
   2276                           
-  2277                           ;blueGyro.c: 774: Setting.GyroY=AccGyroY;
+  2277                           ;blueGyro.c: 778: Setting.GyroY=AccGyroY;
   2278  026D  0021               	movlb	1	; select bank1
   2279  026E  0845               	movf	(_AccGyroY+1)^(0+128),w
   2280  026F  0020               	movlb	0	; select bank0
@@ -2290,7 +2290,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2284  0273  0020               	movlb	0	; select bank0
   2285  0274  00E9               	movwf	_Setting+2
   2286                           
-  2287                           ;blueGyro.c: 775: Setting.GyroZ=AccGyroZ;
+  2287                           ;blueGyro.c: 779: Setting.GyroZ=AccGyroZ;
   2288  0275  0021               	movlb	1	; select bank1
   2289  0276  0849               	movf	(_AccGyroZ+1)^(0+128),w
   2290  0277  0020               	movlb	0	; select bank0
@@ -2300,25 +2300,25 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2294  027B  0020               	movlb	0	; select bank0
   2295  027C  00EB               	movwf	_Setting+4
   2296                           
-  2297                           ;blueGyro.c: 777: SaveSetting();
+  2297                           ;blueGyro.c: 781: SaveSetting();
   2298  027D  3189  21E9  3180   	fcall	_SaveSetting
   2299  0280  2AB7               	goto	l3740
   2300  0281                     l3726:	
-  2301                           ;blueGyro.c: 780: }
-  2302                           ;blueGyro.c: 781: continue;
+  2301                           ;blueGyro.c: 784: }
+  2302                           ;blueGyro.c: 785: continue;
   2303                           
-  2304                           ;blueGyro.c: 779: NewMode=0;
+  2304                           ;blueGyro.c: 783: NewMode=0;
   2305                           
   2306                           
-  2307                           ;blueGyro.c: 782: }
-  2308                           ;blueGyro.c: 784: if(Mode == 5)
+  2307                           ;blueGyro.c: 786: }
+  2308                           ;blueGyro.c: 788: if(Mode == 5)
   2309  0281  3005               	movlw	5
   2310  0282  066D               	xorwf	_Mode,w	;volatile
   2311  0283  1D03               	btfss	3,2
   2312  0284  2ABA               	goto	l3742
   2313                           
-  2314                           ;blueGyro.c: 785: {
-  2315                           ;blueGyro.c: 786: AT24CM02_ReadBlock(AT24CM02_BlockIdx++);
+  2314                           ;blueGyro.c: 789: {
+  2315                           ;blueGyro.c: 790: AT24CM02_ReadBlock(AT24CM02_BlockIdx++);
   2316  0285  085E               	movf	_AT24CM02_BlockIdx+1,w
   2317  0286  00A7               	movwf	AT24CM02_ReadBlock@block+1
   2318  0287  085D               	movf	_AT24CM02_BlockIdx,w
@@ -2330,7 +2330,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2324  028F  3000               	movlw	0
   2325  0290  3DDE               	addwfc	_AT24CM02_BlockIdx+1,f
   2326                           
-  2327                           ;blueGyro.c: 787: if(CurrentData.BlockID!= AT24CM02_BlockID)
+  2327                           ;blueGyro.c: 791: if(CurrentData.BlockID!= AT24CM02_BlockID)
   2328  0291  085C               	movf	_AT24CM02_BlockID+3,w
   2329  0292  0021               	movlb	1	; select bank1
   2330  0293  066D               	xorwf	((_CurrentData+3)^(0+128)+26),w
@@ -2356,16 +2356,16 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2350  02A6  1D03               	btfss	3,2
   2351  02A7  2AB7               	goto	l3740
   2352                           
-  2353                           ;blueGyro.c: 791: }
-  2354                           ;blueGyro.c: 792: DisplayData();
+  2353                           ;blueGyro.c: 795: }
+  2354                           ;blueGyro.c: 796: DisplayData();
   2355                           
-  2356                           ;blueGyro.c: 790: continue;
+  2356                           ;blueGyro.c: 794: continue;
   2357                           
-  2358                           ;blueGyro.c: 788: {
-  2359                           ;blueGyro.c: 789: NewMode= 0;
+  2358                           ;blueGyro.c: 792: {
+  2359                           ;blueGyro.c: 793: NewMode= 0;
   2360  02A8  3186  267F  3180   	fcall	_DisplayData
   2361                           
-  2362                           ;blueGyro.c: 793: if(AT24CM02_BlockIdx >= 8192)
+  2362                           ;blueGyro.c: 797: if(AT24CM02_BlockIdx >= 8192)
   2363  02AB  0020               	movlb	0	; select bank0
   2364  02AC  085E               	movf	_AT24CM02_BlockIdx+1,w
   2365  02AD  3A80               	xorlw	128
@@ -2381,42 +2381,42 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2375  02B6  28CD               	goto	l3620
   2376  02B7                     l3740:	
   2377                           
-  2378                           ;blueGyro.c: 794: NewMode= 0;
+  2378                           ;blueGyro.c: 798: NewMode= 0;
   2379  02B7  0020               	movlb	0	; select bank0
   2380  02B8  01E5               	clrf	_NewMode	;volatile
   2381                           
-  2382                           ;blueGyro.c: 795: continue;
+  2382                           ;blueGyro.c: 799: continue;
   2383  02B9  28CD               	goto	l3620
   2384  02BA                     l3742:	
   2385                           
-  2386                           ;blueGyro.c: 796: }
-  2387                           ;blueGyro.c: 798: if(Mode == 3)
+  2386                           ;blueGyro.c: 800: }
+  2387                           ;blueGyro.c: 802: if(Mode == 3)
   2388  02BA  3003               	movlw	3
   2389  02BB  066D               	xorwf	_Mode,w	;volatile
   2390  02BC  1D03               	btfss	3,2
   2391  02BD  2ADE               	goto	l3758
   2392  02BE                     l3746:	
-  2393                           ;blueGyro.c: 799: {
-  2394                           ;blueGyro.c: 800: while(GotInt_MPU6050()==0);
+  2393                           ;blueGyro.c: 803: {
+  2394                           ;blueGyro.c: 804: while(GotInt_MPU6050()==0);
   2395                           
   2396  02BE  3189  2151  3180   	fcall	_GotInt_MPU6050
   2397  02C1  3A00               	xorlw	0
   2398  02C2  1903               	skipnz
   2399  02C3  2ABE               	goto	l3746
   2400                           
-  2401                           ;blueGyro.c: 801: Get_Accel_Values();
+  2401                           ;blueGyro.c: 805: Get_Accel_Values();
   2402  02C4  3185  25E1  3180   	fcall	_Get_Accel_Values
   2403                           
-  2404                           ;blueGyro.c: 803: Get_HMC5883L_Values();
+  2404                           ;blueGyro.c: 807: Get_HMC5883L_Values();
   2405  02C7  318D  2572  3180   	fcall	_Get_HMC5883L_Values
   2406                           
-  2407                           ;blueGyro.c: 805: CalculateSumOfSquares();
+  2407                           ;blueGyro.c: 809: CalculateSumOfSquares();
   2408  02CA  3184  2453  3180   	fcall	_CalculateSumOfSquares
   2409                           
-  2410                           ;blueGyro.c: 806: DisplayData();
+  2410                           ;blueGyro.c: 810: DisplayData();
   2411  02CD  3186  267F  3180   	fcall	_DisplayData
   2412                           
-  2413                           ;blueGyro.c: 808: AT24CM02_WriteBlock(AT24CM02_BlockIdx++);
+  2413                           ;blueGyro.c: 812: AT24CM02_WriteBlock(AT24CM02_BlockIdx++);
   2414  02D0  0020               	movlb	0	; select bank0
   2415  02D1  085E               	movf	_AT24CM02_BlockIdx+1,w
   2416  02D2  00A7               	movwf	AT24CM02_WriteBlock@block+1
@@ -2429,52 +2429,52 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2423  02DB  3000               	movlw	0
   2424  02DC  3DDE               	addwfc	_AT24CM02_BlockIdx+1,f
   2425                           
-  2426                           ;blueGyro.c: 811: continue;
+  2426                           ;blueGyro.c: 815: continue;
   2427  02DD  28CD               	goto	l3620
   2428  02DE                     l3758:	
   2429                           
-  2430                           ;blueGyro.c: 812: }
-  2431                           ;blueGyro.c: 813: if(Mode == 1)
+  2430                           ;blueGyro.c: 816: }
+  2431                           ;blueGyro.c: 817: if(Mode == 1)
   2432  02DE  036D               	decf	_Mode,w	;volatile
   2433  02DF  1D03               	btfss	3,2
   2434  02E0  2B13               	goto	l3786
   2435                           
-  2436                           ;blueGyro.c: 814: {
-  2437                           ;blueGyro.c: 815: (GIE = 0);
+  2436                           ;blueGyro.c: 818: {
+  2437                           ;blueGyro.c: 819: (GIE = 0);
   2438  02E1  138B               	bcf	11,7	;volatile
   2439                           
-  2440                           ;blueGyro.c: 816: Timerms=0;
+  2440                           ;blueGyro.c: 820: Timerms=0;
   2441  02E2  01FA               	clrf	_Timerms	;volatile
   2442  02E3  01FB               	clrf	_Timerms+1	;volatile
   2443                           
-  2444                           ;blueGyro.c: 817: (GIE = 1);
+  2444                           ;blueGyro.c: 821: (GIE = 1);
   2445  02E4  178B               	bsf	11,7	;volatile
   2446                           
-  2447                           ;blueGyro.c: 818: Get_Accel_Values();
+  2447                           ;blueGyro.c: 822: Get_Accel_Values();
   2448  02E5  3185  25E1  3180   	fcall	_Get_Accel_Values
   2449                           
-  2450                           ;blueGyro.c: 820: Get_HMC5883L_Values();
+  2450                           ;blueGyro.c: 824: Get_HMC5883L_Values();
   2451  02E8  318D  2572  3180   	fcall	_Get_HMC5883L_Values
   2452                           
-  2453                           ;blueGyro.c: 822: CalculateSumOfSquares();
+  2453                           ;blueGyro.c: 826: CalculateSumOfSquares();
   2454  02EB  3184  2453  3180   	fcall	_CalculateSumOfSquares
   2455                           
-  2456                           ;blueGyro.c: 823: if(FindDeltaG())
+  2456                           ;blueGyro.c: 827: if(FindDeltaG())
   2457  02EE  318C  2416  3180   	fcall	_FindDeltaG
   2458  02F1  3A00               	xorlw	0
   2459  02F2  1903               	skipnz
   2460  02F3  2B13               	goto	l3786
   2461                           
-  2462                           ;blueGyro.c: 824: {
-  2463                           ;blueGyro.c: 825: DisplayData();
+  2462                           ;blueGyro.c: 828: {
+  2463                           ;blueGyro.c: 829: DisplayData();
   2464  02F4  3186  267F  3180   	fcall	_DisplayData
   2465                           
-  2466                           ;blueGyro.c: 827: AT24CM02_BlockIdx=0;
+  2466                           ;blueGyro.c: 831: AT24CM02_BlockIdx=0;
   2467  02F7  0020               	movlb	0	; select bank0
   2468  02F8  01DD               	clrf	_AT24CM02_BlockIdx
   2469  02F9  01DE               	clrf	_AT24CM02_BlockIdx+1
   2470                           
-  2471                           ;blueGyro.c: 828: AT24CM02_BlockID++;
+  2471                           ;blueGyro.c: 832: AT24CM02_BlockID++;
   2472  02FA  3001               	movlw	1
   2473  02FB  07D9               	addwf	_AT24CM02_BlockID,f
   2474  02FC  3000               	movlw	0
@@ -2484,7 +2484,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2478  0300  3000               	movlw	0
   2479  0301  3DDC               	addwfc	_AT24CM02_BlockID+3,f
   2480                           
-  2481                           ;blueGyro.c: 829: AT24CM02_WriteBlock(AT24CM02_BlockIdx++);
+  2481                           ;blueGyro.c: 833: AT24CM02_WriteBlock(AT24CM02_BlockIdx++);
   2482  0302  085E               	movf	_AT24CM02_BlockIdx+1,w
   2483  0303  00A7               	movwf	AT24CM02_WriteBlock@block+1
   2484  0304  085D               	movf	_AT24CM02_BlockIdx,w
@@ -2496,40 +2496,40 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2490  030C  3000               	movlw	0
   2491  030D  3DDE               	addwfc	_AT24CM02_BlockIdx+1,f
   2492                           
-  2493                           ;blueGyro.c: 831: NewMode= 3;
+  2493                           ;blueGyro.c: 835: NewMode= 3;
   2494  030E  3003               	movlw	3
   2495  030F  00D4               	movwf	??_main
   2496  0310  0854               	movf	??_main,w
   2497  0311  00E5               	movwf	_NewMode	;volatile
   2498                           
-  2499                           ;blueGyro.c: 832: continue;
+  2499                           ;blueGyro.c: 836: continue;
   2500  0312  28CD               	goto	l3620
   2501  0313                     l3786:	
   2502                           
-  2503                           ;blueGyro.c: 833: }
-  2504                           ;blueGyro.c: 834: }
-  2505                           ;blueGyro.c: 837: if(Mode == 100)
+  2503                           ;blueGyro.c: 837: }
+  2504                           ;blueGyro.c: 838: }
+  2505                           ;blueGyro.c: 841: if(Mode == 100)
   2506  0313  3064               	movlw	100
   2507  0314  0020               	movlb	0	; select bank0
   2508  0315  066D               	xorwf	_Mode,w	;volatile
   2509  0316  1D03               	btfss	3,2
   2510  0317  28CD               	goto	l3620
   2511                           
-  2512                           ;blueGyro.c: 838: {
-  2513                           ;blueGyro.c: 839: Get_Accel_Values();
+  2512                           ;blueGyro.c: 842: {
+  2513                           ;blueGyro.c: 843: Get_Accel_Values();
   2514  0318  3185  25E1  3180   	fcall	_Get_Accel_Values
   2515                           
-  2516                           ;blueGyro.c: 841: Get_HMC5883L_Values();
+  2516                           ;blueGyro.c: 845: Get_HMC5883L_Values();
   2517  031B  318D  2572  3180   	fcall	_Get_HMC5883L_Values
   2518                           
-  2519                           ;blueGyro.c: 843: DisplayInfo();
+  2519                           ;blueGyro.c: 847: DisplayInfo();
   2520  031E  3183  2325  3180   	fcall	_DisplayInfo
   2521                           
-  2522                           ;blueGyro.c: 844: NewMode = 0;
+  2522                           ;blueGyro.c: 848: NewMode = 0;
   2523  0321  0020               	movlb	0	; select bank0
   2524  0322  01E5               	clrf	_NewMode	;volatile
   2525                           
-  2526                           ;blueGyro.c: 845: Mode = 0;
+  2526                           ;blueGyro.c: 849: Mode = 0;
   2527  0323  01ED               	clrf	_Mode	;volatile
   2528  0324  28CD               	goto	l3620
   2529  0325                     __end_of_main:	
@@ -2538,7 +2538,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2532  079A                     __ptext1:	
   2533 ;; *************** function _printVoltage *****************
   2534 ;; Defined at:
-  2535 ;;		line 570 in file "blueGyro.c"
+  2535 ;;		line 574 in file "blueGyro.c"
   2536 ;; Parameters:    Size  Location     Type
   2537 ;;		None
   2538 ;; Auto vars:     Size  Location     Type
@@ -2573,9 +2573,9 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2567                           ;psect for function _printVoltage
   2568  079A                     _printVoltage:	
   2569                           
-  2570                           ;blueGyro.c: 583: unsigned short value;
-  2571                           ;blueGyro.c: 584: long VDDValue;
-  2572                           ;blueGyro.c: 587: ADCON1= 0b11100000;
+  2570                           ;blueGyro.c: 587: unsigned short value;
+  2571                           ;blueGyro.c: 588: long VDDValue;
+  2572                           ;blueGyro.c: 591: ADCON1= 0b11100000;
   2573                           
   2574                           ;incstack = 0
   2575                           ; Regs used in _printVoltage: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -2583,17 +2583,17 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2577  079B  0021               	movlb	1	; select bank1
   2578  079C  009E               	movwf	30	;volatile
   2579                           
-  2580                           ;blueGyro.c: 589: FVRCON= 0b11000010;
+  2580                           ;blueGyro.c: 593: FVRCON= 0b11000010;
   2581  079D  30C2               	movlw	194
   2582  079E  0022               	movlb	2	; select bank2
   2583  079F  0097               	movwf	23	;volatile
   2584                           
-  2585                           ;blueGyro.c: 591: ADCON0= 0b01111101;
+  2585                           ;blueGyro.c: 595: ADCON0= 0b01111101;
   2586  07A0  307D               	movlw	125
   2587  07A1  0021               	movlb	1	; select bank1
   2588  07A2  009D               	movwf	29	;volatile
   2589                           
-  2590                           ;blueGyro.c: 593: _delay((unsigned long)((100)*(32000000/4000.0)));
+  2590                           ;blueGyro.c: 597: _delay((unsigned long)((100)*(32000000/4000.0)));
   2591  07A3  3005               	movlw	5
   2592  07A4  0020               	movlb	0	; select bank0
   2593  07A5  00CC               	movwf	??_printVoltage+2
@@ -2609,16 +2609,16 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2603  07AE  0BCC               	decfsz	??_printVoltage+2,f
   2604  07AF  2FAA               	goto	u3347
   2605                           
-  2606                           ;blueGyro.c: 595: ADGO=1;
+  2606                           ;blueGyro.c: 599: ADGO=1;
   2607  07B0  0021               	movlb	1	; select bank1
   2608  07B1  149D               	bsf	29,1	;volatile
   2609  07B2                     l362:	
-  2610                           ;blueGyro.c: 597: while(ADGO);
+  2610                           ;blueGyro.c: 601: while(ADGO);
   2611                           
   2612  07B2  189D               	btfsc	29,1	;volatile
   2613  07B3  2FB2               	goto	l362
   2614                           
-  2615                           ;blueGyro.c: 598: value = ADRES;
+  2615                           ;blueGyro.c: 602: value = ADRES;
   2616  07B4  081C               	movf	28,w	;volatile
   2617  07B5  0020               	movlb	0	; select bank0
   2618  07B6  00D2               	movwf	printVoltage@value+1
@@ -2627,21 +2627,21 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2621  07B9  0020               	movlb	0	; select bank0
   2622  07BA  00D1               	movwf	printVoltage@value
   2623                           
-  2624                           ;blueGyro.c: 599: cputs("VDD = ");
+  2624                           ;blueGyro.c: 603: cputs("VDD = ");
   2625  07BB  30BF               	movlw	low (STR_12| (0+32768))
   2626  07BC  00F5               	movwf	cputs@s
   2627  07BD  3085               	movlw	high (STR_12| (0+32768))
   2628  07BE  00F6               	movwf	cputs@s+1
   2629  07BF  3189  2115  3187   	fcall	_cputs
   2630                           
-  2631                           ;blueGyro.c: 600: if(value ==0)
+  2631                           ;blueGyro.c: 604: if(value ==0)
   2632  07C2  0020               	movlb	0	; select bank0
   2633  07C3  0851               	movf	printVoltage@value,w
   2634  07C4  0452               	iorwf	printVoltage@value+1,w
   2635  07C5  1D03               	btfss	3,2
   2636  07C6  2FCF               	goto	l3504
   2637                           
-  2638                           ;blueGyro.c: 601: cputs("---");
+  2638                           ;blueGyro.c: 605: cputs("---");
   2639  07C7  30D5               	movlw	low (STR_13| (0+32768))
   2640  07C8  00F5               	movwf	cputs@s
   2641  07C9  3085               	movlw	high (STR_13| (0+32768))
@@ -2650,9 +2650,9 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2644  07CE  2FF5               	goto	l3508
   2645  07CF                     l3504:	
   2646                           
-  2647                           ;blueGyro.c: 602: else
-  2648                           ;blueGyro.c: 603: {
-  2649                           ;blueGyro.c: 605: VDDValue = (long)209715 / ((long)value);
+  2647                           ;blueGyro.c: 606: else
+  2648                           ;blueGyro.c: 607: {
+  2649                           ;blueGyro.c: 609: VDDValue = (long)209715 / ((long)value);
   2650  07CF  0020               	movlb	0	; select bank0
   2651  07D0  0851               	movf	printVoltage@value,w
   2652  07D1  00F2               	movwf	___aldiv@divisor
@@ -2679,7 +2679,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2673  07E8  0872               	movf	?___aldiv,w
   2674  07E9  00CD               	movwf	printVoltage@VDDValue
   2675                           
-  2676                           ;blueGyro.c: 606: printCentiValue(VDDValue);
+  2676                           ;blueGyro.c: 610: printCentiValue(VDDValue);
   2677  07EA  0850               	movf	printVoltage@VDDValue+3,w
   2678  07EB  00B3               	movwf	printCentiValue@value+3
   2679  07EC  084F               	movf	printVoltage@VDDValue+2,w
@@ -2691,19 +2691,19 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2685  07F2  318F  2703  3187   	fcall	_printCentiValue
   2686  07F5                     l3508:	
   2687                           
-  2688                           ;blueGyro.c: 607: }
-  2689                           ;blueGyro.c: 608: cputs("V\r\n");
+  2688                           ;blueGyro.c: 611: }
+  2689                           ;blueGyro.c: 612: cputs("V\r\n");
   2690  07F5  30D1               	movlw	low (STR_14| (0+32768))
   2691  07F6  00F5               	movwf	cputs@s
   2692  07F7  3085               	movlw	high (STR_14| (0+32768))
   2693  07F8  00F6               	movwf	cputs@s+1
   2694  07F9  3189  2115         	fcall	_cputs
   2695                           
-  2696                           ;blueGyro.c: 612: ADCON0=0;
+  2696                           ;blueGyro.c: 616: ADCON0=0;
   2697  07FB  0021               	movlb	1	; select bank1
   2698  07FC  019D               	clrf	29	;volatile
   2699                           
-  2700                           ;blueGyro.c: 613: FVRCON=0;
+  2700                           ;blueGyro.c: 617: FVRCON=0;
   2701  07FD  0022               	movlb	2	; select bank2
   2702  07FE  0197               	clrf	23	;volatile
   2703  07FF  0008               	return
@@ -2713,7 +2713,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2707  0898                     __ptext2:	
   2708 ;; *************** function _printVersion *****************
   2709 ;; Defined at:
-  2710 ;;		line 564 in file "blueGyro.c"
+  2710 ;;		line 568 in file "blueGyro.c"
   2711 ;; Parameters:    Size  Location     Type
   2712 ;;		None
   2713 ;; Auto vars:     Size  Location     Type
@@ -2745,7 +2745,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   2739                           ;psect for function _printVersion
   2740  0898                     _printVersion:	
   2741                           
-  2742                           ;blueGyro.c: 566: cputs("Catapult V1.01\r\n");
+  2742                           ;blueGyro.c: 570: cputs("Catapult V1.02\r\n");
   2743                           
   2744                           ;incstack = 0
   2745                           ; Regs used in _printVersion: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -3069,7 +3069,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3063  09E9                     __ptext6:	
   3064 ;; *************** function _SaveSetting *****************
   3065 ;; Defined at:
-  3066 ;;		line 208 in file "blueGyro.c"
+  3066 ;;		line 212 in file "blueGyro.c"
   3067 ;; Parameters:    Size  Location     Type
   3068 ;;		None
   3069 ;; Auto vars:     Size  Location     Type
@@ -3103,8 +3103,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3097                           ;psect for function _SaveSetting
   3098  09E9                     _SaveSetting:	
   3099                           
-  3100                           ;blueGyro.c: 210: unsigned char idx;
-  3101                           ;blueGyro.c: 211: unsigned char * pointer = (unsigned char *) &Setting;
+  3100                           ;blueGyro.c: 214: unsigned char idx;
+  3101                           ;blueGyro.c: 215: unsigned char * pointer = (unsigned char *) &Setting;
   3102                           
   3103                           ;incstack = 0
   3104                           ; Regs used in _SaveSetting: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
@@ -3113,7 +3113,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3107  09EB  0876               	movf	??_SaveSetting,w
   3108  09EC  00F7               	movwf	SaveSetting@pointer
   3109                           
-  3110                           ;blueGyro.c: 213: for(idx=0; idx < sizeof(Setting);idx++)
+  3110                           ;blueGyro.c: 217: for(idx=0; idx < sizeof(Setting);idx++)
   3111  09ED  01F8               	clrf	SaveSetting@idx
   3112  09EE                     L3:	
   3113  09EE  3006               	movlw	6
@@ -3121,7 +3121,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3115  09F0  1803               	btfsc	3,0
   3116  09F1  0008               	return
   3117                           
-  3118                           ;blueGyro.c: 214: eeprom_write(idx, *(pointer++));
+  3118                           ;blueGyro.c: 218: eeprom_write(idx, *(pointer++));
   3119  09F2  0877               	movf	SaveSetting@pointer,w
   3120  09F3  0086               	movwf	6
   3121  09F4  0187               	clrf	7
@@ -3306,7 +3306,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3300  09B1                     __ptext9:	
   3301 ;; *************** function _LoadSetting *****************
   3302 ;; Defined at:
-  3303 ;;		line 199 in file "blueGyro.c"
+  3303 ;;		line 203 in file "blueGyro.c"
   3304 ;; Parameters:    Size  Location     Type
   3305 ;;		None
   3306 ;; Auto vars:     Size  Location     Type
@@ -3340,8 +3340,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3334                           ;psect for function _LoadSetting
   3335  09B1                     _LoadSetting:	
   3336                           
-  3337                           ;blueGyro.c: 201: unsigned char idx;
-  3338                           ;blueGyro.c: 202: unsigned char * pointer = (unsigned char *) &Setting;
+  3337                           ;blueGyro.c: 205: unsigned char idx;
+  3338                           ;blueGyro.c: 206: unsigned char * pointer = (unsigned char *) &Setting;
   3339                           
   3340                           ;incstack = 0
   3341                           ; Regs used in _LoadSetting: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
@@ -3350,7 +3350,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3344  09B3  0876               	movf	??_LoadSetting,w
   3345  09B4  00F7               	movwf	LoadSetting@pointer
   3346                           
-  3347                           ;blueGyro.c: 204: for(idx=0; idx < sizeof(Setting);idx++)
+  3347                           ;blueGyro.c: 208: for(idx=0; idx < sizeof(Setting);idx++)
   3348  09B5  01F8               	clrf	LoadSetting@idx
   3349  09B6                     L4:	
   3350  09B6  3006               	movlw	6
@@ -3358,7 +3358,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3352  09B8  1803               	btfsc	3,0
   3353  09B9  0008               	return
   3354                           
-  3355                           ;blueGyro.c: 205: *(pointer++) = eeprom_read(idx);
+  3355                           ;blueGyro.c: 209: *(pointer++) = eeprom_read(idx);
   3356  09BA  0878               	movf	LoadSetting@idx,w
   3357  09BB  3189  217D  3189   	fcall	_eeprom_read
   3358  09BE  00F6               	movwf	??_LoadSetting
@@ -3448,7 +3448,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3442  08CF                     __ptext11:	
   3443 ;; *************** function _Init1msTimer *****************
   3444 ;; Defined at:
-  3445 ;;		line 245 in file "blueGyro.c"
+  3445 ;;		line 249 in file "blueGyro.c"
   3446 ;; Parameters:    Size  Location     Type
   3447 ;;		None
   3448 ;; Auto vars:     Size  Location     Type
@@ -3480,39 +3480,39 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   3474                           ;psect for function _Init1msTimer
   3475  08CF                     _Init1msTimer:	
   3476                           
-  3477                           ;blueGyro.c: 252: T2CON=0;
+  3477                           ;blueGyro.c: 256: T2CON=0;
   3478                           
   3479                           ;incstack = 0
   3480                           ; Regs used in _Init1msTimer: [wreg+status,2]
   3481  08CF  0020               	movlb	0	; select bank0
   3482  08D0  019C               	clrf	28	;volatile
   3483                           
-  3484                           ;blueGyro.c: 253: PR2 = 125;
+  3484                           ;blueGyro.c: 257: PR2 = 125;
   3485  08D1  307D               	movlw	125
   3486  08D2  009B               	movwf	27	;volatile
   3487                           
-  3488                           ;blueGyro.c: 254: TMR2=0;
+  3488                           ;blueGyro.c: 258: TMR2=0;
   3489  08D3  019A               	clrf	26	;volatile
   3490                           
-  3491                           ;blueGyro.c: 255: T2CON= 0b00000111;
+  3491                           ;blueGyro.c: 259: T2CON= 0b00000111;
   3492  08D4  3007               	movlw	7
   3493  08D5  009C               	movwf	28	;volatile
   3494                           
-  3495                           ;blueGyro.c: 257: TMR2IF=0;
+  3495                           ;blueGyro.c: 261: TMR2IF=0;
   3496  08D6  1091               	bcf	17,1	;volatile
   3497                           
-  3498                           ;blueGyro.c: 258: Timerms=0;
+  3498                           ;blueGyro.c: 262: Timerms=0;
   3499  08D7  01FA               	clrf	_Timerms	;volatile
   3500  08D8  01FB               	clrf	_Timerms+1	;volatile
   3501                           
-  3502                           ;blueGyro.c: 259: TMR2IE=1;
+  3502                           ;blueGyro.c: 263: TMR2IE=1;
   3503  08D9  0021               	movlb	1	; select bank1
   3504  08DA  1491               	bsf	17,1	;volatile
   3505                           
-  3506                           ;blueGyro.c: 260: PEIE = 1;
+  3506                           ;blueGyro.c: 264: PEIE = 1;
   3507  08DB  170B               	bsf	11,6	;volatile
   3508                           
-  3509                           ;blueGyro.c: 261: GIE=1;
+  3509                           ;blueGyro.c: 265: GIE=1;
   3510  08DC  178B               	bsf	11,7	;volatile
   3511  08DD  0008               	return
   3512  08DE                     __end_of_Init1msTimer:	
@@ -4189,7 +4189,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4183  0C16                     __ptext18:	
   4184 ;; *************** function _FindDeltaG *****************
   4185 ;; Defined at:
-  4186 ;;		line 452 in file "blueGyro.c"
+  4186 ;;		line 456 in file "blueGyro.c"
   4187 ;; Parameters:    Size  Location     Type
   4188 ;;		None
   4189 ;; Auto vars:     Size  Location     Type
@@ -4221,9 +4221,9 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4215                           ;psect for function _FindDeltaG
   4216  0C16                     _FindDeltaG:	
   4217                           
-  4218                           ;blueGyro.c: 456: const long HG = 3072L * 3072L;
-  4219                           ;blueGyro.c: 457: const long LG = 1638L * 1638L;
-  4220                           ;blueGyro.c: 459: if(CurrentData.SumSquare > HG)
+  4218                           ;blueGyro.c: 460: const long HG = 3072L * 3072L;
+  4219                           ;blueGyro.c: 461: const long LG = 1638L * 1638L;
+  4220                           ;blueGyro.c: 463: if(CurrentData.SumSquare > HG)
   4221                           
   4222                           ;incstack = 0
   4223                           ; Regs used in _FindDeltaG: [wreg-fsr0h+pclath]
@@ -4258,12 +4258,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4252  0C31  1803               	skipnc
   4253  0C32  2C35               	goto	l3424
   4254                           
-  4255                           ;blueGyro.c: 460: return 1;
+  4255                           ;blueGyro.c: 464: return 1;
   4256  0C33  3001               	movlw	1
   4257  0C34  0008               	return
   4258  0C35                     l3424:	
   4259                           
-  4260                           ;blueGyro.c: 461: if(CurrentData.SumSquare < LG)
+  4260                           ;blueGyro.c: 465: if(CurrentData.SumSquare < LG)
   4261  0C35  3068               	movlw	low (FindDeltaG@LG| (0+32768))
   4262  0C36  0084               	movwf	4
   4263  0C37  3085               	movlw	high (FindDeltaG@LG| (0+32768))
@@ -4294,12 +4294,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4288  0C4F  1803               	skipnc
   4289  0C50  2C53               	goto	l3430
   4290                           
-  4291                           ;blueGyro.c: 462: return 1;
+  4291                           ;blueGyro.c: 466: return 1;
   4292  0C51  3001               	movlw	1
   4293  0C52  0008               	return
   4294  0C53                     l3430:	
   4295                           
-  4296                           ;blueGyro.c: 463: return 0;
+  4296                           ;blueGyro.c: 467: return 0;
   4297  0C53  3000               	movlw	0
   4298  0C54  0008               	return
   4299  0C55                     __end_of_FindDeltaG:	
@@ -4308,7 +4308,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4302  0325                     __ptext19:	
   4303 ;; *************** function _DisplayInfo *****************
   4304 ;; Defined at:
-  4305 ;;		line 469 in file "blueGyro.c"
+  4305 ;;		line 473 in file "blueGyro.c"
   4306 ;; Parameters:    Size  Location     Type
   4307 ;;		None
   4308 ;; Auto vars:     Size  Location     Type
@@ -4351,8 +4351,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4345                           ;psect for function _DisplayInfo
   4346  0325                     _DisplayInfo:	
   4347                           
-  4348                           ;blueGyro.c: 471: unsigned short Gt;
-  4349                           ;blueGyro.c: 473: const char * cy=" y=";
+  4348                           ;blueGyro.c: 475: unsigned short Gt;
+  4349                           ;blueGyro.c: 477: const char * cy=" y=";
   4350                           
   4351                           ;incstack = 0
   4352                           ; Regs used in _DisplayInfo: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -4362,23 +4362,23 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4356  0328  3085               	movlw	high (STR_2| (0+32768))
   4357  0329  00D1               	movwf	DisplayInfo@cy+1
   4358                           
-  4359                           ;blueGyro.c: 474: const char * cz=" z=";
+  4359                           ;blueGyro.c: 478: const char * cz=" z=";
   4360  032A  30DD               	movlw	low (STR_3| (0+32768))
   4361  032B  00D2               	movwf	DisplayInfo@cz
   4362  032C  3085               	movlw	high (STR_3| (0+32768))
   4363  032D  00D3               	movwf	DisplayInfo@cz+1
   4364                           
-  4365                           ;blueGyro.c: 477: CalculateSumOfSquares();
+  4365                           ;blueGyro.c: 481: CalculateSumOfSquares();
   4366  032E  3184  2453  3183   	fcall	_CalculateSumOfSquares
   4367                           
-  4368                           ;blueGyro.c: 479: cputs(" T(ms)=");
+  4368                           ;blueGyro.c: 483: cputs(" T(ms)=");
   4369  0331  30A8               	movlw	low (STR_4| (0+32768))
   4370  0332  00F5               	movwf	cputs@s
   4371  0333  3085               	movlw	high (STR_4| (0+32768))
   4372  0334  00F6               	movwf	cputs@s+1
   4373  0335  3189  2115  3183   	fcall	_cputs
   4374                           
-  4375                           ;blueGyro.c: 480: printUShort(CurrentData.Timer);
+  4375                           ;blueGyro.c: 484: printUShort(CurrentData.Timer);
   4376  0338  0021               	movlb	1	; select bank1
   4377  0339  0851               	movf	(_CurrentData+1)^(0+128),w
   4378  033A  0020               	movlb	0	; select bank0
@@ -4389,14 +4389,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4383  033F  00A9               	movwf	printUShort@value
   4384  0340  3189  2129  3183   	fcall	_printUShort
   4385                           
-  4386                           ;blueGyro.c: 481: cputs(" G x=");
+  4386                           ;blueGyro.c: 485: cputs(" G x=");
   4387  0343  30C6               	movlw	low (STR_5| (0+32768))
   4388  0344  00F5               	movwf	cputs@s
   4389  0345  3085               	movlw	high (STR_5| (0+32768))
   4390  0346  00F6               	movwf	cputs@s+1
   4391  0347  3189  2115  3183   	fcall	_cputs
   4392                           
-  4393                           ;blueGyro.c: 482: printGForce(CurrentData.Gx);
+  4393                           ;blueGyro.c: 486: printGForce(CurrentData.Gx);
   4394  034A  0021               	movlb	1	; select bank1
   4395  034B  0852               	movf	(_CurrentData^(0+128)+2),w
   4396  034C  0020               	movlb	0	; select bank0
@@ -4412,7 +4412,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4406  0356  00CD               	movwf	printGForce@RawG+3
   4407  0357  318C  2496  3183   	fcall	_printGForce
   4408                           
-  4409                           ;blueGyro.c: 483: cputs(cy);
+  4409                           ;blueGyro.c: 487: cputs(cy);
   4410  035A  0020               	movlb	0	; select bank0
   4411  035B  0851               	movf	DisplayInfo@cy+1,w
   4412  035C  00F6               	movwf	cputs@s+1
@@ -4420,7 +4420,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4414  035E  00F5               	movwf	cputs@s
   4415  035F  3189  2115  3183   	fcall	_cputs
   4416                           
-  4417                           ;blueGyro.c: 484: printGForce(CurrentData.Gy);
+  4417                           ;blueGyro.c: 488: printGForce(CurrentData.Gy);
   4418  0362  0021               	movlb	1	; select bank1
   4419  0363  0854               	movf	(_CurrentData^(0+128)+4),w
   4420  0364  0020               	movlb	0	; select bank0
@@ -4436,7 +4436,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4430  036E  00CD               	movwf	printGForce@RawG+3
   4431  036F  318C  2496  3183   	fcall	_printGForce
   4432                           
-  4433                           ;blueGyro.c: 485: cputs(cz);
+  4433                           ;blueGyro.c: 489: cputs(cz);
   4434  0372  0020               	movlb	0	; select bank0
   4435  0373  0853               	movf	DisplayInfo@cz+1,w
   4436  0374  00F6               	movwf	cputs@s+1
@@ -4444,7 +4444,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4438  0376  00F5               	movwf	cputs@s
   4439  0377  3189  2115  3183   	fcall	_cputs
   4440                           
-  4441                           ;blueGyro.c: 486: printGForce(CurrentData.Gz);
+  4441                           ;blueGyro.c: 490: printGForce(CurrentData.Gz);
   4442  037A  0021               	movlb	1	; select bank1
   4443  037B  0856               	movf	(_CurrentData^(0+128)+6),w
   4444  037C  0020               	movlb	0	; select bank0
@@ -4460,7 +4460,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4454  0386  00CD               	movwf	printGForce@RawG+3
   4455  0387  318C  2496  3183   	fcall	_printGForce
   4456                           
-  4457                           ;blueGyro.c: 488: Gt = isqrt(CurrentData.SumSquare);
+  4457                           ;blueGyro.c: 492: Gt = isqrt(CurrentData.SumSquare);
   4458  038A  3016               	movlw	22
   4459  038B  3ED0               	addlw	(low (_CurrentData| 0))& (0+255)
   4460  038C  0086               	movwf	6
@@ -4480,14 +4480,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4474  039C  0872               	movf	?_isqrt,w
   4475  039D  00CE               	movwf	DisplayInfo@Gt
   4476                           
-  4477                           ;blueGyro.c: 489: cputs(" Gt=");
+  4477                           ;blueGyro.c: 493: cputs(" Gt=");
   4478  039E  30CC               	movlw	low (STR_6| (0+32768))
   4479  039F  00F5               	movwf	cputs@s
   4480  03A0  3085               	movlw	high (STR_6| (0+32768))
   4481  03A1  00F6               	movwf	cputs@s+1
   4482  03A2  3189  2115  3183   	fcall	_cputs
   4483                           
-  4484                           ;blueGyro.c: 490: printGForce(Gt);
+  4484                           ;blueGyro.c: 494: printGForce(Gt);
   4485  03A5  0020               	movlb	0	; select bank0
   4486  03A6  084E               	movf	DisplayInfo@Gt,w
   4487  03A7  00CA               	movwf	printGForce@RawG
@@ -4497,14 +4497,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4491  03AB  01CD               	clrf	printGForce@RawG+3
   4492  03AC  318C  2496  3183   	fcall	_printGForce
   4493                           
-  4494                           ;blueGyro.c: 492: cputs(" Gyro x=");
+  4494                           ;blueGyro.c: 496: cputs(" Gyro x=");
   4495  03AF  3097               	movlw	low (STR_7| (0+32768))
   4496  03B0  00F5               	movwf	cputs@s
   4497  03B1  3085               	movlw	high (STR_7| (0+32768))
   4498  03B2  00F6               	movwf	cputs@s+1
   4499  03B3  3189  2115  3183   	fcall	_cputs
   4500                           
-  4501                           ;blueGyro.c: 493: printGyro(GetGyroWithOffset(CurrentData.Gyrox,Setting.GyroX));
+  4501                           ;blueGyro.c: 497: printGyro(GetGyroWithOffset(CurrentData.Gyrox,Setting.GyroX));
   4502  03B6  0021               	movlb	1	; select bank1
   4503  03B7  085B               	movf	((_CurrentData+1)^(0+128)+10),w
   4504  03B8  00F3               	movwf	GetGyroWithOffset@value+1
@@ -4528,7 +4528,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4522  03CC  00CD               	movwf	printGyro@RawG+3
   4523  03CD  318C  24DA  3183   	fcall	_printGyro
   4524                           
-  4525                           ;blueGyro.c: 494: cputs(cy);
+  4525                           ;blueGyro.c: 498: cputs(cy);
   4526  03D0  0020               	movlb	0	; select bank0
   4527  03D1  0851               	movf	DisplayInfo@cy+1,w
   4528  03D2  00F6               	movwf	cputs@s+1
@@ -4536,7 +4536,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4530  03D4  00F5               	movwf	cputs@s
   4531  03D5  3189  2115  3183   	fcall	_cputs
   4532                           
-  4533                           ;blueGyro.c: 495: printGyro(GetGyroWithOffset(CurrentData.Gyroy,Setting.GyroY));
+  4533                           ;blueGyro.c: 499: printGyro(GetGyroWithOffset(CurrentData.Gyroy,Setting.GyroY));
   4534  03D8  0021               	movlb	1	; select bank1
   4535  03D9  085D               	movf	((_CurrentData+1)^(0+128)+12),w
   4536  03DA  00F3               	movwf	GetGyroWithOffset@value+1
@@ -4560,7 +4560,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4554  03EE  00CD               	movwf	printGyro@RawG+3
   4555  03EF  318C  24DA  3183   	fcall	_printGyro
   4556                           
-  4557                           ;blueGyro.c: 496: cputs(cz);
+  4557                           ;blueGyro.c: 500: cputs(cz);
   4558  03F2  0020               	movlb	0	; select bank0
   4559  03F3  0853               	movf	DisplayInfo@cz+1,w
   4560  03F4  00F6               	movwf	cputs@s+1
@@ -4568,7 +4568,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4562  03F6  00F5               	movwf	cputs@s
   4563  03F7  3189  2115  3183   	fcall	_cputs
   4564                           
-  4565                           ;blueGyro.c: 497: printGyro(GetGyroWithOffset(CurrentData.Gyroz,Setting.GyroZ));
+  4565                           ;blueGyro.c: 501: printGyro(GetGyroWithOffset(CurrentData.Gyroz,Setting.GyroZ));
   4566  03FA  0021               	movlb	1	; select bank1
   4567  03FB  085F               	movf	((_CurrentData+1)^(0+128)+14),w
   4568  03FC  00F3               	movwf	GetGyroWithOffset@value+1
@@ -4592,14 +4592,14 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4586  0410  00CD               	movwf	printGyro@RawG+3
   4587  0411  318C  24DA  3183   	fcall	_printGyro
   4588                           
-  4589                           ;blueGyro.c: 500: cputs(" Mag x=");
+  4589                           ;blueGyro.c: 504: cputs(" Mag x=");
   4590  0414  30B0               	movlw	low (STR_8| (0+32768))
   4591  0415  00F5               	movwf	cputs@s
   4592  0416  3085               	movlw	high (STR_8| (0+32768))
   4593  0417  00F6               	movwf	cputs@s+1
   4594  0418  3189  2115  3183   	fcall	_cputs
   4595                           
-  4596                           ;blueGyro.c: 501: printValue(CurrentData.MagX);
+  4596                           ;blueGyro.c: 505: printValue(CurrentData.MagX);
   4597  041B  0021               	movlb	1	; select bank1
   4598  041C  0861               	movf	((_CurrentData+1)^(0+128)+16),w
   4599  041D  0020               	movlb	0	; select bank0
@@ -4610,7 +4610,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4604  0422  00B0               	movwf	printValue@value
   4605  0423  3189  213D  3183   	fcall	_printValue
   4606                           
-  4607                           ;blueGyro.c: 502: cputs(cy);
+  4607                           ;blueGyro.c: 506: cputs(cy);
   4608  0426  0020               	movlb	0	; select bank0
   4609  0427  0851               	movf	DisplayInfo@cy+1,w
   4610  0428  00F6               	movwf	cputs@s+1
@@ -4618,7 +4618,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4612  042A  00F5               	movwf	cputs@s
   4613  042B  3189  2115  3183   	fcall	_cputs
   4614                           
-  4615                           ;blueGyro.c: 503: printValue(CurrentData.MagY);
+  4615                           ;blueGyro.c: 507: printValue(CurrentData.MagY);
   4616  042E  0021               	movlb	1	; select bank1
   4617  042F  0863               	movf	((_CurrentData+1)^(0+128)+18),w
   4618  0430  0020               	movlb	0	; select bank0
@@ -4629,7 +4629,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4623  0435  00B0               	movwf	printValue@value
   4624  0436  3189  213D  3183   	fcall	_printValue
   4625                           
-  4626                           ;blueGyro.c: 504: cputs(cz);
+  4626                           ;blueGyro.c: 508: cputs(cz);
   4627  0439  0020               	movlb	0	; select bank0
   4628  043A  0853               	movf	DisplayInfo@cz+1,w
   4629  043B  00F6               	movwf	cputs@s+1
@@ -4637,7 +4637,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4631  043D  00F5               	movwf	cputs@s
   4632  043E  3189  2115  3183   	fcall	_cputs
   4633                           
-  4634                           ;blueGyro.c: 505: printValue(CurrentData.MagZ);
+  4634                           ;blueGyro.c: 509: printValue(CurrentData.MagZ);
   4635  0441  0021               	movlb	1	; select bank1
   4636  0442  0865               	movf	((_CurrentData+1)^(0+128)+20),w
   4637  0443  0020               	movlb	0	; select bank0
@@ -4648,7 +4648,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4642  0448  00B0               	movwf	printValue@value
   4643  0449  3189  213D  3183   	fcall	_printValue
   4644                           
-  4645                           ;blueGyro.c: 507: cputs("\r\n");
+  4645                           ;blueGyro.c: 511: cputs("\r\n");
   4646  044C  3087               	movlw	low ((STR_15+10)| (0+32768))
   4647  044D  00F5               	movwf	cputs@s
   4648  044E  3085               	movlw	high ((STR_15+10)| (0+32768))
@@ -4661,7 +4661,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4655  093D                     __ptext20:	
   4656 ;; *************** function _printValue *****************
   4657 ;; Defined at:
-  4658 ;;		line 338 in file "blueGyro.c"
+  4658 ;;		line 342 in file "blueGyro.c"
   4659 ;; Parameters:    Size  Location     Type
   4660 ;;  value           2   16[BANK0 ] short 
   4661 ;; Auto vars:     Size  Location     Type
@@ -4694,8 +4694,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4688                           ;psect for function _printValue
   4689  093D                     _printValue:	
   4690                           
-  4691                           ;blueGyro.c: 340: char buffer[16];
-  4692                           ;blueGyro.c: 341: itoa(buffer,value,10);
+  4691                           ;blueGyro.c: 344: char buffer[16];
+  4692                           ;blueGyro.c: 345: itoa(buffer,value,10);
   4693                           
   4694                           ;incstack = 0
   4695                           ; Regs used in _printValue: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -4711,7 +4711,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4705  0946  3032               	movlw	(low (printValue@buffer| 0))& (0+255)
   4706  0947  318A  2247  3189   	fcall	_itoa
   4707                           
-  4708                           ;blueGyro.c: 342: cputs(buffer);
+  4708                           ;blueGyro.c: 346: cputs(buffer);
   4709  094A  3032               	movlw	low printValue@buffer
   4710  094B  00F5               	movwf	cputs@s
   4711  094C  3000               	movlw	high printValue@buffer
@@ -4724,7 +4724,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4718  0929                     __ptext21:	
   4719 ;; *************** function _printUShort *****************
   4720 ;; Defined at:
-  4721 ;;		line 417 in file "blueGyro.c"
+  4721 ;;		line 421 in file "blueGyro.c"
   4722 ;; Parameters:    Size  Location     Type
   4723 ;;  value           2    9[BANK0 ] unsigned short 
   4724 ;; Auto vars:     Size  Location     Type
@@ -4757,8 +4757,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4751                           ;psect for function _printUShort
   4752  0929                     _printUShort:	
   4753                           
-  4754                           ;blueGyro.c: 419: char buffer[16];
-  4755                           ;blueGyro.c: 420: utoa(buffer,value,10); cputs(buffer);
+  4754                           ;blueGyro.c: 423: char buffer[16];
+  4755                           ;blueGyro.c: 424: utoa(buffer,value,10); cputs(buffer);
   4756                           
   4757                           ;incstack = 0
   4758                           ; Regs used in _printUShort: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -4785,7 +4785,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4779  0CDA                     __ptext22:	
   4780 ;; *************** function _printGyro *****************
   4781 ;; Defined at:
-  4782 ;;		line 406 in file "blueGyro.c"
+  4782 ;;		line 410 in file "blueGyro.c"
   4783 ;; Parameters:    Size  Location     Type
   4784 ;;  RawG            4   42[BANK0 ] long 
   4785 ;; Auto vars:     Size  Location     Type
@@ -4819,7 +4819,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4813                           ;psect for function _printGyro
   4814  0CDA                     _printGyro:	
   4815                           
-  4816                           ;blueGyro.c: 412: RawG *= 625L;
+  4816                           ;blueGyro.c: 416: RawG *= 625L;
   4817                           
   4818                           ;incstack = 0
   4819                           ; Regs used in _printGyro: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -4851,7 +4851,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4845  0CF5  0872               	movf	?___lmul,w
   4846  0CF6  00CA               	movwf	printGyro@RawG
   4847                           
-  4848                           ;blueGyro.c: 413: RawG /= 1024L;
+  4848                           ;blueGyro.c: 417: RawG /= 1024L;
   4849  0CF7  3000               	movlw	0
   4850  0CF8  00F5               	movwf	___aldiv@divisor+3
   4851  0CF9  3000               	movlw	0
@@ -4879,7 +4879,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4873  0D11  0872               	movf	?___aldiv,w
   4874  0D12  00CA               	movwf	printGyro@RawG
   4875                           
-  4876                           ;blueGyro.c: 414: printDeciValue(RawG);
+  4876                           ;blueGyro.c: 418: printDeciValue(RawG);
   4877  0D13  084D               	movf	printGyro@RawG+3,w
   4878  0D14  00B3               	movwf	printDeciValue@value+3
   4879  0D15  084C               	movf	printGyro@RawG+2,w
@@ -4896,7 +4896,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4890  0E94                     __ptext23:	
   4891 ;; *************** function _printDeciValue *****************
   4892 ;; Defined at:
-  4893 ;;		line 371 in file "blueGyro.c"
+  4893 ;;		line 375 in file "blueGyro.c"
   4894 ;; Parameters:    Size  Location     Type
   4895 ;;  value           4   16[BANK0 ] long 
   4896 ;; Auto vars:     Size  Location     Type
@@ -4935,10 +4935,10 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4929                           ;psect for function _printDeciValue
   4930  0E94                     _printDeciValue:	
   4931                           
-  4932                           ;blueGyro.c: 373: char buffer[16];
-  4933                           ;blueGyro.c: 374: long _lvalue;
-  4934                           ;blueGyro.c: 375: unsigned short T;
-  4935                           ;blueGyro.c: 377: if(value <0)
+  4932                           ;blueGyro.c: 377: char buffer[16];
+  4933                           ;blueGyro.c: 378: long _lvalue;
+  4934                           ;blueGyro.c: 379: unsigned short T;
+  4935                           ;blueGyro.c: 381: if(value <0)
   4936                           
   4937                           ;incstack = 0
   4938                           ; Regs used in _printDeciValue: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -4946,12 +4946,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4940  0E95  1FB3               	btfss	printDeciValue@value+3,7
   4941  0E96  2EAC               	goto	l3104
   4942                           
-  4943                           ;blueGyro.c: 378: {
-  4944                           ;blueGyro.c: 379: putch('-');
+  4943                           ;blueGyro.c: 382: {
+  4944                           ;blueGyro.c: 383: putch('-');
   4945  0E97  302D               	movlw	45
   4946  0E98  318A  2206  318E   	fcall	_putch
   4947                           
-  4948                           ;blueGyro.c: 380: _lvalue = (-value);
+  4948                           ;blueGyro.c: 384: _lvalue = (-value);
   4949  0E9B  0020               	movlb	0	; select bank0
   4950  0E9C  0930               	comf	printDeciValue@value,w
   4951  0E9D  00C6               	movwf	printDeciValue@_lvalue
@@ -4969,12 +4969,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4963  0EA9  1903               	skipnz
   4964  0EAA  0AC9               	incf	printDeciValue@_lvalue+3,f
   4965                           
-  4966                           ;blueGyro.c: 381: }
+  4966                           ;blueGyro.c: 385: }
   4967  0EAB  2EB4               	goto	l3106
   4968  0EAC                     l3104:	
   4969                           
-  4970                           ;blueGyro.c: 382: else
-  4971                           ;blueGyro.c: 383: _lvalue = value;
+  4970                           ;blueGyro.c: 386: else
+  4971                           ;blueGyro.c: 387: _lvalue = value;
   4972  0EAC  0833               	movf	printDeciValue@value+3,w
   4973  0EAD  00C9               	movwf	printDeciValue@_lvalue+3
   4974  0EAE  0832               	movf	printDeciValue@value+2,w
@@ -4985,7 +4985,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   4979  0EB3  00C6               	movwf	printDeciValue@_lvalue
   4980  0EB4                     l3106:	
   4981                           
-  4982                           ;blueGyro.c: 385: itoa(buffer,(short) (_lvalue /10),10);cputs(buffer);
+  4982                           ;blueGyro.c: 389: itoa(buffer,(short) (_lvalue /10),10);cputs(buffer);
   4983  0EB4  3000               	movlw	0
   4984  0EB5  00F5               	movwf	___aldiv@divisor+3
   4985  0EB6  3000               	movlw	0
@@ -5020,11 +5020,11 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5014  0ED7  00F6               	movwf	cputs@s+1
   5015  0ED8  3189  2115  318E   	fcall	_cputs
   5016                           
-  5017                           ;blueGyro.c: 386: putch('.');
+  5017                           ;blueGyro.c: 390: putch('.');
   5018  0EDB  302E               	movlw	46
   5019  0EDC  318A  2206  318E   	fcall	_putch
   5020                           
-  5021                           ;blueGyro.c: 388: T = (unsigned short) _lvalue % 10;
+  5021                           ;blueGyro.c: 392: T = (unsigned short) _lvalue % 10;
   5022  0EDF  300A               	movlw	10
   5023  0EE0  00F2               	movwf	___lwmod@divisor
   5024  0EE1  3000               	movlw	0
@@ -5041,7 +5041,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5035  0EEE  0872               	movf	?___lwmod,w
   5036  0EEF  00C4               	movwf	printDeciValue@T
   5037                           
-  5038                           ;blueGyro.c: 390: utoa(buffer,T,10);cputs(buffer);
+  5038                           ;blueGyro.c: 394: utoa(buffer,T,10);cputs(buffer);
   5039  0EF0  0845               	movf	printDeciValue@T+1,w
   5040  0EF1  00A1               	movwf	utoa@val+1
   5041  0EF2  0844               	movf	printDeciValue@T,w
@@ -5064,7 +5064,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5058  0C96                     __ptext24:	
   5059 ;; *************** function _printGForce *****************
   5060 ;; Defined at:
-  5061 ;;		line 396 in file "blueGyro.c"
+  5061 ;;		line 400 in file "blueGyro.c"
   5062 ;; Parameters:    Size  Location     Type
   5063 ;;  RawG            4   42[BANK0 ] long 
   5064 ;; Auto vars:     Size  Location     Type
@@ -5098,7 +5098,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5092                           ;psect for function _printGForce
   5093  0C96                     _printGForce:	
   5094                           
-  5095                           ;blueGyro.c: 401: RawG *= 50L;
+  5095                           ;blueGyro.c: 405: RawG *= 50L;
   5096                           
   5097                           ;incstack = 0
   5098                           ; Regs used in _printGForce: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -5130,7 +5130,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5124  0CB1  0872               	movf	?___lmul,w
   5125  0CB2  00CA               	movwf	printGForce@RawG
   5126                           
-  5127                           ;blueGyro.c: 402: RawG /= 1024L;
+  5127                           ;blueGyro.c: 406: RawG /= 1024L;
   5128  0CB3  3000               	movlw	0
   5129  0CB4  00F5               	movwf	___aldiv@divisor+3
   5130  0CB5  3000               	movlw	0
@@ -5158,7 +5158,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5152  0CCD  0872               	movf	?___aldiv,w
   5153  0CCE  00CA               	movwf	printGForce@RawG
   5154                           
-  5155                           ;blueGyro.c: 403: printCentiValue(RawG);
+  5155                           ;blueGyro.c: 407: printCentiValue(RawG);
   5156  0CCF  084D               	movf	printGForce@RawG+3,w
   5157  0CD0  00B3               	movwf	printCentiValue@value+3
   5158  0CD1  084C               	movf	printGForce@RawG+2,w
@@ -5175,7 +5175,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5169  0F03                     __ptext25:	
   5170 ;; *************** function _printCentiValue *****************
   5171 ;; Defined at:
-  5172 ;;		line 346 in file "blueGyro.c"
+  5172 ;;		line 350 in file "blueGyro.c"
   5173 ;; Parameters:    Size  Location     Type
   5174 ;;  value           4   16[BANK0 ] long 
   5175 ;; Auto vars:     Size  Location     Type
@@ -5215,10 +5215,10 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5209                           ;psect for function _printCentiValue
   5210  0F03                     _printCentiValue:	
   5211                           
-  5212                           ;blueGyro.c: 348: char buffer[16];
-  5213                           ;blueGyro.c: 349: long _lvalue;
-  5214                           ;blueGyro.c: 350: unsigned short T;
-  5215                           ;blueGyro.c: 352: if(value <0)
+  5212                           ;blueGyro.c: 352: char buffer[16];
+  5213                           ;blueGyro.c: 353: long _lvalue;
+  5214                           ;blueGyro.c: 354: unsigned short T;
+  5215                           ;blueGyro.c: 356: if(value <0)
   5216                           
   5217                           ;incstack = 0
   5218                           ; Regs used in _printCentiValue: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -5226,12 +5226,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5220  0F04  1FB3               	btfss	printCentiValue@value+3,7
   5221  0F05  2F1B               	goto	l3082
   5222                           
-  5223                           ;blueGyro.c: 353: {
-  5224                           ;blueGyro.c: 354: putch('-');
+  5223                           ;blueGyro.c: 357: {
+  5224                           ;blueGyro.c: 358: putch('-');
   5225  0F06  302D               	movlw	45
   5226  0F07  318A  2206  318F   	fcall	_putch
   5227                           
-  5228                           ;blueGyro.c: 355: _lvalue = (-value);
+  5228                           ;blueGyro.c: 359: _lvalue = (-value);
   5229  0F0A  0020               	movlb	0	; select bank0
   5230  0F0B  0930               	comf	printCentiValue@value,w
   5231  0F0C  00C6               	movwf	printCentiValue@_lvalue
@@ -5249,12 +5249,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5243  0F18  1903               	skipnz
   5244  0F19  0AC9               	incf	printCentiValue@_lvalue+3,f
   5245                           
-  5246                           ;blueGyro.c: 356: }
+  5246                           ;blueGyro.c: 360: }
   5247  0F1A  2F23               	goto	l3084
   5248  0F1B                     l3082:	
   5249                           
-  5250                           ;blueGyro.c: 357: else
-  5251                           ;blueGyro.c: 358: _lvalue = value;
+  5250                           ;blueGyro.c: 361: else
+  5251                           ;blueGyro.c: 362: _lvalue = value;
   5252  0F1B  0833               	movf	printCentiValue@value+3,w
   5253  0F1C  00C9               	movwf	printCentiValue@_lvalue+3
   5254  0F1D  0832               	movf	printCentiValue@value+2,w
@@ -5265,7 +5265,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5259  0F22  00C6               	movwf	printCentiValue@_lvalue
   5260  0F23                     l3084:	
   5261                           
-  5262                           ;blueGyro.c: 360: itoa(buffer,(short) (_lvalue /100),10);cputs(buffer);
+  5262                           ;blueGyro.c: 364: itoa(buffer,(short) (_lvalue /100),10);cputs(buffer);
   5263  0F23  3000               	movlw	0
   5264  0F24  00F5               	movwf	___aldiv@divisor+3
   5265  0F25  3000               	movlw	0
@@ -5300,11 +5300,11 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5294  0F46  00F6               	movwf	cputs@s+1
   5295  0F47  3189  2115  318F   	fcall	_cputs
   5296                           
-  5297                           ;blueGyro.c: 361: putch('.');
+  5297                           ;blueGyro.c: 365: putch('.');
   5298  0F4A  302E               	movlw	46
   5299  0F4B  318A  2206  318F   	fcall	_putch
   5300                           
-  5301                           ;blueGyro.c: 363: T = (unsigned short) _lvalue % 100;
+  5301                           ;blueGyro.c: 367: T = (unsigned short) _lvalue % 100;
   5302  0F4E  3064               	movlw	100
   5303  0F4F  00F2               	movwf	___lwmod@divisor
   5304  0F50  3000               	movlw	0
@@ -5321,7 +5321,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5315  0F5D  0872               	movf	?___lwmod,w
   5316  0F5E  00C4               	movwf	printCentiValue@T
   5317                           
-  5318                           ;blueGyro.c: 365: if(T < 10)
+  5318                           ;blueGyro.c: 369: if(T < 10)
   5319  0F5F  3000               	movlw	0
   5320  0F60  0245               	subwf	printCentiValue@T+1,w
   5321  0F61  300A               	movlw	10
@@ -5330,12 +5330,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5324  0F64  1803               	skipnc
   5325  0F65  2F6A               	goto	l303
   5326                           
-  5327                           ;blueGyro.c: 366: putch('0');
+  5327                           ;blueGyro.c: 370: putch('0');
   5328  0F66  3030               	movlw	48
   5329  0F67  318A  2206  318F   	fcall	_putch
   5330  0F6A                     l303:	
   5331                           
-  5332                           ;blueGyro.c: 367: utoa(buffer,T,10);cputs(buffer);
+  5332                           ;blueGyro.c: 371: utoa(buffer,T,10);cputs(buffer);
   5333  0F6A  0020               	movlb	0	; select bank0
   5334  0F6B  0845               	movf	printCentiValue@T+1,w
   5335  0F6C  00A1               	movwf	utoa@val+1
@@ -5979,7 +5979,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   5973  0712                     __ptext31:	
   5974 ;; *************** function _isqrt *****************
   5975 ;; Defined at:
-  5976 ;;		line 326 in file "blueGyro.c"
+  5976 ;;		line 330 in file "blueGyro.c"
   5977 ;; Parameters:    Size  Location     Type
   5978 ;;  val             4    2[COMMON] unsigned long 
   5979 ;; Auto vars:     Size  Location     Type
@@ -6014,7 +6014,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6008                           ;psect for function _isqrt
   6009  0712                     _isqrt:	
   6010                           
-  6011                           ;blueGyro.c: 327: unsigned long temp, g=0, b = 0x8000, bshft = 15;
+  6011                           ;blueGyro.c: 331: unsigned long temp, g=0, b = 0x8000, bshft = 15;
   6012                           
   6013                           ;incstack = 0
   6014                           ; Regs used in _isqrt: [wreg+status,2+status,0]
@@ -6044,10 +6044,10 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6038  0729  300F               	movlw	15
   6039  072A  00B0               	movwf	isqrt@bshft
   6040  072B                     l3238:	
-  6041                           ;blueGyro.c: 328: do {
+  6041                           ;blueGyro.c: 332: do {
   6042                           
   6043                           
-  6044                           ;blueGyro.c: 329: if (val >= (temp = (((g << 1) + b)<<bshft--))) {
+  6044                           ;blueGyro.c: 333: if (val >= (temp = (((g << 1) + b)<<bshft--))) {
   6045  072B  0838               	movf	isqrt@b,w
   6046  072C  00A0               	movwf	??_isqrt
   6047  072D  0839               	movf	isqrt@b+1,w
@@ -6130,7 +6130,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6124  0776  1C03               	skipc
   6125  0777  2F88               	goto	l3242
   6126                           
-  6127                           ;blueGyro.c: 330: g += b;
+  6127                           ;blueGyro.c: 334: g += b;
   6128  0778  0838               	movf	isqrt@b,w
   6129  0779  07B4               	addwf	isqrt@g,f
   6130  077A  0839               	movf	isqrt@b+1,w
@@ -6140,7 +6140,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6134  077E  083B               	movf	isqrt@b+3,w
   6135  077F  3DB7               	addwfc	isqrt@g+3,f
   6136                           
-  6137                           ;blueGyro.c: 331: val -= temp;
+  6137                           ;blueGyro.c: 335: val -= temp;
   6138  0780  082C               	movf	isqrt@temp,w
   6139  0781  02F2               	subwf	isqrt@val,f
   6140  0782  082D               	movf	isqrt@temp+1,w
@@ -6151,8 +6151,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6145  0787  3BF5               	subwfb	isqrt@val+3,f
   6146  0788                     l3242:	
   6147                           
-  6148                           ;blueGyro.c: 332: }
-  6149                           ;blueGyro.c: 333: } while (b >>= 1);
+  6148                           ;blueGyro.c: 336: }
+  6149                           ;blueGyro.c: 337: } while (b >>= 1);
   6150  0788  3001               	movlw	1
   6151  0789                     u2815:	
   6152  0789  36BB               	lsrf	isqrt@b+3,f
@@ -6168,7 +6168,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6162  0793  1D03               	skipz
   6163  0794  2F2B               	goto	l3238
   6164                           
-  6165                           ;blueGyro.c: 334: return g;
+  6165                           ;blueGyro.c: 338: return g;
   6166  0795  0835               	movf	isqrt@g+1,w
   6167  0796  00F3               	movwf	?_isqrt+1
   6168  0797  0834               	movf	isqrt@g,w
@@ -6180,7 +6180,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6174  0453                     __ptext32:	
   6175 ;; *************** function _CalculateSumOfSquares *****************
   6176 ;; Defined at:
-  6177 ;;		line 426 in file "blueGyro.c"
+  6177 ;;		line 430 in file "blueGyro.c"
   6178 ;; Parameters:    Size  Location     Type
   6179 ;;		None
   6180 ;; Auto vars:     Size  Location     Type
@@ -6216,9 +6216,9 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6210                           ;psect for function _CalculateSumOfSquares
   6211  0453                     _CalculateSumOfSquares:	
   6212                           
-  6213                           ;blueGyro.c: 429: unsigned long GxSquare, GySquare, GzSquare;
-  6214                           ;blueGyro.c: 430: long temp;
-  6215                           ;blueGyro.c: 438: GxSquare = (unsigned long) (CurrentData.Gx<0 ? (-CurrentData.Gx) : Cur
+  6213                           ;blueGyro.c: 433: unsigned long GxSquare, GySquare, GzSquare;
+  6214                           ;blueGyro.c: 434: long temp;
+  6215                           ;blueGyro.c: 442: GxSquare = (unsigned long) (CurrentData.Gx<0 ? (-CurrentData.Gx) : Cur
       +                          rentData.Gx);
   6216                           
   6217                           ;incstack = 0
@@ -6261,7 +6261,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6254  0474  00B4               	movwf	CalculateSumOfSquares@GxSquare+2
   6255  0475  00B5               	movwf	CalculateSumOfSquares@GxSquare+3
   6256                           
-  6257                           ;blueGyro.c: 439: GySquare = (unsigned long) (CurrentData.Gy<0 ? (-CurrentData.Gy) : Cur
+  6257                           ;blueGyro.c: 443: GySquare = (unsigned long) (CurrentData.Gy<0 ? (-CurrentData.Gy) : Cur
       +                          rentData.Gy);
   6258  0476  0021               	movlb	1	; select bank1
   6259  0477  1BD5               	btfsc	((_CurrentData+1)^(0+128)+4),7
@@ -6301,7 +6301,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6293  0497  00B8               	movwf	CalculateSumOfSquares@GySquare+2
   6294  0498  00B9               	movwf	CalculateSumOfSquares@GySquare+3
   6295                           
-  6296                           ;blueGyro.c: 440: GzSquare = (unsigned long) (CurrentData.Gz<0 ? (-CurrentData.Gz) : Cur
+  6296                           ;blueGyro.c: 444: GzSquare = (unsigned long) (CurrentData.Gz<0 ? (-CurrentData.Gz) : Cur
       +                          rentData.Gz);
   6297  0499  0021               	movlb	1	; select bank1
   6298  049A  1BD7               	btfsc	((_CurrentData+1)^(0+128)+6),7
@@ -6341,7 +6341,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6332  04BA  00BC               	movwf	CalculateSumOfSquares@GzSquare+2
   6333  04BB  00BD               	movwf	CalculateSumOfSquares@GzSquare+3
   6334                           
-  6335                           ;blueGyro.c: 444: GxSquare *= GxSquare;
+  6335                           ;blueGyro.c: 448: GxSquare *= GxSquare;
   6336  04BC  0835               	movf	CalculateSumOfSquares@GxSquare+3,w
   6337  04BD  00F5               	movwf	___lmul@multiplier+3
   6338  04BE  0834               	movf	CalculateSumOfSquares@GxSquare+2,w
@@ -6369,7 +6369,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6360  04D6  0872               	movf	?___lmul,w
   6361  04D7  00B2               	movwf	CalculateSumOfSquares@GxSquare
   6362                           
-  6363                           ;blueGyro.c: 445: GySquare *= GySquare;
+  6363                           ;blueGyro.c: 449: GySquare *= GySquare;
   6364  04D8  0839               	movf	CalculateSumOfSquares@GySquare+3,w
   6365  04D9  00F5               	movwf	___lmul@multiplier+3
   6366  04DA  0838               	movf	CalculateSumOfSquares@GySquare+2,w
@@ -6397,7 +6397,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6388  04F2  0872               	movf	?___lmul,w
   6389  04F3  00B6               	movwf	CalculateSumOfSquares@GySquare
   6390                           
-  6391                           ;blueGyro.c: 446: GzSquare *= GzSquare;
+  6391                           ;blueGyro.c: 450: GzSquare *= GzSquare;
   6392  04F4  083D               	movf	CalculateSumOfSquares@GzSquare+3,w
   6393  04F5  00F5               	movwf	___lmul@multiplier+3
   6394  04F6  083C               	movf	CalculateSumOfSquares@GzSquare+2,w
@@ -6425,7 +6425,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6416  050E  0872               	movf	?___lmul,w
   6417  050F  00BA               	movwf	CalculateSumOfSquares@GzSquare
   6418                           
-  6419                           ;blueGyro.c: 447: CurrentData.SumSquare = GxSquare + GySquare + GzSquare;
+  6419                           ;blueGyro.c: 451: CurrentData.SumSquare = GxSquare + GySquare + GzSquare;
   6420  0510  083A               	movf	CalculateSumOfSquares@GzSquare,w
   6421  0511  00A4               	movwf	??_CalculateSumOfSquares
   6422  0512  083B               	movf	CalculateSumOfSquares@GzSquare+1,w
@@ -6573,7 +6573,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6564  067F                     __ptext34:	
   6565 ;; *************** function _DisplayData *****************
   6566 ;; Defined at:
-  6567 ;;		line 532 in file "blueGyro.c"
+  6567 ;;		line 536 in file "blueGyro.c"
   6568 ;; Parameters:    Size  Location     Type
   6569 ;;		None
   6570 ;; Auto vars:     Size  Location     Type
@@ -6607,7 +6607,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6598                           ;psect for function _DisplayData
   6599  067F                     _DisplayData:	
   6600                           
-  6601                           ;blueGyro.c: 543: putHex(CurrentData.Timer);
+  6601                           ;blueGyro.c: 547: putHex(CurrentData.Timer);
   6602                           
   6603                           ;incstack = 0
   6604                           ; Regs used in _DisplayData: [wreg-fsr1h+status,2+status,0+pclath+cstack]
@@ -6621,7 +6621,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6612  0686  00A0               	movwf	putHex@value
   6613  0687  318A  2290  3186   	fcall	_putHex
   6614                           
-  6615                           ;blueGyro.c: 544: putHex(CurrentData.Gx);
+  6615                           ;blueGyro.c: 548: putHex(CurrentData.Gx);
   6616  068A  0021               	movlb	1	; select bank1
   6617  068B  0853               	movf	((_CurrentData+1)^(0+128)+2),w
   6618  068C  0020               	movlb	0	; select bank0
@@ -6632,7 +6632,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6623  0691  00A0               	movwf	putHex@value
   6624  0692  318A  2290  3186   	fcall	_putHex
   6625                           
-  6626                           ;blueGyro.c: 545: putHex(CurrentData.Gy);
+  6626                           ;blueGyro.c: 549: putHex(CurrentData.Gy);
   6627  0695  0021               	movlb	1	; select bank1
   6628  0696  0855               	movf	((_CurrentData+1)^(0+128)+4),w
   6629  0697  0020               	movlb	0	; select bank0
@@ -6643,7 +6643,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6634  069C  00A0               	movwf	putHex@value
   6635  069D  318A  2290  3186   	fcall	_putHex
   6636                           
-  6637                           ;blueGyro.c: 546: putHex(CurrentData.Gz);
+  6637                           ;blueGyro.c: 550: putHex(CurrentData.Gz);
   6638  06A0  0021               	movlb	1	; select bank1
   6639  06A1  0857               	movf	((_CurrentData+1)^(0+128)+6),w
   6640  06A2  0020               	movlb	0	; select bank0
@@ -6654,7 +6654,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6645  06A7  00A0               	movwf	putHex@value
   6646  06A8  318A  2290  3186   	fcall	_putHex
   6647                           
-  6648                           ;blueGyro.c: 550: putHex(GetGyroWithOffset(CurrentData.Gyrox,Setting.GyroX));
+  6648                           ;blueGyro.c: 554: putHex(GetGyroWithOffset(CurrentData.Gyrox,Setting.GyroX));
   6649  06AB  0021               	movlb	1	; select bank1
   6650  06AC  085B               	movf	((_CurrentData+1)^(0+128)+10),w
   6651  06AD  00F3               	movwf	GetGyroWithOffset@value+1
@@ -6673,7 +6673,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6664  06BC  00A0               	movwf	putHex@value
   6665  06BD  318A  2290  3186   	fcall	_putHex
   6666                           
-  6667                           ;blueGyro.c: 551: putHex(GetGyroWithOffset(CurrentData.Gyroy,Setting.GyroY));
+  6667                           ;blueGyro.c: 555: putHex(GetGyroWithOffset(CurrentData.Gyroy,Setting.GyroY));
   6668  06C0  0021               	movlb	1	; select bank1
   6669  06C1  085D               	movf	((_CurrentData+1)^(0+128)+12),w
   6670  06C2  00F3               	movwf	GetGyroWithOffset@value+1
@@ -6692,7 +6692,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6683  06D1  00A0               	movwf	putHex@value
   6684  06D2  318A  2290  3186   	fcall	_putHex
   6685                           
-  6686                           ;blueGyro.c: 552: putHex(GetGyroWithOffset(CurrentData.Gyroz,Setting.GyroZ));
+  6686                           ;blueGyro.c: 556: putHex(GetGyroWithOffset(CurrentData.Gyroz,Setting.GyroZ));
   6687  06D5  0021               	movlb	1	; select bank1
   6688  06D6  085F               	movf	((_CurrentData+1)^(0+128)+14),w
   6689  06D7  00F3               	movwf	GetGyroWithOffset@value+1
@@ -6711,7 +6711,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6702  06E6  00A0               	movwf	putHex@value
   6703  06E7  318A  2290  3186   	fcall	_putHex
   6704                           
-  6705                           ;blueGyro.c: 555: putHex(CurrentData.MagX);
+  6705                           ;blueGyro.c: 559: putHex(CurrentData.MagX);
   6706  06EA  0021               	movlb	1	; select bank1
   6707  06EB  0861               	movf	((_CurrentData+1)^(0+128)+16),w
   6708  06EC  0020               	movlb	0	; select bank0
@@ -6722,7 +6722,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6713  06F1  00A0               	movwf	putHex@value
   6714  06F2  318A  2290  3186   	fcall	_putHex
   6715                           
-  6716                           ;blueGyro.c: 556: putHex(CurrentData.MagY);
+  6716                           ;blueGyro.c: 560: putHex(CurrentData.MagY);
   6717  06F5  0021               	movlb	1	; select bank1
   6718  06F6  0863               	movf	((_CurrentData+1)^(0+128)+18),w
   6719  06F7  0020               	movlb	0	; select bank0
@@ -6733,7 +6733,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6724  06FC  00A0               	movwf	putHex@value
   6725  06FD  318A  2290  3186   	fcall	_putHex
   6726                           
-  6727                           ;blueGyro.c: 557: putHex(CurrentData.MagZ);
+  6727                           ;blueGyro.c: 561: putHex(CurrentData.MagZ);
   6728  0700  0021               	movlb	1	; select bank1
   6729  0701  0865               	movf	((_CurrentData+1)^(0+128)+20),w
   6730  0702  0020               	movlb	0	; select bank0
@@ -6744,7 +6744,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6735  0707  00A0               	movwf	putHex@value
   6736  0708  318A  2290  3186   	fcall	_putHex
   6737                           
-  6738                           ;blueGyro.c: 559: cputs("\r\n");
+  6738                           ;blueGyro.c: 563: cputs("\r\n");
   6739  070B  3087               	movlw	low ((STR_15+10)| (0+32768))
   6740  070C  00F5               	movwf	cputs@s
   6741  070D  3085               	movlw	high ((STR_15+10)| (0+32768))
@@ -6757,7 +6757,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6748  0A90                     __ptext35:	
   6749 ;; *************** function _putHex *****************
   6750 ;; Defined at:
-  6751 ;;		line 523 in file "blueGyro.c"
+  6751 ;;		line 527 in file "blueGyro.c"
   6752 ;; Parameters:    Size  Location     Type
   6753 ;;  value           2    0[BANK0 ] unsigned short 
   6754 ;; Auto vars:     Size  Location     Type
@@ -6789,7 +6789,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6780                           ;psect for function _putHex
   6781  0A90                     _putHex:	
   6782                           
-  6783                           ;blueGyro.c: 526: putHexNibble(value >> 12);
+  6783                           ;blueGyro.c: 530: putHexNibble(value >> 12);
   6784                           
   6785                           ;incstack = 0
   6786                           ; Regs used in _putHex: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
@@ -6805,12 +6805,12 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6796  0A99  0822               	movf	??_putHex,w
   6797  0A9A  3188  20EF  318A   	fcall	_putHexNibble
   6798                           
-  6799                           ;blueGyro.c: 527: putHexNibble(value >> 8);
+  6799                           ;blueGyro.c: 531: putHexNibble(value >> 8);
   6800  0A9D  0020               	movlb	0	; select bank0
   6801  0A9E  0821               	movf	putHex@value+1,w
   6802  0A9F  3188  20EF  318A   	fcall	_putHexNibble
   6803                           
-  6804                           ;blueGyro.c: 528: putHexNibble(value >> 4);
+  6804                           ;blueGyro.c: 532: putHexNibble(value >> 4);
   6805  0AA2  0020               	movlb	0	; select bank0
   6806  0AA3  0821               	movf	putHex@value+1,w
   6807  0AA4  00A3               	movwf	??_putHex+1
@@ -6825,7 +6825,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6816  0AAC  0822               	movf	??_putHex,w
   6817  0AAD  3188  20EF  318A   	fcall	_putHexNibble
   6818                           
-  6819                           ;blueGyro.c: 529: putHexNibble(value);
+  6819                           ;blueGyro.c: 533: putHexNibble(value);
   6820  0AB0  0020               	movlb	0	; select bank0
   6821  0AB1  0820               	movf	putHex@value,w
   6822  0AB2  3188  20EF         	fcall	_putHexNibble
@@ -6836,7 +6836,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6827  08EF                     __ptext36:	
   6828 ;; *************** function _putHexNibble *****************
   6829 ;; Defined at:
-  6830 ;;		line 510 in file "blueGyro.c"
+  6830 ;;		line 514 in file "blueGyro.c"
   6831 ;; Parameters:    Size  Location     Type
   6832 ;;  value           1    wreg     unsigned char 
   6833 ;; Auto vars:     Size  Location     Type
@@ -6873,32 +6873,32 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6864                           ;putHexNibble@value stored from wreg
   6865  08EF  00F6               	movwf	putHexNibble@value
   6866                           
-  6867                           ;blueGyro.c: 512: value &= 0xf;
+  6867                           ;blueGyro.c: 516: value &= 0xf;
   6868  08F0  300F               	movlw	15
   6869  08F1  00F5               	movwf	??_putHexNibble
   6870  08F2  0875               	movf	??_putHexNibble,w
   6871  08F3  05F6               	andwf	putHexNibble@value,f
   6872                           
-  6873                           ;blueGyro.c: 513: if(value > 9)
+  6873                           ;blueGyro.c: 517: if(value > 9)
   6874  08F4  300A               	movlw	10
   6875  08F5  0276               	subwf	putHexNibble@value,w
   6876  08F6  1C03               	skipc
   6877  08F7  28FA               	goto	l3122
   6878                           
-  6879                           ;blueGyro.c: 514: value += 'A' - 10;
+  6879                           ;blueGyro.c: 518: value += 'A' - 10;
   6880  08F8  3037               	movlw	55
   6881  08F9  28FB               	goto	L5
   6882  08FA                     l3122:	
   6883                           
-  6884                           ;blueGyro.c: 515: else
-  6885                           ;blueGyro.c: 516: value += '0';
+  6884                           ;blueGyro.c: 519: else
+  6885                           ;blueGyro.c: 520: value += '0';
   6886  08FA  3030               	movlw	48
   6887  08FB                     L5:	
   6888  08FB  00F5               	movwf	??_putHexNibble
   6889  08FC  0875               	movf	??_putHexNibble,w
   6890  08FD  07F6               	addwf	putHexNibble@value,f
   6891                           
-  6892                           ;blueGyro.c: 517: putch(value);
+  6892                           ;blueGyro.c: 521: putch(value);
   6893  08FE  0876               	movf	putHexNibble@value,w
   6894  08FF  318A  2206         	fcall	_putch
   6895  0901  0008               	return
@@ -6982,7 +6982,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   6973  0A06                     __ptext38:	
   6974 ;; *************** function _putch *****************
   6975 ;; Defined at:
-  6976 ;;		line 301 in file "blueGyro.c"
+  6976 ;;		line 305 in file "blueGyro.c"
   6977 ;; Parameters:    Size  Location     Type
   6978 ;;  char_out        1    wreg     unsigned char 
   6979 ;; Auto vars:     Size  Location     Type
@@ -7023,8 +7023,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7014                           ;putch@char_out stored from wreg
   7015  0A06  00F3               	movwf	putch@char_out
   7016                           
-  7017                           ;blueGyro.c: 303: unsigned char temp;
-  7018                           ;blueGyro.c: 306: temp = InFiFo + 1;
+  7017                           ;blueGyro.c: 307: unsigned char temp;
+  7018                           ;blueGyro.c: 310: temp = InFiFo + 1;
   7019  0A07  0020               	movlb	0	; select bank0
   7020  0A08  0864               	movf	_InFiFo,w	;volatile
   7021  0A09  3E01               	addlw	1
@@ -7032,22 +7032,22 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7023  0A0B  0872               	movf	??_putch,w
   7024  0A0C  00F4               	movwf	putch@temp
   7025                           
-  7026                           ;blueGyro.c: 307: if(temp >= 32)
+  7026                           ;blueGyro.c: 311: if(temp >= 32)
   7027  0A0D  3020               	movlw	32
   7028  0A0E  0274               	subwf	putch@temp,w
   7029  0A0F  1803               	btfsc	3,0
   7030                           
-  7031                           ;blueGyro.c: 308: temp = 0;
+  7031                           ;blueGyro.c: 312: temp = 0;
   7032  0A10  01F4               	clrf	putch@temp
   7033  0A11                     l2934:	
-  7034                           ;blueGyro.c: 311: while(temp == OutFiFo);
+  7034                           ;blueGyro.c: 315: while(temp == OutFiFo);
   7035                           
   7036  0A11  0874               	movf	putch@temp,w
   7037  0A12  0666               	xorwf	_OutFiFo,w	;volatile
   7038  0A13  1903               	skipnz
   7039  0A14  2A11               	goto	l2934
   7040                           
-  7041                           ;blueGyro.c: 314: SerialBuffer[InFiFo]=char_out;
+  7041                           ;blueGyro.c: 318: SerialBuffer[InFiFo]=char_out;
   7042  0A15  0873               	movf	putch@char_out,w
   7043  0A16  00F2               	movwf	??_putch
   7044  0A17  0864               	movf	_InFiFo,w
@@ -7057,13 +7057,13 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7048  0A1B  0872               	movf	??_putch,w
   7049  0A1C  0081               	movwf	1
   7050                           
-  7051                           ;blueGyro.c: 316: InFiFo= temp;
+  7051                           ;blueGyro.c: 320: InFiFo= temp;
   7052  0A1D  0874               	movf	putch@temp,w
   7053  0A1E  00F2               	movwf	??_putch
   7054  0A1F  0872               	movf	??_putch,w
   7055  0A20  00E4               	movwf	_InFiFo	;volatile
   7056                           
-  7057                           ;blueGyro.c: 318: TXIE=1;
+  7057                           ;blueGyro.c: 322: TXIE=1;
   7058  0A21  0021               	movlb	1	; select bank1
   7059  0A22  1611               	bsf	17,4	;volatile
   7060  0A23  0008               	return
@@ -7073,7 +7073,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7064  0D1E                     __ptext39:	
   7065 ;; *************** function _GetGyroWithOffset *****************
   7066 ;; Defined at:
-  7067 ;;		line 218 in file "blueGyro.c"
+  7067 ;;		line 222 in file "blueGyro.c"
   7068 ;; Parameters:    Size  Location     Type
   7069 ;;  value           2    2[COMMON] short 
   7070 ;;  Goffset         2    4[COMMON] short 
@@ -7107,8 +7107,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7098                           ;psect for function _GetGyroWithOffset
   7099  0D1E                     _GetGyroWithOffset:	
   7100                           
-  7101                           ;blueGyro.c: 220: short _temp;
-  7102                           ;blueGyro.c: 222: if(value > 0)
+  7101                           ;blueGyro.c: 224: short _temp;
+  7102                           ;blueGyro.c: 226: if(value > 0)
   7103                           
   7104                           ;incstack = 0
   7105                           ; Regs used in _GetGyroWithOffset: [wreg+status,2+status,0]
@@ -7125,13 +7125,13 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7116  0D27  1C03               	skipc
   7117  0D28  2D42               	goto	l3222
   7118                           
-  7119                           ;blueGyro.c: 223: {
-  7120                           ;blueGyro.c: 224: if(Goffset <0)
+  7119                           ;blueGyro.c: 227: {
+  7120                           ;blueGyro.c: 228: if(Goffset <0)
   7121  0D29  1FF5               	btfss	GetGyroWithOffset@Goffset+1,7
   7122  0D2A  2D64               	goto	l3232
   7123                           
-  7124                           ;blueGyro.c: 225: {
-  7125                           ;blueGyro.c: 226: _temp = 32767 +Goffset;
+  7124                           ;blueGyro.c: 229: {
+  7125                           ;blueGyro.c: 230: _temp = 32767 +Goffset;
   7126  0D2B  0874               	movf	GetGyroWithOffset@Goffset,w
   7127  0D2C  3EFF               	addlw	255
   7128  0D2D  00F8               	movwf	GetGyroWithOffset@_temp
@@ -7139,7 +7139,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7130  0D2F  3D75               	addwfc	GetGyroWithOffset@Goffset+1,w
   7131  0D30  00F9               	movwf	GetGyroWithOffset@_temp+1
   7132                           
-  7133                           ;blueGyro.c: 227: if(value >= _temp)
+  7133                           ;blueGyro.c: 231: if(value >= _temp)
   7134  0D31  0873               	movf	GetGyroWithOffset@value+1,w
   7135  0D32  3A80               	xorlw	128
   7136  0D33  00F6               	movwf	??_GetGyroWithOffset
@@ -7154,20 +7154,20 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7145  0D3B  1C03               	skipc
   7146  0D3C  2D64               	goto	l3232
   7147                           
-  7148                           ;blueGyro.c: 228: return 32767;
+  7148                           ;blueGyro.c: 232: return 32767;
   7149  0D3D  30FF               	movlw	255
   7150  0D3E  00F2               	movwf	?_GetGyroWithOffset
   7151  0D3F  307F               	movlw	127
   7152  0D40  00F3               	movwf	?_GetGyroWithOffset+1
   7153  0D41  0008               	return
   7154  0D42                     l3222:	
-  7155                           ;blueGyro.c: 229: }
-  7156                           ;blueGyro.c: 230: }
+  7155                           ;blueGyro.c: 233: }
+  7156                           ;blueGyro.c: 234: }
   7157                           
   7158                           
-  7159                           ;blueGyro.c: 231: else
-  7160                           ;blueGyro.c: 232: {
-  7161                           ;blueGyro.c: 233: if(Goffset >0)
+  7159                           ;blueGyro.c: 235: else
+  7160                           ;blueGyro.c: 236: {
+  7161                           ;blueGyro.c: 237: if(Goffset >0)
   7162  0D42  0875               	movf	GetGyroWithOffset@Goffset+1,w
   7163  0D43  3A80               	xorlw	128
   7164  0D44  00F6               	movwf	??_GetGyroWithOffset
@@ -7181,8 +7181,8 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7172  0D4B  1C03               	skipc
   7173  0D4C  2D64               	goto	l3232
   7174                           
-  7175                           ;blueGyro.c: 234: {
-  7176                           ;blueGyro.c: 235: _temp = -32768 + Goffset;
+  7175                           ;blueGyro.c: 238: {
+  7176                           ;blueGyro.c: 239: _temp = -32768 + Goffset;
   7177  0D4D  0874               	movf	GetGyroWithOffset@Goffset,w
   7178  0D4E  3E00               	addlw	0
   7179  0D4F  00F8               	movwf	GetGyroWithOffset@_temp
@@ -7190,7 +7190,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7181  0D51  3D75               	addwfc	GetGyroWithOffset@Goffset+1,w
   7182  0D52  00F9               	movwf	GetGyroWithOffset@_temp+1
   7183                           
-  7184                           ;blueGyro.c: 236: if(value <= _temp)
+  7184                           ;blueGyro.c: 240: if(value <= _temp)
   7185  0D53  0879               	movf	GetGyroWithOffset@_temp+1,w
   7186  0D54  3A80               	xorlw	128
   7187  0D55  00F6               	movwf	??_GetGyroWithOffset
@@ -7205,7 +7205,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7196  0D5D  1C03               	skipc
   7197  0D5E  2D64               	goto	l3232
   7198                           
-  7199                           ;blueGyro.c: 237: return -32768;
+  7199                           ;blueGyro.c: 241: return -32768;
   7200  0D5F  3000               	movlw	0
   7201  0D60  00F2               	movwf	?_GetGyroWithOffset
   7202  0D61  3080               	movlw	128
@@ -7213,9 +7213,9 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   7204  0D63  0008               	return
   7205  0D64                     l3232:	
   7206                           
-  7207                           ;blueGyro.c: 238: }
-  7208                           ;blueGyro.c: 239: }
-  7209                           ;blueGyro.c: 240: return(value - Goffset);
+  7207                           ;blueGyro.c: 242: }
+  7208                           ;blueGyro.c: 243: }
+  7209                           ;blueGyro.c: 244: return(value - Goffset);
   7210  0D64  0974               	comf	GetGyroWithOffset@Goffset,w
   7211  0D65  00F6               	movwf	??_GetGyroWithOffset
   7212  0D66  0975               	comf	GetGyroWithOffset@Goffset+1,w
@@ -8215,7 +8215,7 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   8204  0004                     __pintentry:	
   8205 ;; *************** function _isr *****************
   8206 ;; Defined at:
-  8207 ;;		line 270 in file "blueGyro.c"
+  8207 ;;		line 274 in file "blueGyro.c"
   8208 ;; Parameters:    Size  Location     Type
   8209 ;;		None
   8210 ;; Auto vars:     Size  Location     Type
@@ -8252,25 +8252,25 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   8241  0007  087F               	movf	127,w
   8242  0008  00F1               	movwf	??_isr+1
   8243                           
-  8244                           ;blueGyro.c: 272: if(TXIE)
+  8244                           ;blueGyro.c: 276: if(TXIE)
   8245  0009  0021               	movlb	1	; select bank1
   8246  000A  1E11               	btfss	17,4	;volatile
   8247  000B  282B               	goto	i1l275
   8248                           
-  8249                           ;blueGyro.c: 273: if(TXIF)
+  8249                           ;blueGyro.c: 277: if(TXIF)
   8250  000C  0020               	movlb	0	; select bank0
   8251  000D  1E11               	btfss	17,4	;volatile
   8252  000E  282B               	goto	i1l275
   8253                           
-  8254                           ;blueGyro.c: 274: {
-  8255                           ;blueGyro.c: 276: if(InFiFo != OutFiFo)
+  8254                           ;blueGyro.c: 278: {
+  8255                           ;blueGyro.c: 280: if(InFiFo != OutFiFo)
   8256  000F  0864               	movf	_InFiFo,w	;volatile
   8257  0010  0666               	xorwf	_OutFiFo,w	;volatile
   8258  0011  1903               	skipnz
   8259  0012  2825               	goto	i1l2616
   8260                           
-  8261                           ;blueGyro.c: 277: {
-  8262                           ;blueGyro.c: 278: TXREG= SerialBuffer[OutFiFo];
+  8261                           ;blueGyro.c: 281: {
+  8262                           ;blueGyro.c: 282: TXREG= SerialBuffer[OutFiFo];
   8263  0013  0866               	movf	_OutFiFo,w
   8264  0014  3EA0               	addlw	(low (_SerialBuffer| 0))& (0+255)
   8265  0015  0086               	movwf	6
@@ -8279,50 +8279,50 @@ Microchip Technology Omniscient Code Generator v1.35 (Free mode) build 201507080
   8268  0018  0023               	movlb	3	; select bank3
   8269  0019  009A               	movwf	26	;volatile
   8270                           
-  8271                           ;blueGyro.c: 279: OutFiFo++;
+  8271                           ;blueGyro.c: 283: OutFiFo++;
   8272  001A  3001               	movlw	1
   8273  001B  00F0               	movwf	??_isr
   8274  001C  0870               	movf	??_isr,w
   8275  001D  0020               	movlb	0	; select bank0
   8276  001E  07E6               	addwf	_OutFiFo,f	;volatile
   8277                           
-  8278                           ;blueGyro.c: 280: if(OutFiFo >= 32)
+  8278                           ;blueGyro.c: 284: if(OutFiFo >= 32)
   8279  001F  3020               	movlw	32
   8280  0020  0266               	subwf	_OutFiFo,w	;volatile
   8281  0021  1C03               	skipc
   8282  0022  282B               	goto	i1l275
   8283                           
-  8284                           ;blueGyro.c: 281: OutFiFo=0;
+  8284                           ;blueGyro.c: 285: OutFiFo=0;
   8285  0023  01E6               	clrf	_OutFiFo	;volatile
   8286                           
-  8287                           ;blueGyro.c: 282: }
+  8287                           ;blueGyro.c: 286: }
   8288  0024  282B               	goto	i1l275
   8289  0025                     i1l2616:	
   8290                           
-  8291                           ;blueGyro.c: 283: else
-  8292                           ;blueGyro.c: 284: if(OutFiFo == InFiFo)
+  8291                           ;blueGyro.c: 287: else
+  8292                           ;blueGyro.c: 288: if(OutFiFo == InFiFo)
   8293  0025  0866               	movf	_OutFiFo,w	;volatile
   8294  0026  0664               	xorwf	_InFiFo,w	;volatile
   8295  0027  1D03               	skipz
   8296  0028  282B               	goto	i1l275
   8297                           
-  8298                           ;blueGyro.c: 285: {
-  8299                           ;blueGyro.c: 288: TXIE=0;
+  8298                           ;blueGyro.c: 289: {
+  8299                           ;blueGyro.c: 292: TXIE=0;
   8300  0029  0021               	movlb	1	; select bank1
   8301  002A  1211               	bcf	17,4	;volatile
   8302  002B                     i1l275:	
   8303                           
-  8304                           ;blueGyro.c: 289: }
-  8305                           ;blueGyro.c: 290: }
-  8306                           ;blueGyro.c: 293: if(TMR2IF){
+  8304                           ;blueGyro.c: 293: }
+  8305                           ;blueGyro.c: 294: }
+  8306                           ;blueGyro.c: 297: if(TMR2IF){
   8307  002B  0020               	movlb	0	; select bank0
   8308  002C  1C91               	btfss	17,1	;volatile
   8309  002D  2833               	goto	i1l282
   8310                           
-  8311                           ;blueGyro.c: 294: TMR2IF=0;
+  8311                           ;blueGyro.c: 298: TMR2IF=0;
   8312  002E  1091               	bcf	17,1	;volatile
   8313                           
-  8314                           ;blueGyro.c: 295: Timerms++;
+  8314                           ;blueGyro.c: 299: Timerms++;
   8315  002F  3001               	movlw	1
   8316  0030  07FA               	addwf	_Timerms,f	;volatile
   8317  0031  3000               	movlw	0
@@ -9113,7 +9113,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.35 build -356382666 
-Symbol Table                                                                                   Wed Oct 12 18:35:23 2016
+Symbol Table                                                                                   Wed Oct 12 19:35:44 2016
 
                        ?_Init1msTimer 0070                         ?_LDRAMReadI2C 0020  
                    LDRAMWriteI2C@Data 0022                           __CFG_CP$OFF 0000  

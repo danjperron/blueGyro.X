@@ -35,49 +35,49 @@
 [v _AT24CM02_WriteBlock AT24CM02_WriteBlock `(v  1 e 0 0 ]
 "36
 [v _AT24CM02_ReadBlock AT24CM02_ReadBlock `(v  1 e 0 0 ]
-"199 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"203 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _LoadSetting LoadSetting `(v  1 e 0 0 ]
-"208
+"212
 [v _SaveSetting SaveSetting `(v  1 e 0 0 ]
-"218
+"222
 [v _GetGyroWithOffset GetGyroWithOffset `(s  1 e 2 0 ]
-"245
+"249
 [v _Init1msTimer Init1msTimer `(v  1 e 0 0 ]
-"270
+"274
 [v _isr isr `II(v  1 s 0 isr ]
-"301
+"305
 [v _putch putch `(v  1 e 0 0 ]
-"326
+"330
 [v _isqrt isqrt `(us  1 s 2 isqrt ]
-"338
+"342
 [v _printValue printValue `(v  1 e 0 0 ]
-"346
+"350
 [v _printCentiValue printCentiValue `(v  1 e 0 0 ]
-"371
+"375
 [v _printDeciValue printDeciValue `(v  1 e 0 0 ]
-"396
+"400
 [v _printGForce printGForce `(v  1 e 0 0 ]
-"406
+"410
 [v _printGyro printGyro `(v  1 e 0 0 ]
-"417
+"421
 [v _printUShort printUShort `(v  1 e 0 0 ]
-"426
+"430
 [v _CalculateSumOfSquares CalculateSumOfSquares `(v  1 e 0 0 ]
-"452
+"456
 [v _FindDeltaG FindDeltaG `(uc  1 e 1 0 ]
-"469
+"473
 [v _DisplayInfo DisplayInfo `(v  1 e 0 0 ]
-"510
+"514
 [v _putHexNibble putHexNibble `(v  1 e 0 0 ]
-"523
+"527
 [v _putHex putHex `(v  1 e 0 0 ]
-"532
+"536
 [v _DisplayData DisplayData `(v  1 e 0 0 ]
-"564
+"568
 [v _printVersion printVersion `(v  1 e 0 0 ]
-"570
+"574
 [v _printVoltage printVoltage `(v  1 e 0 0 ]
-"617
+"621
 [v _main main `(i  1 e 2 0 ]
 "9 /Users/daniel/MPLABXProjects/blueGyro.X/HMC5883L.c
 [v _Setup_HMC5883L Setup_HMC5883L `(v  1 e 0 0 ]
@@ -250,52 +250,52 @@
 "16
 [v _AT24CM02_A0A7 AT24CM02_A0A7 `uc  1 e 1 0 ]
 [s S137 . 6 `s 1 GyroX 2 0 `s 1 GyroY 2 2 `s 1 GyroZ 2 4 ]
-"154 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"158 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _Setting Setting `S137  1 e 6 0 ]
-"158
+"162
 [v _Timerms Timerms `VNEus  1 e 2 0 ]
-"159
+"163
 [v _TimerCrash TimerCrash `VEus  1 e 2 0 ]
-"164
+"168
 [v _AccGyroX AccGyroX `l  1 e 4 0 ]
-"165
+"169
 [v _AccGyroY AccGyroY `l  1 e 4 0 ]
-"166
+"170
 [v _AccGyroZ AccGyroZ `l  1 e 4 0 ]
-"167
+"171
 [v _AccGyroCount AccGyroCount `s  1 e 2 0 ]
-"188
+"192
 [v _Mode Mode `VEuc  1 e 1 0 ]
-"189
-[v _NewMode NewMode `VEuc  1 e 1 0 ]
 "193
+[v _NewMode NewMode `VEuc  1 e 1 0 ]
+"197
 [v _InFiFo InFiFo `VEuc  1 e 1 0 ]
 [v _OutFiFo OutFiFo `VEuc  1 e 1 0 ]
-"194
+"198
 [v _SerialBuffer SerialBuffer `[32]uc  1 e 32 0 ]
 [s S92 . 32 `us 1 Timer 2 0 `s 1 Gx 2 2 `s 1 Gy 2 4 `s 1 Gz 2 6 `s 1 temp 2 8 `s 1 Gyrox 2 10 `s 1 Gyroy 2 12 `s 1 Gyroz 2 14 `s 1 MagX 2 16 `s 1 MagY 2 18 `s 1 MagZ 2 20 `ul 1 SumSquare 4 22 `l 1 BlockID 4 26 `s 1 spare 2 30 ]
 "141 /Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
 [v _CurrentData CurrentData `S92  1 e 32 0 ]
-"617 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"621 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _main main `(i  1 e 2 0 ]
 {
-"619
+"623
 [v main@UserKey UserKey `uc  1 a 1 56 ]
-"849
+"853
 } 0
-"570
+"574
 [v _printVoltage printVoltage `(v  1 e 0 0 ]
 {
-"584
+"588
 [v printVoltage@VDDValue VDDValue `l  1 a 4 45 ]
-"583
+"587
 [v printVoltage@value value `us  1 a 2 49 ]
-"614
+"618
 } 0
-"564
+"568
 [v _printVersion printVersion `(v  1 e 0 0 ]
 {
-"567
+"571
 } 0
 "12 /Users/daniel/MPLABXProjects/blueGyro.X/i2cMaster.c
 [v _i2c_Init i2c_Init `(v  1 e 0 0 ]
@@ -318,14 +318,14 @@
 {
 "16
 } 0
-"208 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"212 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _SaveSetting SaveSetting `(v  1 e 0 0 ]
 {
-"210
+"214
 [v SaveSetting@idx idx `uc  1 a 1 8 ]
-"211
-[v SaveSetting@pointer pointer `*.4uc  1 a 1 7 ]
 "215
+[v SaveSetting@pointer pointer `*.4uc  1 a 1 7 ]
+"219
 } 0
 "6 /Applications/microchip/xc8/v1.35/sources/pic/eewrite.c
 [v _eeprom_write eeprom_write `(v  1 e 0 0 ]
@@ -343,14 +343,14 @@
 [v MPU6050_Test_I2C@Data Data `uc  1 a 1 5 ]
 "23
 } 0
-"199 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"203 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _LoadSetting LoadSetting `(v  1 e 0 0 ]
 {
-"201
+"205
 [v LoadSetting@idx idx `uc  1 a 1 8 ]
-"202
-[v LoadSetting@pointer pointer `*.4uc  1 a 1 7 ]
 "206
+[v LoadSetting@pointer pointer `*.4uc  1 a 1 7 ]
+"210
 } 0
 "6 /Applications/microchip/xc8/v1.35/sources/pic/eeread.c
 [v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
@@ -361,10 +361,10 @@
 [v eeprom_read@addr addr `uc  1 a 1 5 ]
 "12
 } 0
-"245 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"249 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _Init1msTimer Init1msTimer `(v  1 e 0 0 ]
 {
-"262
+"266
 } 0
 "164 /Users/daniel/MPLABXProjects/blueGyro.X/MPU6050.c
 [v _GotInt_MPU6050 GotInt_MPU6050 `(uc  1 e 1 0 ]
@@ -423,81 +423,81 @@
 [v LDByteSetAddress@i2cSlaveAddress i2cSlaveAddress `uc  1 a 1 7 ]
 "105
 } 0
-"452 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"456 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _FindDeltaG FindDeltaG `(uc  1 e 1 0 ]
 {
-"456
+"460
 [v FindDeltaG@HG HG `DCCl  1 s 4 HG ]
-"457
+"461
 [v FindDeltaG@LG LG `DCCl  1 s 4 LG ]
-"465
-} 0
 "469
+} 0
+"473
 [v _DisplayInfo DisplayInfo `(v  1 e 0 0 ]
 {
-"474
+"478
 [v DisplayInfo@cz cz `*.25DCCuc  1 a 2 50 ]
-"473
+"477
 [v DisplayInfo@cy cy `*.25DCCuc  1 a 2 48 ]
-"471
+"475
 [v DisplayInfo@Gt Gt `us  1 a 2 46 ]
-"508
+"512
 } 0
-"338
+"342
 [v _printValue printValue `(v  1 e 0 0 ]
 {
-"340
+"344
 [v printValue@buffer buffer `[16]uc  1 a 16 18 ]
-"338
+"342
 [v printValue@value value `s  1 p 2 16 ]
-"343
+"347
 } 0
-"417
+"421
 [v _printUShort printUShort `(v  1 e 0 0 ]
 {
-"419
+"423
 [v printUShort@buffer buffer `[16]uc  1 a 16 11 ]
-"417
-[v printUShort@value value `us  1 p 2 9 ]
 "421
+[v printUShort@value value `us  1 p 2 9 ]
+"425
 } 0
-"406
+"410
 [v _printGyro printGyro `(v  1 e 0 0 ]
 {
 [v printGyro@RawG RawG `l  1 p 4 42 ]
-"415
+"419
 } 0
-"371
+"375
 [v _printDeciValue printDeciValue `(v  1 e 0 0 ]
 {
-"373
+"377
 [v printDeciValue@buffer buffer `[16]uc  1 a 16 20 ]
-"374
+"378
 [v printDeciValue@_lvalue _lvalue `l  1 a 4 38 ]
-"375
+"379
 [v printDeciValue@T T `us  1 a 2 36 ]
-"371
+"375
 [v printDeciValue@value value `l  1 p 4 16 ]
-"392
-} 0
 "396
+} 0
+"400
 [v _printGForce printGForce `(v  1 e 0 0 ]
 {
 [v printGForce@RawG RawG `l  1 p 4 42 ]
-"404
+"408
 } 0
-"346
+"350
 [v _printCentiValue printCentiValue `(v  1 e 0 0 ]
 {
-"348
+"352
 [v printCentiValue@buffer buffer `[16]uc  1 a 16 20 ]
-"349
+"353
 [v printCentiValue@_lvalue _lvalue `l  1 a 4 38 ]
-"350
+"354
 [v printCentiValue@T T `us  1 a 2 36 ]
-"346
+"350
 [v printCentiValue@value value `l  1 p 4 16 ]
-"369
+"373
 } 0
 "4 /Applications/microchip/xc8/v1.35/sources/common/itoa.c
 [v _itoa itoa `(*.4uc  1 e 1 0 ]
@@ -564,26 +564,26 @@
 [v ___aldiv@dividend dividend `l  1 p 4 6 ]
 "42
 } 0
-"326 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"330 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _isqrt isqrt `(us  1 s 2 isqrt ]
 {
-"327
+"331
 [v isqrt@b b `ul  1 a 4 24 ]
 [v isqrt@g g `ul  1 a 4 20 ]
 [v isqrt@bshft bshft `ul  1 a 4 16 ]
 [v isqrt@temp temp `ul  1 a 4 12 ]
-"326
+"330
 [v isqrt@val val `ul  1 p 4 2 ]
-"335
+"339
 } 0
-"426
+"430
 [v _CalculateSumOfSquares CalculateSumOfSquares `(v  1 e 0 0 ]
 {
-"429
+"433
 [v CalculateSumOfSquares@GzSquare GzSquare `ul  1 a 4 26 ]
 [v CalculateSumOfSquares@GySquare GySquare `ul  1 a 4 22 ]
 [v CalculateSumOfSquares@GxSquare GxSquare `ul  1 a 4 18 ]
-"449
+"453
 } 0
 "15 /Applications/microchip/xc8/v1.35/sources/common/Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
@@ -595,25 +595,25 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 6 ]
 "129
 } 0
-"532 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"536 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _DisplayData DisplayData `(v  1 e 0 0 ]
 {
-"561
+"565
 } 0
-"523
+"527
 [v _putHex putHex `(v  1 e 0 0 ]
 {
 [v putHex@value value `us  1 p 2 0 ]
-"530
+"534
 } 0
-"510
+"514
 [v _putHexNibble putHexNibble `(v  1 e 0 0 ]
 {
 [v putHexNibble@value value `uc  1 a 1 wreg ]
 [v putHexNibble@value value `uc  1 a 1 wreg ]
-"512
+"516
 [v putHexNibble@value value `uc  1 a 1 6 ]
-"519
+"523
 } 0
 "4 /Applications/microchip/xc8/v1.35/sources/common/cputs.c
 [v _cputs cputs `(v  1 e 0 0 ]
@@ -621,27 +621,27 @@
 [v cputs@s s `*.26DCCuc  1 p 2 5 ]
 "8
 } 0
-"301 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"305 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _putch putch `(v  1 e 0 0 ]
 {
 [v putch@char_out char_out `uc  1 a 1 wreg ]
-"303
+"307
 [v putch@temp temp `uc  1 a 1 4 ]
-"301
+"305
 [v putch@char_out char_out `uc  1 a 1 wreg ]
-"306
+"310
 [v putch@char_out char_out `uc  1 a 1 3 ]
-"319
+"323
 } 0
-"218
+"222
 [v _GetGyroWithOffset GetGyroWithOffset `(s  1 e 2 0 ]
 {
-"220
+"224
 [v GetGyroWithOffset@_temp _temp `s  1 a 2 8 ]
-"218
+"222
 [v GetGyroWithOffset@value value `s  1 p 2 2 ]
 [v GetGyroWithOffset@Goffset Goffset `s  1 p 2 4 ]
-"241
+"245
 } 0
 "27 /Users/daniel/MPLABXProjects/blueGyro.X/AT24CM02.c
 [v _AT24CM02_WriteBlock AT24CM02_WriteBlock `(v  1 e 0 0 ]
@@ -752,8 +752,8 @@
 [v AT24CM02_GetAddress@block block `s  1 p 2 2 ]
 "24
 } 0
-"270 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
+"274 /Users/daniel/MPLABXProjects/blueGyro.X/blueGyro.c
 [v _isr isr `II(v  1 s 0 isr ]
 {
-"297
+"301
 } 0

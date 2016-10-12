@@ -6,7 +6,7 @@ Linker command line:
   --UDF=html/blueGyro.X.production.link.html -cs \
   -h+dist/default/production/blueGyro.X.production.sym \
   --cmf=dist/default/production/blueGyro.X.production.cmf -z -Q12F1840 \
-  -o/tmp/xcK9hCTD9 -Mdist/default/production/blueGyro.X.production.map -E1 \
+  -o/tmp/xcMt9NjZG -Mdist/default/production/blueGyro.X.production.map -E1 \
   -ver=XC8 -ASTACK=020A0h-020efh -pstack=STACK -ACODE=00h-07FFhx2 \
   -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
   -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -28,7 +28,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 --MS=program,0,1000,800 --MS=data,0,1000,80 -k \
-  /tmp/xcTUfA114.obj dist/default/production/blueGyro.X.production.obj 
+  /tmp/xcwYtDJ9q.obj dist/default/production/blueGyro.X.production.obj 
 
 Object code version is 3.11
 
@@ -42,7 +42,7 @@ MEMORY SPACES
 
 
                 Name                               Link     Load   Length Selector   Space         Scale
-/tmp/xcTUfA114.obj
+/tmp/xcwYtDJ9q.obj
                 end_init                             37       37        2        8      program
                 reset_vec                             0        0        2        0      program
                 config                             8007     8007        2    1000E      program
@@ -1217,7 +1217,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 617 in file "blueGyro.c"
+		line 621 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1266,7 +1266,7 @@ Total ram usage:        5 bytes
 
  *************** function _printVoltage *****************
  Defined at:
-		line 570 in file "blueGyro.c"
+		line 574 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1299,7 +1299,7 @@ Total ram usage:        9 bytes
 
  *************** function _printVersion *****************
  Defined at:
-		line 564 in file "blueGyro.c"
+		line 568 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1420,7 +1420,7 @@ Total ram usage:        1 bytes
 
  *************** function _SaveSetting *****************
  Defined at:
-		line 208 in file "blueGyro.c"
+		line 212 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1514,7 +1514,7 @@ Total ram usage:        3 bytes
 
  *************** function _LoadSetting *****************
  Defined at:
-		line 199 in file "blueGyro.c"
+		line 203 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1576,7 +1576,7 @@ Total ram usage:        4 bytes
 
  *************** function _Init1msTimer *****************
  Defined at:
-		line 245 in file "blueGyro.c"
+		line 249 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1810,7 +1810,7 @@ Total ram usage:        2 bytes
 
  *************** function _FindDeltaG *****************
  Defined at:
-		line 452 in file "blueGyro.c"
+		line 456 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1840,7 +1840,7 @@ Total ram usage:        4 bytes
 
  *************** function _DisplayInfo *****************
  Defined at:
-		line 469 in file "blueGyro.c"
+		line 473 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1881,7 +1881,7 @@ Total ram usage:        6 bytes
 
  *************** function _printValue *****************
  Defined at:
-		line 338 in file "blueGyro.c"
+		line 342 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           2   16[BANK0 ] short 
  Auto vars:     Size  Location     Type
@@ -1912,7 +1912,7 @@ Total ram usage:       18 bytes
 
  *************** function _printUShort *****************
  Defined at:
-		line 417 in file "blueGyro.c"
+		line 421 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           2    9[BANK0 ] unsigned short 
  Auto vars:     Size  Location     Type
@@ -1943,7 +1943,7 @@ Total ram usage:       18 bytes
 
  *************** function _printGyro *****************
  Defined at:
-		line 406 in file "blueGyro.c"
+		line 410 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   RawG            4   42[BANK0 ] long 
  Auto vars:     Size  Location     Type
@@ -1975,7 +1975,7 @@ Total ram usage:        4 bytes
 
  *************** function _printDeciValue *****************
  Defined at:
-		line 371 in file "blueGyro.c"
+		line 375 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           4   16[BANK0 ] long 
  Auto vars:     Size  Location     Type
@@ -2012,7 +2012,7 @@ Total ram usage:       26 bytes
 
  *************** function _printGForce *****************
  Defined at:
-		line 396 in file "blueGyro.c"
+		line 400 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   RawG            4   42[BANK0 ] long 
  Auto vars:     Size  Location     Type
@@ -2044,7 +2044,7 @@ Total ram usage:        4 bytes
 
  *************** function _printCentiValue *****************
  Defined at:
-		line 346 in file "blueGyro.c"
+		line 350 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           4   16[BANK0 ] long 
  Auto vars:     Size  Location     Type
@@ -2263,7 +2263,7 @@ Total ram usage:       15 bytes
 
  *************** function _isqrt *****************
  Defined at:
-		line 326 in file "blueGyro.c"
+		line 330 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   val             4    2[COMMON] unsigned long 
  Auto vars:     Size  Location     Type
@@ -2296,7 +2296,7 @@ Total ram usage:       32 bytes
 
  *************** function _CalculateSumOfSquares *****************
  Defined at:
-		line 426 in file "blueGyro.c"
+		line 430 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2363,7 +2363,7 @@ Total ram usage:       12 bytes
 
  *************** function _DisplayData *****************
  Defined at:
-		line 532 in file "blueGyro.c"
+		line 536 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2395,7 +2395,7 @@ Total ram usage:        0 bytes
 
  *************** function _putHex *****************
  Defined at:
-		line 523 in file "blueGyro.c"
+		line 527 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           2    0[BANK0 ] unsigned short 
  Auto vars:     Size  Location     Type
@@ -2425,7 +2425,7 @@ Total ram usage:        4 bytes
 
  *************** function _putHexNibble *****************
  Defined at:
-		line 510 in file "blueGyro.c"
+		line 514 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2500,7 +2500,7 @@ Total ram usage:        3 bytes
 
  *************** function _putch *****************
  Defined at:
-		line 301 in file "blueGyro.c"
+		line 305 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   char_out        1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2534,7 +2534,7 @@ Total ram usage:        3 bytes
 
  *************** function _GetGyroWithOffset *****************
  Defined at:
-		line 218 in file "blueGyro.c"
+		line 222 in file "blueGyro.c"
  Parameters:    Size  Location     Type
   value           2    2[COMMON] short 
   Goffset         2    4[COMMON] short 
@@ -3000,7 +3000,7 @@ Total ram usage:        6 bytes
 
  *************** function _isr *****************
  Defined at:
-		line 270 in file "blueGyro.c"
+		line 274 in file "blueGyro.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

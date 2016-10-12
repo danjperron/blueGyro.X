@@ -48,7 +48,10 @@
         G,g or enter	-> READY  Be ready for High G detection
         I or i          -> INFO   Display Acceleration info in G.
         H or h          -> HIT    Force High/Low G detection
- *      Z or z          -> Zero   Zero Gyro values (set offset)
+        Z or z          -> Zero   Zero Gyro values (set offset)
+       
+        D or d          -> Dump   Dump flash data from AT24CM02
+ 
 
       Command available in IDLE mode only
         ?               -> display Release version.
@@ -66,7 +69,7 @@
               zzzz is gyro z
 
 
-     
+*/    
 //////////////////////////  PORT DESCRIPTION
 /*
 
@@ -83,6 +86,10 @@
 // if you don't want magnetometer  undef HMC5883L_ENABLE in HMC5883L.h
 
 
+// Oct 12 , 2016 Flash memory add-on
+// Version 1.02
+
+
 
 #include <htc.h>
 #include <stddef.h>
@@ -90,6 +97,7 @@
 #include <stdlib.h>
 #include "i2cMaster.h"
 #include "MPU6050.h"
+#include "AT24CM02.h"
 
 
 
@@ -178,6 +186,7 @@ settingsStruct Setting;
 #define MODE_READY  	      	1
 #define MODE_HIT			 	3
 #define MODE_GYRO_OFFSET        4
+#define MODE_DUMP               5
 #define MODE_INFO				100
 
 volatile unsigned char Mode= 0xff;
@@ -261,10 +270,6 @@ GIE=1;
 
 void CalculateSumOfSquare(void);
 
-char FindDrop(void);
-
-
-
 
 static void interrupt isr(void){
 // check serial transmit Interrupt
@@ -334,10 +339,10 @@ static unsigned short isqrt(unsigned long val) {
 	}
 
 
-void printValue(long value)
+void printValue(short value)
 {
     char buffer[16];
-    ltoa(buffer,value,10);
+    itoa(buffer,value,10);
     cputs(buffer);
 }
 
@@ -356,7 +361,7 @@ void printCentiValue(long value)
   else
    _lvalue = value;
   
-  ltoa(buffer,_lvalue /100,10);cputs(buffer);
+  itoa(buffer,(short) (_lvalue /100),10);cputs(buffer);
   putch('.');
 
   T = (unsigned short) _lvalue % 100;
@@ -381,7 +386,7 @@ void printDeciValue(long value)
   else
    _lvalue = value;
   
-  ltoa(buffer,_lvalue /10,10);cputs(buffer);
+  itoa(buffer,(short) (_lvalue /10),10);cputs(buffer);
   putch('.');
 
   T = (unsigned short) _lvalue % 10;
@@ -389,6 +394,8 @@ void printDeciValue(long value)
   utoa(buffer,T,10);cputs(buffer);  
    
 }
+
+
 
 void printGForce(long RawG)
 {
@@ -462,6 +469,7 @@ char FindDeltaG(void)
 }
 
 
+
 void DisplayInfo(void)
 {
   unsigned short  Gt;
@@ -472,7 +480,7 @@ void DisplayInfo(void)
   // assuming that interrupt routine is off
   CalculateSumOfSquares();
   // now let's display the info
-  cputs(" Time(ms)=");
+  cputs(" T(ms)=");
   printUShort(CurrentData.Timer);
   cputs(" G x=");
   printGForce(CurrentData.Gx);
@@ -482,7 +490,7 @@ void DisplayInfo(void)
   printGForce(CurrentData.Gz);
   // now  for the full force we will do the square root of the sum of the squares.
   Gt = isqrt(CurrentData.SumSquare);
-  cputs("Gt=");
+  cputs(" Gt=");
   printGForce(Gt);
 
   cputs(" Gyro x=");
@@ -502,7 +510,6 @@ void DisplayInfo(void)
 #endif
   cputs("\r\n");  
 }
-
 
 void putHexNibble(unsigned char value)
 {
@@ -560,7 +567,7 @@ void DisplayData(void)
 
 void printVersion(void)
 {
-   cputs("Catapult V1.01\r\n");
+   cputs("Catapult V1.02\r\n");
 }
 
 
@@ -695,13 +702,22 @@ void printVoltage(void)
    { 
      UserKey = RCREG;  // get user command
      
-    if ((UserKey == 'G' ) || (UserKey == 'g' ) || (UserKey == 0xd))
+    if ((UserKey == 'D')  || (UserKey == 'd' ))
+     {
+        AT24CM02_BlockIdx=0;
+        AT24CM02_ReadBlock(0);
+        AT24CM02_BlockID= CurrentData.BlockID;
+        NewMode= MODE_DUMP;
+    }
+    if ((UserKey == 'G' ) || (UserKey == 'g' ))
          NewMode=MODE_READY;
     else if (UserKey== 27)
          NewMode= MODE_IDLE;
+
     else if ((UserKey== 'I') || (UserKey== 'i'))
          NewMode= MODE_INFO;
-    else if ((UserKey == 'h' ) || (UserKey == 'H'))
+
+    else if ((UserKey == 'H' ) || (UserKey == 'h'))
          NewMode = MODE_HIT;
     else
        if(Mode == MODE_IDLE)
@@ -730,11 +746,11 @@ void printVoltage(void)
 
      switch(Mode)
     {
-       case MODE_GYRO_OFFSET:  cputs("\r\nZero Gyro.\r\n");
+       case MODE_GYRO_OFFSET:  cputs("Zero Gyro.\r\n");
                                break;
-       case MODE_IDLE:   cputs("\r\nIDLE\r\n");
+       case MODE_IDLE:   cputs("IDLE\r\n");
                                       break;
-       case MODE_READY: cputs("\r\nREADY\r\n");
+       case MODE_READY: cputs("READY\r\n");
 						    // clear the  datas
                                         CurrentData.SumSquare=0;
                                         TimerCrash=65535;
@@ -768,7 +784,22 @@ void printVoltage(void)
        }
          continue;
      }
-  if(Mode == MODE_HIT)
+
+ if(Mode == MODE_DUMP)
+ {
+        AT24CM02_ReadBlock(AT24CM02_BlockIdx++);
+        if(CurrentData.BlockID!= AT24CM02_BlockID)
+        { 
+            NewMode= MODE_IDLE;
+            continue;
+        }
+        DisplayData();
+        if(AT24CM02_BlockIdx >= AT24CM02_BLOCK_MAX)
+            NewMode= MODE_IDLE;
+         continue;  
+ }
+ 
+ if(Mode == MODE_HIT)
      {
        while(GotInt_MPU6050()==0);
          Get_Accel_Values();
@@ -777,6 +808,10 @@ void printVoltage(void)
 #endif
          CalculateSumOfSquares();
          DisplayData();
+#ifdef AT24CM02_ENABLE
+         AT24CM02_WriteBlock(AT24CM02_BlockIdx++);
+#endif
+
          continue;
      }
    if(Mode == MODE_READY)
@@ -792,10 +827,17 @@ void printVoltage(void)
        if(FindDeltaG())
          {
            DisplayData();
+#ifdef AT24CM02_ENABLE
+           AT24CM02_BlockIdx=0;
+           AT24CM02_BlockID++;    
+           AT24CM02_WriteBlock(AT24CM02_BlockIdx++);
+#endif
             NewMode= MODE_HIT;
            continue;
          }
     }
+
+
    if(Mode == MODE_INFO)
    {
       Get_Accel_Values();
@@ -806,6 +848,7 @@ void printVoltage(void)
       NewMode = MODE_IDLE;
       Mode    = MODE_IDLE;
    }
+
  }
 }
 
