@@ -92,20 +92,26 @@ unsigned char i2c_Read(unsigned char ack)
 
 
 /*********************************************************************
-* Function:        LDByteWriteI2C()
+* Function:        LDSingleByteWriteI2C()
 * Input:		Control Byte, 8 - bit address, data.
 * Overview:		Write a byte to low density device at address LowAdd
 ********************************************************************/
-void LDByteWriteI2C(unsigned char i2cSlaveAddress, unsigned char LowAdd, unsigned char data)
-{
-	unsigned int ErrorCode=0;
 
+void LDByteSetAddress(unsigned char i2cSlaveAddress, unsigned char LowAdd)
+{
     i2c_Start();					//Generate Start COndition
     i2c_Address(i2cSlaveAddress,I2C_WRITE);
     i2c_Write(LowAdd);	                // Servo Speed 
-    i2c_Write(data);	                // 2 seconds on servo 0
+}
+
+void LDByteWriteI2C(unsigned char i2cSlaveAddress, unsigned char LowAdd, unsigned char data)
+{
+	unsigned int ErrorCode=0;
+    LDByteSetAddress(i2cSlaveAddress,LowAdd);
+     i2c_Write(data);	                // 2 seconds on servo 0
     i2c_Stop();	                        // send Stop
 }
+
 
 
 /*********************************************************************
@@ -116,9 +122,7 @@ void LDByteWriteI2C(unsigned char i2cSlaveAddress, unsigned char LowAdd, unsigne
 ********************************************************************/
 void LDByteReadI2C(unsigned char i2cSlaveAddress, unsigned char Address, unsigned char *Data, unsigned char Length)
 {
-    i2c_Start();                        // send Start
-    i2c_Address(i2cSlaveAddress, I2C_WRITE);  // Send slave address - write operation
-    i2c_Write(Address);	                // Set register for servo 0
+    LDByteSetAddress(i2cSlaveAddress,Address);
     i2c_Restart();                      // Restart
     i2c_Address(i2cSlaveAddress, I2C_READ);   // Send slave address - read operation	
 
@@ -128,6 +132,7 @@ void LDByteReadI2C(unsigned char i2cSlaveAddress, unsigned char Address, unsigne
     i2c_Stop();
 }
 
+/*
 unsigned char  LDSingleByteReadI2C(unsigned char i2cSlaveAddress, unsigned char Address)
 {
     unsigned char _ctemp;
@@ -140,8 +145,33 @@ unsigned char  LDSingleByteReadI2C(unsigned char i2cSlaveAddress, unsigned char 
     i2c_Stop();
     return(_ctemp);    
 }
+*/
 
+void LDRAMSetAddress(unsigned char i2cSlaveAddress, unsigned char HighAddress, unsigned char LowAddress)
+{
+    i2c_Start();
+    i2c_Address(i2cSlaveAddress,I2C_WRITE);
+    i2c_Write(HighAddress);
+    i2c_Write(LowAddress);
+}
 
+void LDRAMWriteI2C(unsigned char i2cSlaveAddress, unsigned char HighAddress, unsigned char LowAddress, unsigned char *Data, unsigned char Length)
+{
+    LDRAMSetAddress(i2cSlaveAddress, HighAddress,LowAddress);
+    while(Length-- >0)
+        i2c_Write(*(Data++));
+    i2c_Stop();
+}
 
+void LDRAMReadI2C(unsigned char i2cSlaveAddress, unsigned char HighAddress, unsigned char LowAddress, unsigned char *Data, unsigned char Length)
+{
+    LDRAMSetAddress(i2cSlaveAddress, HighAddress,LowAddress);
+    i2c_Restart();                      // Restart
+    i2c_Address(i2cSlaveAddress, I2C_READ);   // Send slave address - read operation	
+    while(Length-- > 1)
+    *(Data++) = i2c_Read(1);            // Read one byte
+    *(Data++) = i2c_Read(0);
+    i2c_Stop();
+}
 
 

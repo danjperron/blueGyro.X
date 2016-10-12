@@ -119,18 +119,20 @@ void Setup_MPU6050(void);
 void Get_Accel_Values(void);
 unsigned char GotInt_MPU6050(void);
 
-
+// Force CurrentData to be 32 bytes
+// this way we could store up to 8192 record into i2c eerom and not  having page problem
 typedef struct
 {
+  unsigned short Timer;  
   short Gx,Gy,Gz;
   short temp;
   short Gyrox,Gyroy,Gyroz;
-  unsigned short Timer;
-  unsigned long SumSquare;
-#ifdef HMC5883L_ENABLE
   short MagX,MagY,MagZ;
-#endif
+  unsigned long SumSquare;
+  long BlockID;
+  short spare;
 }GForceStruct;
+
 
 
 extern GForceStruct  CurrentData;

@@ -7,68 +7,72 @@ Psect Usage Map:
  idataBANK0 | Bank 0 data (ROM image)          | 0003h - 0003h |   1 word   
  intentry   | Interrupt context entry code     | 0004h - 0036h |  51 words  
  end_init   | Initialization code              | 0037h - 0038h |   2 words  
- cinit      | Initialization code              | 0039h - 004Eh |  22 words  
- maintext   | Program code for main() function | 004Fh - 02A0h | 594 words  
- text25     | Program and library code         | 02A1h - 03DAh | 314 words  
- text41     | Program and library code         | 050Dh - 05F5h | 233 words  
- text15     | Program and library code         | 05F6h - 0693h | 158 words  
- text43     | Program and library code         | 0694h - 0723h | 144 words  
- text36     | Program and library code         | 0724h - 07ACh | 137 words  
- text38     | Program and library code         | 07ADh - 07FFh |  83 words  
- text20     | Program and library code         | 083Dh - 0841h |   5 words  
- text19     | Program and library code         | 0842h - 0846h |   5 words  
- text18     | Program and library code         | 0847h - 084Bh |   5 words  
- clrtext    | Memory clearing code             | 084Ch - 0851h |   6 words  
- text17     | Program and library code         | 0852h - 0858h |   7 words  
- text2      | Program and library code         | 0859h - 085Fh |   7 words  
- text23     | Program and library code         | 0860h - 0867h |   8 words  
- text3      | Program and library code         | 0868h - 0873h |  12 words  
- text22     | Program and library code         | 0874h - 0882h |  15 words  
- text11     | Program and library code         | 0883h - 0891h |  15 words  
- text45     | Program and library code         | 0892h - 08A4h |  19 words  
- text46     | Program and library code         | 08A5h - 08B8h |  20 words  
- text27     | Program and library code         | 08B9h - 08CCh |  20 words  
- text5      | Program and library code         | 08CDh - 08E0h |  20 words  
- text12     | Program and library code         | 08E1h - 08F6h |  22 words  
- text26     | Program and library code         | 08F7h - 090Eh |  24 words  
- text14     | Program and library code         | 090Fh - 0926h |  24 words  
- text10     | Program and library code         | 0927h - 093Eh |  24 words  
- text21     | Program and library code         | 093Fh - 095Ah |  28 words  
- text9      | Program and library code         | 095Bh - 0976h |  28 words  
- text6      | Program and library code         | 0977h - 0993h |  29 words  
- text47     | Program and library code         | 0994h - 09B1h |  30 words  
- text8      | Program and library code         | 09B2h - 09D4h |  35 words  
- text7      | Program and library code         | 09D5h - 09F7h |  35 words  
- text44     | Program and library code         | 09F8h - 0A1Ch |  37 words  
- text33     | Program and library code         | 0A1Dh - 0A48h |  44 words  
- text35     | Program and library code         | 0A49h - 0A76h |  46 words  
- text42     | Program and library code         | 0A77h - 0AA8h |  50 words  
- text34     | Program and library code         | 0AA9h - 0ADCh |  52 words  
- text24     | Program and library code         | 0ADDh - 0B1Bh |  63 words  
- text16     | Program and library code         | 0B1Ch - 0B5Bh |  64 words  
- text37     | Program and library code         | 0B5Ch - 0B9Eh |  67 words  
- text30     | Program and library code         | 0B9Fh - 0BE2h |  68 words  
- text28     | Program and library code         | 0BE3h - 0C26h |  68 words  
- text48     | Program and library code         | 0C27h - 0C7Ah |  84 words  
- text13     | Program and library code         | 0C7Bh - 0CD0h |  86 words  
- text32     | Program and library code         | 0CD1h - 0D32h |  98 words  
- text1      | Program and library code         | 0D33h - 0D98h | 102 words  
- text4      | Program and library code         | 0D99h - 0E03h | 107 words  
- text29     | Program and library code         | 0E04h - 0E76h | 115 words  
- text31     | Program and library code         | 0E77h - 0EF5h | 127 words  
- text39     | Program and library code         | 0EF6h - 0F77h | 130 words  
- text40     | Program and library code         | 0F78h - 0FFFh | 136 words  
+ cinit      | Initialization code              | 0039h - 0051h |  25 words  
+ maintext   | Program code for main() function | 0052h - 0324h | 723 words  
+ text19     | Program and library code         | 0325h - 0452h | 302 words  
+ text32     | Program and library code         | 0453h - 053Bh | 233 words  
+ text15     | Program and library code         | 05E1h - 067Eh | 158 words  
+ text34     | Program and library code         | 067Fh - 0711h | 147 words  
+ text31     | Program and library code         | 0712h - 0799h | 136 words  
+ text1      | Program and library code         | 079Ah - 07FFh | 102 words  
+ text49     | Program and library code         | 087Ch - 0880h |   5 words  
+ text45     | Program and library code         | 0881h - 0885h |   5 words  
+ text44     | Program and library code         | 0886h - 088Ah |   5 words  
+ clrtext    | Memory clearing code             | 088Bh - 0890h |   6 words  
+ text48     | Program and library code         | 0891h - 0897h |   7 words  
+ text2      | Program and library code         | 0898h - 089Eh |   7 words  
+ text51     | Program and library code         | 089Fh - 08A6h |   8 words  
+ text3      | Program and library code         | 08A7h - 08B2h |  12 words  
+ text17     | Program and library code         | 08B3h - 08BFh |  13 words  
+ text50     | Program and library code         | 08C0h - 08CEh |  15 words  
+ text11     | Program and library code         | 08CFh - 08DDh |  15 words  
+ text47     | Program and library code         | 08DEh - 08EEh |  17 words  
+ text36     | Program and library code         | 08EFh - 0901h |  19 words  
+ text14     | Program and library code         | 0902h - 0914h |  19 words  
+ text37     | Program and library code         | 0915h - 0928h |  20 words  
+ text21     | Program and library code         | 0929h - 093Ch |  20 words  
+ text20     | Program and library code         | 093Dh - 0950h |  20 words  
+ text12     | Program and library code         | 0951h - 0966h |  22 words  
+ text5      | Program and library code         | 0967h - 097Ch |  22 words  
+ text10     | Program and library code         | 097Dh - 0994h |  24 words  
+ text46     | Program and library code         | 0995h - 09B0h |  28 words  
+ text9      | Program and library code         | 09B1h - 09CCh |  28 words  
+ text8      | Program and library code         | 09CDh - 09E8h |  28 words  
+ text6      | Program and library code         | 09E9h - 0A05h |  29 words  
+ text38     | Program and library code         | 0A06h - 0A23h |  30 words  
+ text7      | Program and library code         | 0A24h - 0A46h |  35 words  
+ text26     | Program and library code         | 0A47h - 0A6Ah |  36 words  
+ text41     | Program and library code         | 0A6Bh - 0A8Fh |  37 words  
+ text35     | Program and library code         | 0A90h - 0AB4h |  37 words  
+ text42     | Program and library code         | 0AB5h - 0ADDh |  41 words  
+ text28     | Program and library code         | 0ADEh - 0B09h |  44 words  
+ text52     | Program and library code         | 0B0Ah - 0B39h |  48 words  
+ text33     | Program and library code         | 0B3Ah - 0B6Bh |  50 words  
+ text29     | Program and library code         | 0B6Ch - 0B9Fh |  52 words  
+ text40     | Program and library code         | 0BA0h - 0BD8h |  57 words  
+ text16     | Program and library code         | 0BD9h - 0C15h |  61 words  
+ text18     | Program and library code         | 0C16h - 0C54h |  63 words  
+ text43     | Program and library code         | 0C55h - 0C95h |  65 words  
+ text24     | Program and library code         | 0C96h - 0CD9h |  68 words  
+ text22     | Program and library code         | 0CDAh - 0D1Dh |  68 words  
+ text39     | Program and library code         | 0D1Eh - 0D71h |  84 words  
+ text13     | Program and library code         | 0D72h - 0DC7h |  86 words  
+ text27     | Program and library code         | 0DC8h - 0E29h |  98 words  
+ text4      | Program and library code         | 0E2Ah - 0E93h | 106 words  
+ text23     | Program and library code         | 0E94h - 0F02h | 111 words  
+ text25     | Program and library code         | 0F03h - 0F7Dh | 123 words  
+ text30     | Program and library code         | 0F7Eh - 0FFFh | 130 words  
             |                                  |               |             
- stringtext | Strings and constant data        | 03DBh - 050Ch | 306 words  
+ stringtext | Strings and constant data        | 053Ch - 05E0h | 165 words  
 ------------|----------------------------------|---------------|-------------
  cstackCOMM | Stack in common memory           | 0070h - 0079h |  10 bytes  
  bssCOMMON  | RAM variables in common memory   | 007Ah - 007Bh |   2 bytes  
             |                                  |               |             
- cstackBANK | Stack in bank 0                  | 0020h - 0064h |  69 bytes  
- bssBANK0   | BSS variables in bank 0          | 0065h - 0069h |   5 bytes  
- dataBANK0  | Data variables in bank 0         | 006Ah - 006Ah |   1 byte   
+ cstackBANK | Stack in bank 0                  | 0020h - 0058h |  57 bytes  
+ bssBANK0   | BSS variables in bank 0          | 0059h - 006Ch |  20 bytes  
+ dataBANK0  | Data variables in bank 0         | 006Dh - 006Dh |   1 byte   
             |                                  |               |             
- bssBANK1   | BSS variables in bank 1          | 00A0h - 00EDh |  78 bytes  
+ bssBANK1   | BSS variables in bank 1          | 00A0h - 00EFh |  80 bytes  
             |                                  |               |             
  abs_s1     | Absolute RAM variables           | 007Eh - 007Fh |   2 bytes  
 ------------|----------------------------------|---------------|-------------
