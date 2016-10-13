@@ -18,6 +18,13 @@ https://www.youtube.com/watch?v=4Xm-DA170TM
 D'autres vidéos et codes viendront 
 
 
+V1.01 Ajout du magnétomètre.
+V1.02 Ajout du la puce mémoire. La boîte noire.
+
+N.B. il est possible de ne pas utiliser le magnétomètre et la boîte noire. Il sagit de faire un #undefine.
+Pour le magnétomètre  ->  ajouter #undef HMC5883L_ENABLE  juste après le #define dans HMC5883L.h
+Pour le AT24CM02      ->  ajouter #define AT24CM02_ENABLE juste après le #define dans AT24CM02.h
+
 
 
 
