@@ -29,9 +29,9 @@ Pour le AT24CM02      ->  ajouter #undef AT24CM02_ENABLE juste après le #define
 Les  commandes disponible sont,
 
 
-    - [esc]  			      IDLE MODE   Système en attente.
+    - [esc]  			IDLE MODE   Système en attente.
     - G , g ou [enter]  READY MODE  Système pret. Attend pour un signal d'accélération.
-    - H  ou  h				  HIT MODE    Déclenchement de l'enregistrement. Simule une accélération soudaine.
+    - H  ou  h		    HIT MODE    Déclenchement de l'enregistrement. Simule une accélération soudaine.
     - I  ou i           INFO MODE   Affiche les données. Accéléromètre, gyroscope et magétomètre.
     - D  ou d           EEROM DUMP  Affiche en hexadécimal le contenue de la mémoire flash
     - ?                             Affiche la version.   (Idle mode seulement)
