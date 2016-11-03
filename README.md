@@ -35,7 +35,7 @@ Les  commandes disponible sont,
     - I  ou i           INFO MODE   Affiche les données. Accéléromètre, gyroscope et magétomètre.
     - D  ou d           EEROM DUMP  Affiche en hexadécimal le contenue de la mémoire flash
     - ?                             Affiche la version.   (Idle mode seulement)
-    - V or  v                       Affiche la tension de la batteriee.  (Idle mode seulement)
+    - V or  v                       Affiche la tension de la batterie.  (Idle mode seulement)
 
 
 -------
