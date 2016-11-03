@@ -26,7 +26,16 @@ Pour le magnétomètre  ->  ajouter #undef HMC5883L_ENABLE  juste après le #def
 Pour le AT24CM02      ->  ajouter #undef AT24CM02_ENABLE juste après le #define dans AT24CM02.h
 
 
+Les  commandes disponible sont,
 
+
+    - [esc]  			      IDLE MODE   Système en attente.
+    - G , g ou [enter]  READY MODE  Système pret. Attend pour un signal d'accélération.
+    - H  ou  h				  HIT MODE    Déclenchement de l'enregistrement. Simule une accélération soudaine.
+    - I  ou i           INFO MODE   Affiche les données. Accéléromètre, gyroscope et magétomètre.
+    - D  ou d           EEROM DUMP  Affiche en hexadécimal le contenue de la mémoire flash
+    - ?                             Affiche la version.   (Idle mode seulement)
+    - V or  v                       Affiche la tension de la batteriee.  (Idle mode seulement)
 
 
 -------
