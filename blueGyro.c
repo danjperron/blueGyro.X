@@ -567,7 +567,7 @@ void DisplayData(void)
 
 void printVersion(void)
 {
-   cputs("Catapult V1.02\r\n");
+   cputs("Catapult V1.03\r\n");
 }
 
 
@@ -704,10 +704,14 @@ void printVoltage(void)
      
     if ((UserKey == 'D')  || (UserKey == 'd' ))
      {
+ #ifdef AT24CM02_ENABLE         
         AT24CM02_BlockIdx=0;
         AT24CM02_ReadBlock(0);
-        AT24CM02_BlockID= CurrentData.BlockID;
+        AT24CM02_BlockID= CurrentData.BlockID;       
         NewMode= MODE_DUMP;
+ #else
+        NewMode= MODE_IDLE;
+ #endif        
     }
     if ((UserKey == 'G' ) || (UserKey == 'g' ))
          NewMode=MODE_READY;
@@ -787,6 +791,7 @@ void printVoltage(void)
 
  if(Mode == MODE_DUMP)
  {
+#ifdef AT24CM02_ENABLE       
         AT24CM02_ReadBlock(AT24CM02_BlockIdx++);
         if(CurrentData.BlockID!= AT24CM02_BlockID)
         { 
@@ -796,7 +801,12 @@ void printVoltage(void)
         DisplayData();
         if(AT24CM02_BlockIdx >= AT24CM02_BLOCK_MAX)
             NewMode= MODE_IDLE;
+#else
+        NewMode=MODE_IDLE;
+
+#endif        
          continue;  
+         
  }
  
  if(Mode == MODE_HIT)
